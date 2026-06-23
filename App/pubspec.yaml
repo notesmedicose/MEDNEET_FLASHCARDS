@@ -1,0 +1,32 @@
+name: mednotes
+description: MEDNEET - NEET Prep App with Flashcards & Gamification
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.10.0
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+  flutter_animate: ^4.5.2
+  sqflite: ^2.4.1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.5
+  provider: ^6.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - lib/data/flashcards_physics.json
+    - lib/data/flashcards_chemistry.json
+    - lib/data/flashcards_biology.json

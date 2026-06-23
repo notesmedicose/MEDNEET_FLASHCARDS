@@ -1,0 +1,1279 @@
+[
+    {
+        "id": "phy_ch1_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "What are the 7 SI base units and their symbols?",
+        "back": "1. Length - Metre (m)\n2. Mass - Kilogram (kg)\n3. Time - Second (s)\n4. Electric Current - Ampere (A)\n5. Temperature - Kelvin (K)\n6. Amount of Substance - Mole (mol)\n7. Luminous Intensity - Candela (cd)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 1-2",
+        "difficulty": "easy",
+        "tags": [
+            "si-units",
+            "fundamentals"
+        ]
+    },
+    {
+        "id": "phy_ch1_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "Define 1 parsec. How is it related to metre and light year?",
+        "back": "1 parsec = 3.08 × 10¹⁶ m ≈ 3.26 light years.\nIt is the distance at which 1 AU subtends an angle of 1 arcsecond.\nParsec = (1 AU) / (1 arcsecond in radians)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 10",
+        "difficulty": "medium",
+        "tags": [
+            "units",
+            "astronomical",
+            "measurement"
+        ]
+    },
+    {
+        "id": "phy_ch1_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "State the Principle of Homogeneity of Dimensions.",
+        "back": "Principle of Homogeneity: Only physical quantities of the same dimension can be added, subtracted, or equated.\nIf A + B = C, then [A] = [B] = [C].\nIf an equation is dimensionally incorrect, it is definitely wrong. If correct, it may still be wrong (doesn't guarantee physical correctness).",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 7",
+        "difficulty": "easy",
+        "tags": [
+            "dimensions",
+            "homogeneity",
+            "fundamentals"
+        ]
+    },
+    {
+        "id": "phy_ch1_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "formula",
+        "front": "Dimensional formula of: Force, Work/Energy, Power, Pressure",
+        "back": "Force [F] = [MLT⁻²]\nWork/Energy = [ML²T⁻²]\nPower = [ML²T⁻³]\nPressure/Stress = [ML⁻¹T⁻²]",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 5",
+        "difficulty": "easy",
+        "tags": [
+            "dimensions",
+            "formulas"
+        ]
+    },
+    {
+        "id": "phy_ch1_005",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "List the 4 limitations of Dimensional Analysis.",
+        "back": "1. Cannot determine dimensionless constants (e.g., 2π, ½)\n2. Cannot distinguish quantities with same dimensions (e.g., Work and Torque both [ML²T⁻²])\n3. Cannot derive equations involving trigonometric, log, or exponential functions\n4. Cannot derive equations with additive terms (e.g., s = ut + ½at²)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 8",
+        "difficulty": "medium",
+        "tags": [
+            "dimensions",
+            "limitations"
+        ]
+    },
+    {
+        "id": "phy_ch1_006",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "recall",
+        "front": "How many significant figures in: 0.006720?",
+        "back": "4 significant figures.\nLeading zeros (0.00) are NOT significant.\n6, 7, 2, and trailing 0 (after decimal) ARE significant.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 13",
+        "difficulty": "easy",
+        "tags": [
+            "significant-figures"
+        ]
+    },
+    {
+        "id": "phy_ch1_007",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "recall",
+        "front": "What is the percentage error if a measurement is (2.00 ± 0.02) m?",
+        "back": "Percentage error = (Absolute error / True value) × 100\n= (0.02 / 2.00) × 100 = 1%",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 15",
+        "difficulty": "easy",
+        "tags": [
+            "errors",
+            "percentage-error"
+        ]
+    },
+    {
+        "id": "phy_ch1_008",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Units & Measurement",
+        "chapterNum": 1,
+        "type": "formula",
+        "front": "Error propagation formulas for addition, multiplication, and powers.",
+        "back": "Addition/Subtraction: Z = A ± B → ΔZ = ΔA + ΔB (absolute errors ADD)\nMultiplication/Division: Z = AB or A/B → ΔZ/Z = ΔA/A + ΔB/B (relative errors ADD)\nPower: Z = Aⁿ → ΔZ/Z = n(ΔA/A)\nGeneral: Z = AᵖBᵞ/Cʳ → ΔZ/Z = p(ΔA/A) + q(ΔB/B) + r(ΔC/C)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.1, Pg. 17",
+        "difficulty": "medium",
+        "tags": [
+            "errors",
+            "error-propagation"
+        ]
+    },
+    {
+        "id": "phy_ch2_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Straight Line",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "Distinguish between Distance and Displacement.",
+        "back": "Distance: Total path length traveled (scalar, always ≥ 0)\nDisplacement: Shortest path between initial and final position (vector, can be +, -, or 0)\nAverage speed = Total distance / time ≥ |Average velocity| = |Displacement|/time\nEquality only when motion is in one direction without reversal.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.2, Pg. 19",
+        "difficulty": "easy",
+        "tags": [
+            "kinematics",
+            "definitions"
+        ]
+    },
+    {
+        "id": "phy_ch2_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Straight Line",
+        "chapterNum": 2,
+        "type": "formula",
+        "front": "Write all 5 SUVAT equations for uniform acceleration.",
+        "back": "① v = u + at\n② s = ut + ½at²\n③ v² = u² + 2as\n④ s = (u+v)t/2\n⑤ sₙ = u + a(2n-1)/2 (distance in nth second)\n\nValid ONLY when acceleration is CONSTANT.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.2, Pg. 22-23",
+        "difficulty": "easy",
+        "tags": [
+            "kinematics",
+            "suvat",
+            "formulas"
+        ]
+    },
+    {
+        "id": "phy_ch2_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Straight Line",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "What does the slope and area of v-t graph represent?",
+        "back": "Slope of v-t graph = Acceleration (a = dv/dt)\nArea under v-t graph = Displacement (∫v dt)\nArea under a-t graph = Change in velocity (Δv)\nParabolic x-t graph → uniform acceleration\nStraight line v-t → uniform acceleration",
+        "ncertRef": "NCERT Class 11 Physics, Ch.2, Pg. 25",
+        "difficulty": "easy",
+        "tags": [
+            "graphs",
+            "kinematics"
+        ]
+    },
+    {
+        "id": "phy_ch2_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Straight Line",
+        "chapterNum": 2,
+        "type": "formula",
+        "front": "A body starts from rest with a = 4 m/s². Distance covered in 5th second?",
+        "back": "sₙ = u + a(2n-1)/2\ns₅ = 0 + 4(2×5-1)/2\ns₅ = 4(9)/2 = 18 m",
+        "ncertRef": "NCERT Class 11 Physics, Ch.2, Pg. 23",
+        "difficulty": "medium",
+        "tags": [
+            "suvat",
+            "numerical"
+        ]
+    },
+    {
+        "id": "phy_ch2_005",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Straight Line",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "Conditions for applying SUVAT equations in free fall under gravity.",
+        "back": "Replace 'a' with 'g' (g = 9.8 m/s² ≈ 10 m/s² for NEET)\nSign convention: upward = +ve, downward = -ve\nAt highest point: v = 0, but a = g ≠ 0\nTime of ascent = Time of descent (same height)\nSpeed at return = speed of projection (same height)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.2, Pg. 30",
+        "difficulty": "medium",
+        "tags": [
+            "free-fall",
+            "gravity"
+        ]
+    },
+    {
+        "id": "phy_ch2_006",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Straight Line",
+        "chapterNum": 2,
+        "type": "formula",
+        "front": "Maximum height and time of flight for a body thrown vertically upward with initial velocity u.",
+        "back": "Max Height H = u²/2g\nTime of ascent ta = u/g\nTotal time of flight T = 2u/g\nVelocity at height h: v = ±√(u² - 2gh)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.2, Pg. 31",
+        "difficulty": "medium",
+        "tags": [
+            "free-fall",
+            "vertical-motion"
+        ]
+    },
+    {
+        "id": "phy_ch3_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Plane",
+        "chapterNum": 3,
+        "type": "concept",
+        "front": "What are scalar and vector quantities? Give 3 examples each.",
+        "back": "Scalars (magnitude only): Distance, Speed, Mass, Time, Energy, Work\nVectors (magnitude + direction): Displacement, Velocity, Acceleration, Force, Momentum\n\nScalars follow algebraic addition.\nVectors follow triangle/parallelogram law of addition.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.3, Pg. 40",
+        "difficulty": "easy",
+        "tags": [
+            "vectors",
+            "scalars"
+        ]
+    },
+    {
+        "id": "phy_ch3_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Plane",
+        "chapterNum": 3,
+        "type": "formula",
+        "front": "Projectile motion: Range, Max Height, Time of Flight formulas.",
+        "back": "Time of Flight: T = 2u sinθ/g\nMaximum Height: H = u² sin²θ/2g\nHorizontal Range: R = u² sin2θ/g\n\nRange is maximum (Rmax = u²/g) when θ = 45°\nR(θ) = R(90°-θ) for same initial speed",
+        "ncertRef": "NCERT Class 11 Physics, Ch.3, Pg. 48",
+        "difficulty": "medium",
+        "tags": [
+            "projectile",
+            "formulas"
+        ]
+    },
+    {
+        "id": "phy_ch3_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Plane",
+        "chapterNum": 3,
+        "type": "concept",
+        "front": "What is uniform circular motion? Write expression for centripetal acceleration.",
+        "back": "Uniform Circular Motion: Object moving in a circle with constant speed.\nCentripetal Acceleration: ac = v²/r = ω²r\nCentripetal Force: Fc = mv²/r = mω²r\nDirection: Always towards the center of the circle.\nNote: Speed is constant but velocity changes due to direction change.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.3, Pg. 52",
+        "difficulty": "medium",
+        "tags": [
+            "circular-motion",
+            "centripetal"
+        ]
+    },
+    {
+        "id": "phy_ch3_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Motion in a Plane",
+        "chapterNum": 3,
+        "type": "formula",
+        "front": "Triangle law of vector addition and resultant magnitude.",
+        "back": "If vectors A and B have angle θ between them:\nResultant R = √(A² + B² + 2AB cosθ)\nDirection: tan α = (B sinθ)/(A + B cosθ)\nwhere α is angle between R and A.\n\nFor subtraction: R = √(A² + B² - 2AB cosθ)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.3, Pg. 42",
+        "difficulty": "medium",
+        "tags": [
+            "vectors",
+            "addition"
+        ]
+    },
+    {
+        "id": "phy_ch4_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Laws of Motion",
+        "chapterNum": 4,
+        "type": "concept",
+        "front": "State Newton's Three Laws of Motion.",
+        "back": "1st Law (Law of Inertia): A body at rest stays at rest, a body in motion continues in uniform motion unless acted upon by an external force.\n2nd Law: F = dp/dt = ma (for constant mass). Rate of change of momentum is proportional to applied force.\n3rd Law: Every action has an equal and opposite reaction (F₁₂ = -F₂₁).",
+        "ncertRef": "NCERT Class 11 Physics, Ch.4, Pg. 56-59",
+        "difficulty": "easy",
+        "tags": [
+            "newtons-laws",
+            "fundamentals"
+        ]
+    },
+    {
+        "id": "phy_ch4_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Laws of Motion",
+        "chapterNum": 4,
+        "type": "formula",
+        "front": "What is the formula for friction? Distinguish between static, kinetic, and rolling friction.",
+        "back": "Static Friction: fs ≤ μsN (opposes impending motion)\nKinetic Friction: fk = μkN (opposes relative motion)\nRolling Friction: fr = μrN (much smaller ≈ 10-100× less than kinetic)\n\nμs > μk >> μr\nAngle of repose θ = tan⁻¹(μs)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.4, Pg. 66",
+        "difficulty": "medium",
+        "tags": [
+            "friction",
+            "forces"
+        ]
+    },
+    {
+        "id": "phy_ch4_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Laws of Motion",
+        "chapterNum": 4,
+        "type": "concept",
+        "front": "What is impulse? How is it related to force and momentum change?",
+        "back": "Impulse J = F·Δt = Δp = change in momentum\nImpulse is the product of force and time duration.\nUnit: N·s or kg·m/s\nArea under F-t graph = Impulse\nUsed in collisions, hitting a ball, etc.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.4, Pg. 60",
+        "difficulty": "easy",
+        "tags": [
+            "impulse",
+            "momentum"
+        ]
+    },
+    {
+        "id": "phy_ch4_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Laws of Motion",
+        "chapterNum": 4,
+        "type": "concept",
+        "front": "Banking of roads: formula for optimum speed on a banked road.",
+        "back": "For a banked road with angle θ:\ntan θ = v²/rg (no friction considered)\nWith friction:\nvmax = √[rg(μ + tanθ)/(1 - μ tanθ)]\nOptimum speed (no lateral friction): v₀ = √(rg tanθ)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.4, Pg. 70",
+        "difficulty": "hard",
+        "tags": [
+            "banking",
+            "circular-motion"
+        ]
+    },
+    {
+        "id": "phy_ch5_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Work, Energy & Power",
+        "chapterNum": 5,
+        "type": "formula",
+        "front": "Work done by a constant force and by a variable force.",
+        "back": "Constant Force: W = F·s·cosθ = F·d\nVariable Force: W = ∫F·dx (area under F-x graph)\nWork-Energy Theorem: Wnet = ΔKE = ½mv² - ½mu²\n\nWork done is positive when 0° ≤ θ < 90°, negative when 90° < θ ≤ 180°, zero when θ = 90°.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.5, Pg. 75",
+        "difficulty": "easy",
+        "tags": [
+            "work",
+            "energy"
+        ]
+    },
+    {
+        "id": "phy_ch5_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Work, Energy & Power",
+        "chapterNum": 5,
+        "type": "formula",
+        "front": "Kinetic Energy and Potential Energy formulas.",
+        "back": "Kinetic Energy: KE = ½mv²\nGravitational PE: PE = mgh\nElastic PE (spring): PE = ½kx²\n\nConservation of Mechanical Energy:\nEtotal = KE + PE = constant (for conservative forces only)\n½mv₁² + mgh₁ = ½mv₂² + mgh₂",
+        "ncertRef": "NCERT Class 11 Physics, Ch.5, Pg. 78",
+        "difficulty": "easy",
+        "tags": [
+            "kinetic-energy",
+            "potential-energy"
+        ]
+    },
+    {
+        "id": "phy_ch5_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Work, Energy & Power",
+        "chapterNum": 5,
+        "type": "concept",
+        "front": "What is Power? How is it related to force and velocity?",
+        "back": "Power = Work/Time = Energy/Time\nInstantaneous Power: P = F·v (dot product of force and velocity)\nSI Unit: Watt (W) = J/s\n1 hp = 746 W\n1 kWh = 3.6 × 10⁶ J (commercial unit of energy)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.5, Pg. 82",
+        "difficulty": "easy",
+        "tags": [
+            "power",
+            "energy"
+        ]
+    },
+    {
+        "id": "phy_ch5_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Work, Energy & Power",
+        "chapterNum": 5,
+        "type": "concept",
+        "front": "Distinguish between Conservative and Non-conservative forces with examples.",
+        "back": "Conservative Forces: Work done is path-independent, depends only on initial and final positions.\nExamples: Gravitational force, Spring force, Electrostatic force\n\nNon-conservative Forces: Work done depends on the path taken.\nExamples: Friction, Air resistance, Viscous drag\n\nKey: For conservative forces, ∮F·dr = 0 (work done in closed loop is zero).",
+        "ncertRef": "NCERT Class 11 Physics, Ch.5, Pg. 80",
+        "difficulty": "medium",
+        "tags": [
+            "conservative-forces",
+            "energy"
+        ]
+    },
+    {
+        "id": "phy_ch6_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "System of Particles & Rotational Motion",
+        "chapterNum": 6,
+        "type": "concept",
+        "front": "Define centre of mass. Write formula for COM for a system of particles.",
+        "back": "Centre of Mass (COM): Point where entire mass of the system is assumed to be concentrated.\n\nFor n particles:\nXcm = (Σmixi)/M, Ycm = (Σmiyi)/M, Zcm = (Σmizi)/M\nwhere M = Σmi (total mass)\n\nVelocity of COM: Vcm = (Σmivi)/M\nAcceleration of COM: Acm = (Σmiai)/M = Fext/M",
+        "ncertRef": "NCERT Class 11 Physics, Ch.6, Pg. 88",
+        "difficulty": "medium",
+        "tags": [
+            "centre-of-mass",
+            "system-of-particles"
+        ]
+    },
+    {
+        "id": "phy_ch6_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "System of Particles & Rotational Motion",
+        "chapterNum": 6,
+        "type": "formula",
+        "front": "Moment of inertia formulas for common shapes (ring, disc, sphere, rod).",
+        "back": "Ring (about axis through ⊥ to plane): MR²\nDisc (about ⊥ axis through center): ½MR²\nSolid Sphere (about diameter): ⅖MR²\nHollow Sphere (about diameter): ⅔MR²\nRod (about center ⊥ to length): ML²/12\nRod (about end ⊥ to length): ML²/3\n\nParallel Axis Theorem: I = Icm + Md²\nPerpendicular Axis Theorem: Iz = Ix + Iy (for lamina)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.6, Pg. 99",
+        "difficulty": "hard",
+        "tags": [
+            "moment-of-inertia",
+            "rotation"
+        ]
+    },
+    {
+        "id": "phy_ch6_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "System of Particles & Rotational Motion",
+        "chapterNum": 6,
+        "type": "formula",
+        "front": "Rotational analogs: Replace linear quantities with rotational quantities.",
+        "back": "Linear → Rotational\nDisplacement x → Angular displacement θ\nVelocity v → Angular velocity ω\nAcceleration a → Angular acceleration α\nMass m → Moment of Inertia I\nForce F → Torque τ = r × F\nMomentum p → Angular momentum L = Iω\n\nNewton's 2nd: F=ma → τ = Iα\nKE = ½mv² → KErot = ½Iω²\nPower = Fv → Power = τω",
+        "ncertRef": "NCERT Class 11 Physics, Ch.6, Pg. 104",
+        "difficulty": "medium",
+        "tags": [
+            "rotational-dynamics",
+            "analogs"
+        ]
+    },
+    {
+        "id": "phy_ch6_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "System of Particles & Rotational Motion",
+        "chapterNum": 6,
+        "type": "concept",
+        "front": "State and explain Conservation of Angular Momentum with an example.",
+        "back": "Law of Conservation of Angular Momentum:\nIf net external torque τext = 0, then L = Iω = constant.\n\nExample: Ice skater spinning - when arms are pulled in, I decreases, ω increases to keep L constant.\n\nL = mvr (for a particle)\nL = Iω (for a rigid body)\nUnit: kg·m²/s",
+        "ncertRef": "NCERT Class 11 Physics, Ch.6, Pg. 107",
+        "difficulty": "medium",
+        "tags": [
+            "angular-momentum",
+            "conservation"
+        ]
+    },
+    {
+        "id": "phy_ch7_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Gravitation",
+        "chapterNum": 7,
+        "type": "formula",
+        "front": "Newton's Law of Gravitation and formula for gravitational field intensity.",
+        "back": "F = Gm₁m₂/r²\nG = 6.67 × 10⁻¹¹ N·m²/kg² (Universal gravitational constant)\n\nGravitational Field Intensity: E = F/m = GM/r²\nGravitational Potential: V = -GM/r\nRelation: E = -dV/dr",
+        "ncertRef": "NCERT Class 11 Physics, Ch.7, Pg. 114",
+        "difficulty": "easy",
+        "tags": [
+            "gravitation",
+            "newtons-law"
+        ]
+    },
+    {
+        "id": "phy_ch7_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Gravitation",
+        "chapterNum": 7,
+        "type": "formula",
+        "front": "Acceleration due to gravity: variation with height and depth.",
+        "back": "At surface: g = GM/R²\nAt height h: gh = g(1 - 2h/R) for h << R\nAt depth d: gd = g(1 - d/R)\nAt center of Earth: g = 0\n\nEffect of Earth's rotation: g' = g - ω²R cos²φ\nAt equator g is minimum, at poles g is maximum.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.7, Pg. 118",
+        "difficulty": "medium",
+        "tags": [
+            "gravity",
+            "variation"
+        ]
+    },
+    {
+        "id": "phy_ch7_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Gravitation",
+        "chapterNum": 7,
+        "type": "formula",
+        "front": "Kepler's Laws of Planetary Motion.",
+        "back": "1st Law (Law of Orbits): Planets move in elliptical orbits with Sun at one focus.\n2nd Law (Law of Areas): Areal velocity is constant (dA/dt = L/2m = constant).\n3rd Law (Law of Periods): T² ∝ r³ or T² = (4π²/GM)r³\n\nT1²/T2² = r1³/r2³",
+        "ncertRef": "NCERT Class 11 Physics, Ch.7, Pg. 122",
+        "difficulty": "medium",
+        "tags": [
+            "kepler",
+            "planetary-motion"
+        ]
+    },
+    {
+        "id": "phy_ch7_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Gravitation",
+        "chapterNum": 7,
+        "type": "formula",
+        "front": "Escape velocity and orbital velocity formulas.",
+        "back": "Escape Velocity: ve = √(2GM/R) = √(2gR)\nve for Earth ≈ 11.2 km/s\n\nOrbital Velocity: v₀ = √(GM/r) = √(gR²/r)\nFor Earth's surface orbit: v₀ ≈ 7.9 km/s\n\nRelation: ve = √2 × v₀\n\nEnergy of orbiting satellite: Total E = -GMm/2r (negative means bound system)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.7, Pg. 125",
+        "difficulty": "medium",
+        "tags": [
+            "escape-velocity",
+            "satellites"
+        ]
+    },
+    {
+        "id": "phy_ch8_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Thermal Properties of Matter",
+        "chapterNum": 8,
+        "type": "concept",
+        "front": "Define specific heat capacity, molar heat capacity, and latent heat.",
+        "back": "Specific Heat Capacity (c): Heat required to raise temperature of 1 kg by 1°C. Q = mcΔT\nUnit: J/kg·K\n\nMolar Heat Capacity (C): Heat required per mole per degree. Q = nCΔT\nUnit: J/mol·K\n\nLatent Heat (L): Heat required for phase change at constant temperature.\nQ = mL (fusion/vaporization)\nLf(ice) = 80 cal/g = 336 kJ/kg\nLv(water) = 540 cal/g = 2268 kJ/kg",
+        "ncertRef": "NCERT Class 11 Physics, Ch.8, Pg. 147",
+        "difficulty": "medium",
+        "tags": [
+            "thermal",
+            "heat-capacity"
+        ]
+    },
+    {
+        "id": "phy_ch8_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Thermal Properties of Matter",
+        "chapterNum": 8,
+        "type": "formula",
+        "front": "Thermal expansion: formulas for linear, area, and volume expansion.",
+        "back": "Linear Expansion: ΔL = L₀αΔT\nArea Expansion: ΔA = A₀βΔT where β = 2α\nVolume Expansion: ΔV = V₀γΔT where γ = 3α\n\nFor ideal gas: PV = nRT\nCharles' Law: V ∝ T (at constant P)\nBoyle's Law: P ∝ 1/V (at constant T)\nGay-Lussac's Law: P ∝ T (at constant V)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.8, Pg. 144",
+        "difficulty": "medium",
+        "tags": [
+            "thermal-expansion",
+            "coefficients"
+        ]
+    },
+    {
+        "id": "phy_ch8_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Thermal Properties of Matter",
+        "chapterNum": 8,
+        "type": "formula",
+        "front": "Newton's Law of Cooling and Stefan-Boltzmann Law.",
+        "back": "Newton's Law of Cooling:\n-dT/dt = k(T - T₀)\nRate of cooling ∝ Temperature difference with surroundings\n\nStefan-Boltzmann Law:\nP = σAεT⁴ (radiated power)\nσ = 5.67 × 10⁻⁸ W/m²K⁴\nε = emissivity (0 to 1), perfect blackbody ε = 1\n\nWien's Displacement Law: λmaxT = constant = 2.898 × 10⁻³ m·K",
+        "ncertRef": "NCERT Class 11 Physics, Ch.8, Pg. 155",
+        "difficulty": "hard",
+        "tags": [
+            "thermal-radiation",
+            "cooling"
+        ]
+    },
+    {
+        "id": "phy_ch9_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Thermodynamics",
+        "chapterNum": 9,
+        "type": "concept",
+        "front": "State the First and Second Laws of Thermodynamics.",
+        "back": "First Law: ΔU = Q - W (or ΔU = Q + W depending on sign convention)\nEnergy can neither be created nor destroyed, only converted between forms.\nIn NCERT: ΔU = Q + W (W = work done ON the system)\n\nSecond Law: Heat cannot spontaneously flow from a colder body to a hotter body.\nOR: The entropy of an isolated system always increases.\nKelvin-Planck: It's impossible to convert 100% of heat into work.\nClausius: Heat can't flow from cold to hot without external work.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.9, Pg. 164",
+        "difficulty": "medium",
+        "tags": [
+            "thermodynamics",
+            "laws"
+        ]
+    },
+    {
+        "id": "phy_ch9_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Thermodynamics",
+        "chapterNum": 9,
+        "type": "formula",
+        "front": "Efficiency of Carnot Engine and its formula.",
+        "back": "Carnot Engine Efficiency:\nη = 1 - T₂/T₁ = 1 - Q₂/Q₁\nwhere T₁ = source temp, T₂ = sink temp (in Kelvin)\n\nCarnot cycle: Isothermal expansion → Adiabatic expansion → Isothermal compression → Adiabatic compression\n\nThe Carnot engine is the most efficient heat engine operating between two temperatures.\nEfficiency is always < 1 (100%) as T₂ > 0 K is impossible.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.9, Pg. 172",
+        "difficulty": "medium",
+        "tags": [
+            "carnot",
+            "efficiency"
+        ]
+    },
+    {
+        "id": "phy_ch9_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Thermodynamics",
+        "chapterNum": 9,
+        "type": "formula",
+        "front": "Work done in isothermal and adiabatic processes for an ideal gas.",
+        "back": "Isothermal Process (ΔT = 0, ΔU = 0):\nW = nRT ln(V₂/V₁) = 2.303 nRT log(V₂/V₁)\nQ = W (all heat converted to work)\n\nAdiabatic Process (Q = 0):\nW = (P₁V₁ - P₂V₂)/(γ-1) = nR(T₁-T₂)/(γ-1)\nPVʸ = constant, TVʸ⁻¹ = constant, TʸP¹⁻ʸ = constant\nγ = Cp/Cv = 5/3 for monatomic, 7/5 for diatomic",
+        "ncertRef": "NCERT Class 11 Physics, Ch.9, Pg. 170",
+        "difficulty": "hard",
+        "tags": [
+            "thermodynamic-processes",
+            "work"
+        ]
+    },
+    {
+        "id": "phy_ch10_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Kinetic Theory of Gases",
+        "chapterNum": 10,
+        "type": "formula",
+        "front": "Ideal Gas Equation and Boyle's/Charles'/Avogadro's Laws.",
+        "back": "Ideal Gas Equation: PV = nRT = NkT\nR = 8.314 J/mol·K (Universal Gas Constant)\nk = R/NA = 1.38 × 10⁻²³ J/K (Boltzmann Constant)\n\nBoyle's Law: P ∝ 1/V (at constant T, n)\nCharles' Law: V ∝ T (at constant P, n)\nAvogadro's Law: V ∝ n (at constant P, T)\n\nSTP conditions: T = 273 K, P = 1 atm, V = 22.4 L/mol",
+        "ncertRef": "NCERT Class 11 Physics, Ch.10, Pg. 182",
+        "difficulty": "easy",
+        "tags": [
+            "gas-laws",
+            "ideal-gas"
+        ]
+    },
+    {
+        "id": "phy_ch10_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Kinetic Theory of Gases",
+        "chapterNum": 10,
+        "type": "formula",
+        "front": "RMS speed, Average speed, and Most probable speed of gas molecules.",
+        "back": "RMS Speed: vrms = √(3RT/M) = √(3kT/m)\nAverage Speed: vavg = √(8RT/πM) = √(8kT/πm)\nMost Probable Speed: vmp = √(2RT/M) = √(2kT/m)\n\nRelation: vrms > vavg > vmp\nvrms : vavg : vmp = √3 : √(8/π) : √2 ≈ 1.732 : 1.596 : 1.414\n\nDependence: v ∝ √T (temperature) and v ∝ 1/√M (molar mass)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.10, Pg. 187",
+        "difficulty": "medium",
+        "tags": [
+            "kinetic-theory",
+            "speeds"
+        ]
+    },
+    {
+        "id": "phy_ch10_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Kinetic Theory of Gases",
+        "chapterNum": 10,
+        "type": "formula",
+        "front": "Degrees of freedom and law of equipartition of energy.",
+        "back": "Degrees of Freedom (f):\nMonatomic (He, Ne): f = 3 (translational only)\nDiatomic (N₂, O₂): f = 5 (3 trans + 2 rot) at room temp\nPolyatomic: f = 6 (3 trans + 3 rot)\n\nEquipartition of Energy:\nEach degree of freedom contributes ½kT per molecule.\nTotal internal energy U = (f/2)nRT\n\nCv = (f/2)R, Cp = Cv + R = (f/2 + 1)R\nγ = Cp/Cv = 1 + 2/f",
+        "ncertRef": "NCERT Class 11 Physics, Ch.10, Pg. 189",
+        "difficulty": "hard",
+        "tags": [
+            "degrees-of-freedom",
+            "equipartition"
+        ]
+    },
+    {
+        "id": "phy_ch11_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Oscillations",
+        "chapterNum": 11,
+        "type": "formula",
+        "front": "Simple Harmonic Motion (SHM): differential equation and general solution.",
+        "back": "Differential equation: d²x/dt² = -ω²x\nGeneral solution: x = A sin(ωt + φ) or x = A cos(ωt + φ)\n\nAngular frequency: ω = 2π/T = 2πf\nVelocity: v = ω√(A² - x²)\nAcceleration: a = -ω²x\n\nMaximum velocity: vmax = Aω\nMaximum acceleration: amax = Aω²\n\nPE = ½kA²sin²(ωt+φ), KE = ½kA²cos²(ωt+φ), Total E = ½kA² = constant",
+        "ncertRef": "NCERT Class 11 Physics, Ch.11, Pg. 197",
+        "difficulty": "medium",
+        "tags": [
+            "shm",
+            "oscillations"
+        ]
+    },
+    {
+        "id": "phy_ch11_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Oscillations",
+        "chapterNum": 11,
+        "type": "formula",
+        "front": "Time period of Simple Pendulum and Spring-mass system.",
+        "back": "Simple Pendulum:\nT = 2π√(L/g) (independent of mass!)\nValid only for small angular amplitude (θ ≤ 10°)\n\nSpring-mass System:\nT = 2π√(m/k)\nω = √(k/m)\nwhere k = spring constant\n\nSeries combination of springs: 1/k_eq = 1/k₁ + 1/k₂\nParallel combination: k_eq = k₁ + k₂",
+        "ncertRef": "NCERT Class 11 Physics, Ch.11, Pg. 206",
+        "difficulty": "medium",
+        "tags": [
+            "pendulum",
+            "spring-mass"
+        ]
+    },
+    {
+        "id": "phy_ch11_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Oscillations",
+        "chapterNum": 11,
+        "type": "concept",
+        "front": "What is resonance? Give examples of destructive resonance.",
+        "back": "Resonance: When driving frequency matches natural frequency, amplitude becomes maximum.\nωd = ω₀ → maximum energy absorption\n\nExamples:\n- Pushing a swing at its natural frequency\n- Tacoma Narrows Bridge collapse (1940)\n- Singer shattering a glass by hitting the right frequency\n- Tuning a radio circuit to a specific station\n\nDamping: Amplitude decreases exponentially in presence of resistive forces.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.11, Pg. 210",
+        "difficulty": "medium",
+        "tags": [
+            "resonance",
+            "oscillations"
+        ]
+    },
+    {
+        "id": "phy_ch12_001",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Waves",
+        "chapterNum": 12,
+        "type": "concept",
+        "front": "Distinguish between transverse and longitudinal waves.",
+        "back": "Transverse Waves:\n- Particles vibrate ⊥ to wave direction\n- Travel through solids and surface of liquids\n- Example: Light waves, waves on string, ripples on water\n- Crests and troughs\n\nLongitudinal Waves:\n- Particles vibrate ∥ to wave direction\n- Travel through solids, liquids, and gases\n- Example: Sound waves, spring waves\n- Compressions and rarefactions\n\nMechanical waves require a medium; electromagnetic waves don't.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.12, Pg. 217",
+        "difficulty": "easy",
+        "tags": [
+            "wave-types",
+            "fundamentals"
+        ]
+    },
+    {
+        "id": "phy_ch12_002",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Waves",
+        "chapterNum": 12,
+        "type": "formula",
+        "front": "Wave equation and speed of transverse waves on a string.",
+        "back": "Wave Equation: ∂²y/∂x² = (1/v²)∂²y/∂t²\nGeneral solution: y = f(x ± vt)\n\nSpeed of transverse wave on string:\nv = √(T/μ)\nwhere T = tension, μ = linear mass density = mass/length\n\nSpeed of longitudinal (sound) wave in a medium:\nv = √(B/ρ) for liquids\nv = √(γP/ρ) for gases\nv = √(Y/ρ) for solids",
+        "ncertRef": "NCERT Class 11 Physics, Ch.12, Pg. 220",
+        "difficulty": "medium",
+        "tags": [
+            "wave-speed",
+            "wave-equation"
+        ]
+    },
+    {
+        "id": "phy_ch12_003",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Waves",
+        "chapterNum": 12,
+        "type": "concept",
+        "front": "Explain superposition principle, interference, and beats.",
+        "back": "Superposition: Net displacement = sum of individual displacements.\n\nInterference: y = y₁ + y₂ = 2A cos(Δφ/2) sin(ωt + φ)\nConstructive: Δφ = 2nπ → amplitude = 2A\nDestructive: Δφ = (2n+1)π → amplitude = 0\n\nBeats: When two waves of slightly different frequencies superpose.\nBeat frequency: fbeat = |f₁ - f₂|\nHuman ear can detect up to ~10-15 beats/sec.",
+        "ncertRef": "NCERT Class 11 Physics, Ch.12, Pg. 226",
+        "difficulty": "medium",
+        "tags": [
+            "superposition",
+            "interference",
+            "beats"
+        ]
+    },
+    {
+        "id": "phy_ch12_004",
+        "subject": "Physics",
+        "classNum": "11",
+        "chapter": "Waves",
+        "chapterNum": 12,
+        "type": "formula",
+        "front": "Fundamental frequencies: open organ pipe vs closed organ pipe.",
+        "back": "Open Organ Pipe:\nFundamental: f₀ = v/2L\nHarmonics: All harmonics present (f₀, 2f₀, 3f₀...)\n\nClosed Organ Pipe:\nFundamental: f₀ = v/4L\nHarmonics: Only odd harmonics present (f₀, 3f₀, 5f₀...)\n\nFor stretched string fixed at both ends:\nFundamental: f₀ = (1/2L)√(T/μ)\nHarmonics: All harmonics present\n\nDoppler Effect: f' = f(v ± v₀)/(v ∓ vs)",
+        "ncertRef": "NCERT Class 11 Physics, Ch.12, Pg. 230",
+        "difficulty": "hard",
+        "tags": [
+            "organ-pipes",
+            "harmonics",
+            "standing-waves"
+        ]
+    },
+    {
+        "id": "phy_ch13_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electric Charges & Fields",
+        "chapterNum": 13,
+        "type": "formula",
+        "front": "Coulomb's Law and electric field intensity formulas.",
+        "back": "Coulomb's Law:\nF = kq₁q₂/r² = (1/4πε₀)(q₁q₂/r²)\nk = 9 × 10⁹ N·m²/C²\nε₀ = 8.85 × 10⁻¹² C²/N·m²\n\nElectric Field: E = F/q₀ = kQ/r²\nElectric Field due to dipole:\nAxial point: E = 2kp/r³\nEquatorial point: E = -kp/r³\nTorque on dipole: τ = pE sinθ\nPE of dipole: U = -pE cosθ",
+        "ncertRef": "NCERT Class 12 Physics, Ch.1, Pg. 6",
+        "difficulty": "medium",
+        "tags": [
+            "coulomb",
+            "electric-field"
+        ]
+    },
+    {
+        "id": "phy_ch13_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electric Charges & Fields",
+        "chapterNum": 13,
+        "type": "formula",
+        "front": "Gauss's Law and its applications.",
+        "back": "Gauss's Law: ∮E·dA = Qenc/ε₀\nElectric flux: Φ = ∮E·dA = EA cosθ\n\nApplications:\n1. Infinite line charge: E = λ/2πε₀r\n2. Infinite plane sheet: E = σ/2ε₀\n3. Spherical shell (outside): E = Q/4πε₀r²\n4. Spherical shell (inside): E = 0\n5. Solid sphere (outside): E = Q/4πε₀r²\n6. Solid sphere (inside): E = Qr/4πε₀R³",
+        "ncertRef": "NCERT Class 12 Physics, Ch.1, Pg. 18",
+        "difficulty": "hard",
+        "tags": [
+            "gauss-law",
+            "applications"
+        ]
+    },
+    {
+        "id": "phy_ch14_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electrostatic Potential & Capacitance",
+        "chapterNum": 14,
+        "type": "formula",
+        "front": "Electric potential and potential energy formulas.",
+        "back": "Electric Potential: V = kQ/r (point charge)\nPotential Difference: V = W/q₀\nV = -∫E·dr\n\nPotential due to dipole:\nGeneral: V = kp cosθ/r²\nAxial: V = kp/r²\nEquatorial: V = 0\n\nPotential Energy:\nU = kq₁q₂/r (for two charges)\nU = -pE (for dipole in uniform field)\n\nEquipotential surfaces: ⊥ to electric field lines, no work done moving charge on them.",
+        "ncertRef": "NCERT Class 12 Physics, Ch.2, Pg. 34",
+        "difficulty": "medium",
+        "tags": [
+            "electric-potential",
+            "potential-energy"
+        ]
+    },
+    {
+        "id": "phy_ch14_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electrostatic Potential & Capacitance",
+        "chapterNum": 14,
+        "type": "formula",
+        "front": "Capacitance formulas: parallel plate, spherical, cylindrical capacitors.",
+        "back": "Parallel Plate Capacitor:\nC = ε₀A/d (with vacuum)\nC = ε₀εrA/d (with dielectric)\n\nSpherical Capacitor:\nC = 4πε₀(ab)/(b-a)\n\nCylindrical Capacitor:\nC = 2πε₀L/ln(b/a)\n\nEnergy stored: U = ½CV² = ½QV = Q²/2C\n\nSeries: 1/Ceq = 1/C₁ + 1/C₂ + ...\nParallel: Ceq = C₁ + C₂ + ...\n\nEffect of dielectric: C = KC₀ (K = dielectric constant)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.2, Pg. 42",
+        "difficulty": "hard",
+        "tags": [
+            "capacitance",
+            "dielectrics"
+        ]
+    },
+    {
+        "id": "phy_ch15_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Current Electricity",
+        "chapterNum": 15,
+        "type": "formula",
+        "front": "Ohm's Law, resistivity, conductivity formulas.",
+        "back": "Ohm's Law: V = IR\nResistance: R = ρL/A (ρ = resistivity)\nConductance: G = 1/R\nConductivity: σ = 1/ρ\n\nTemperature dependence:\nR = R₀(1 + αΔT)\nρ = ρ₀(1 + αΔT)\nα = temperature coefficient, negative for semiconductors, positive for metals.\n\nDrift velocity: vd = I/neA = eEτ/m\nCurrent density: J = I/A = σE = nevd",
+        "ncertRef": "NCERT Class 12 Physics, Ch.3, Pg. 58",
+        "difficulty": "medium",
+        "tags": [
+            "ohm's-law",
+            "resistivity"
+        ]
+    },
+    {
+        "id": "phy_ch15_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Current Electricity",
+        "chapterNum": 15,
+        "type": "formula",
+        "front": "Kirchhoff's Laws — Junction and Loop Rules.",
+        "back": "Kirchhoff's Current Law (KCL) - Junction Rule:\nΣ Iin = Σ Iout\nCharge is conserved; net current at a junction is zero.\n\nKirchhoff's Voltage Law (KVL) - Loop Rule:\nΣ ΔV = 0 around any closed loop\nEnergy is conserved; sum of potential differences is zero.\n\nWheatstone Bridge:\nBalanced when R₁/R₂ = R₃/R₄ (Ig = 0)\nMeter Bridge: X = (100-l)R/l",
+        "ncertRef": "NCERT Class 12 Physics, Ch.3, Pg. 68",
+        "difficulty": "medium",
+        "tags": [
+            "kirchhoff",
+            "circuits"
+        ]
+    },
+    {
+        "id": "phy_ch15_003",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Current Electricity",
+        "chapterNum": 15,
+        "type": "formula",
+        "front": "Combination of cells: series, parallel, and mixed grouping.",
+        "back": "Series (n cells of emf E and internal resistance r):\nEeq = nE, req = nr\n\nParallel (m cells):\nEeq = E, req = r/m\n\nMixed (n rows × m cells):\nEeq = nE, req = nr/m\n\nMaximum power transfer: When external R = internal r of the source.\nPmax = E²/4r\n\nCell in circuit: I = E/(R+r)\nTerminal voltage: V = E - Ir (during discharge)\nV = E + Ir (during charging)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.3, Pg. 72",
+        "difficulty": "medium",
+        "tags": [
+            "cells",
+            "internal-resistance"
+        ]
+    },
+    {
+        "id": "phy_ch16_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Moving Charges & Magnetism",
+        "chapterNum": 16,
+        "type": "formula",
+        "front": "Biot-Savart Law and its applications.",
+        "back": "Biot-Savart Law: dB = (μ₀/4π)(Idl×r̂/r²)\nμ₀ = 4π × 10⁻⁷ T·m/A\n\nApplications:\n1. Center of circular loop: B = μ₀I/2R\n2. On axis of circular loop: B = μ₀IR²/2(R²+x²)³/²\n3. Infinite straight wire: B = μ₀I/2πr\n4. Infinite solenoid: B = μ₀nI\n5. Toroid: B = μ₀NI/2πr\n\nForce on moving charge: F = q(v×B)\nForce on current: F = I(L×B)\nForce between parallel wires: F/L = μ₀I₁I₂/2πd (attractive if same direction)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.4, Pg. 84",
+        "difficulty": "hard",
+        "tags": [
+            "biot-savart",
+            "magnetic-field"
+        ]
+    },
+    {
+        "id": "phy_ch16_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Moving Charges & Magnetism",
+        "chapterNum": 16,
+        "type": "formula",
+        "front": "Motion of charged particle in uniform magnetic field.",
+        "back": "When v ⟂ B: Circular motion\nRadius: r = mv/qB = p/qB\nTime period: T = 2πm/qB (independent of velocity!)\nAngular frequency (Cyclotron): ω = qB/m\n\nWhen v has components parallel and perpendicular: Helical path\nPitch: p = v∥ × T = (2πm/qB)vcosθ\n\nLorentz Force: F = q(E + v×B)\n\nCyclotron frequency: f = qB/2πm",
+        "ncertRef": "NCERT Class 12 Physics, Ch.4, Pg. 90",
+        "difficulty": "medium",
+        "tags": [
+            "cyclotron",
+            "motion-in-magnetic-field"
+        ]
+    },
+    {
+        "id": "phy_ch17_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Magnetism & Matter",
+        "chapterNum": 17,
+        "type": "concept",
+        "front": "Define magnetic dipole moment and Earth's magnetism elements.",
+        "back": "Magnetic Dipole Moment:\nM = NIA (for current loop)\nM = m×2l (for bar magnet)\n\nTorque: τ = M×B, PE: U = -M·B\n\nEarth's Magnetism Elements:\nDeclination (θ): Angle between geographic and magnetic meridian\nDip/Inclination (δ): Angle of magnetic field with horizontal\nHorizontal component: BH = Bcosδ\nVertical component: BV = Bsinδ\nB = √(BH² + BV²)\n\nMagnetic materials:\nDiamagnetic (μr < 1): Weakly repelled (Bi, Cu, H₂O)\nParamagnetic (μr > 1): Weakly attracted (Al, O₂)\nFerromagnetic (μr >> 1): Strongly attracted (Fe, Ni, Co, Gd)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.5, Pg. 108",
+        "difficulty": "medium",
+        "tags": [
+            "magnetism",
+            "earth-magnetism"
+        ]
+    },
+    {
+        "id": "phy_ch18_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electromagnetic Induction",
+        "chapterNum": 18,
+        "type": "formula",
+        "front": "Faraday's Laws and Lenz's Law of Electromagnetic Induction.",
+        "back": "Faraday's Laws:\n1st: EMF is induced when magnetic flux through a circuit changes.\n2nd: Induced EMF ε = -dΦB/dt\n\nMagnetic Flux: ΦB = ∮B·dA = BA cosθ\n\nLenz's Law: The induced current opposes the change in flux that causes it.\nThis is why the negative sign appears in Faraday's law.\n\nε = -N(dΦ/dt) for a coil of N turns\n\nMotional EMF: ε = Bℓv (conductor of length ℓ moving with v ⟂ to B)\n\nEddy currents: Induced circulating currents in bulk conductors - cause heating and damping.",
+        "ncertRef": "NCERT Class 12 Physics, Ch.6, Pg. 126",
+        "difficulty": "medium",
+        "tags": [
+            "faraday",
+            "lenz",
+            "emi"
+        ]
+    },
+    {
+        "id": "phy_ch18_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electromagnetic Induction",
+        "chapterNum": 18,
+        "type": "formula",
+        "front": "Self-inductance and mutual inductance formulas.",
+        "back": "Self-Inductance:\nε = -L(dI/dt)\nL = NΦB/I\nFor solenoid: L = μ₀n²Al\nEnergy stored: U = ½LI²\n\nMutual Inductance:\nε₂ = -M(dI₁/dt) (EMF induced in coil 2 due to current change in coil 1)\nM = μ₀N₁N₂A/l (for coaxial solenoids)\nM = k√(L₁L₂) where k = coupling coefficient (0 to 1)\n\nR-L Circuit:\nGrowth: I = I₀(1 - e⁻t/τ), τ = L/R\nDecay: I = I₀e⁻t/τ",
+        "ncertRef": "NCERT Class 12 Physics, Ch.6, Pg. 134",
+        "difficulty": "hard",
+        "tags": [
+            "inductance",
+            "self-inductance",
+            "mutual-inductance"
+        ]
+    },
+    {
+        "id": "phy_ch19_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Alternating Current",
+        "chapterNum": 19,
+        "type": "formula",
+        "front": "RMS value, average value, and peak value of AC.",
+        "back": "Instantaneous: I = I₀ sin(ωt), V = V₀ sin(ωt)\nPeak Value: I₀, V₀\nRMS Value: Irms = I₀/√2 ≈ 0.707I₀\nVrms = V₀/√2 ≈ 0.707V₀\n\nAverage value (half cycle): Iavg = 2I₀/π ≈ 0.637I₀\n\nAC through Resistor: V and I in phase (φ = 0°)\nAC through Inductor: I lags V by 90° (φ = +90°)\nAC through Capacitor: I leads V by 90° (φ = -90°)\n\nDomestic AC: Vrms = 220V, f = 50 Hz → V₀ = 311V",
+        "ncertRef": "NCERT Class 12 Physics, Ch.7, Pg. 148",
+        "difficulty": "medium",
+        "tags": [
+            "ac",
+            "rms"
+        ]
+    },
+    {
+        "id": "phy_ch19_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Alternating Current",
+        "chapterNum": 19,
+        "type": "formula",
+        "front": "Impedance formulas for LCR series circuit and resonance condition.",
+        "back": "Inductive Reactance: XL = ωL = 2πfL\nCapacitive Reactance: XC = 1/ωC = 1/2πfC\nImpedance: Z = √(R² + (XL - XC)²)\nPhase angle: tan φ = (XL - XC)/R\n\nResonance (when XL = XC):\nω₀ = 1/√(LC)\nf₀ = 1/2π√(LC)\nAt resonance: Z = R (minimum), I = V/R (maximum)\n\nQuality Factor: Q = ω₀L/R = 1/R × √(L/C)\n\nPower Factor: cos φ = R/Z\nAverage Power: Pavg = VrmsIrms cos φ",
+        "ncertRef": "NCERT Class 12 Physics, Ch.7, Pg. 155",
+        "difficulty": "hard",
+        "tags": [
+            "lcr-circuit",
+            "resonance",
+            "impedance"
+        ]
+    },
+    {
+        "id": "phy_ch20_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Electromagnetic Waves",
+        "chapterNum": 20,
+        "type": "concept",
+        "front": "Write Maxwell's equations and properties of EM waves.",
+        "back": "Maxwell's Equations:\n1. ∮E·dA = Q/ε₀ (Gauss's Law for electricity)\n2. ∮B·dA = 0 (Gauss's Law for magnetism)\n3. ∮E·dl = -dΦB/dt (Faraday's Law)\n4. ∮B·dl = μ₀I + μ₀ε₀(dΦE/dt) (Ampere-Maxwell Law)\n\nDisplacement current: Id = ε₀(dΦE/dt)\n\nEM Wave Properties:\nSpeed: c = 1/√(μ₀ε₀) = 3 × 10⁸ m/s\nc = E₀/B₀ (ratio of electric and magnetic field amplitudes)\n\nEM waves are transverse, self-sustaining, don't need medium.\n\nEM Spectrum (increasing frequency): Radio → Microwave → IR → Visible → UV → X-ray → Gamma\nc = fλ",
+        "ncertRef": "NCERT Class 12 Physics, Ch.8, Pg. 166",
+        "difficulty": "medium",
+        "tags": [
+            "maxwell",
+            "em-waves"
+        ]
+    },
+    {
+        "id": "phy_ch21_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Ray Optics & Optical Instruments",
+        "chapterNum": 21,
+        "type": "formula",
+        "front": "Laws of reflection, refraction, and Snell's Law.",
+        "back": "Reflection: ∠i = ∠r (with normal)\nRefraction (Snell's Law): n₁ sin i = n₂ sin r\nRefractive Index: n = c/v = λ₀/λ\n\nTotal Internal Reflection (TIR):\nCritical angle: sin ic = n₂/n₁ (for n₁ > n₂)\nConditions: Light from denser to rarer, angle > ic\nApplications: Optical fibers, mirages, brilliance of diamonds.\n\nLens Maker's Formula:\n1/f = (n-1)(1/R₁ - 1/R₂)\n\nMagnification: m = -v/u = hi/ho\nPower of lens: P = 1/f (in metres), unit: dioptre (D)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.9, Pg. 182",
+        "difficulty": "medium",
+        "tags": [
+            "reflection",
+            "refraction",
+            "snell"
+        ]
+    },
+    {
+        "id": "phy_ch21_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Ray Optics & Optical Instruments",
+        "chapterNum": 21,
+        "type": "formula",
+        "front": "Mirror formula and lens formula with sign conventions.",
+        "back": "Mirror Formula: 1/v + 1/u = 1/f\nMagnification: m = -v/u\nFocal length: f = R/2\n\nLens Formula: 1/v - 1/u = 1/f\nMagnification: m = v/u\n\nSign Convention (Cartesian - all distances from optical center):\nObject distance u: always negative (-)\nFocal length of convex lens/concave mirror: positive (+)\nFocal length of concave lens/convex mirror: negative (-)\nImage distance v: + for real, - for virtual\n\nCombination of lenses: 1/F = 1/f₁ + 1/f₂\nPower of combination: P = P₁ + P₂",
+        "ncertRef": "NCERT Class 12 Physics, Ch.9, Pg. 188",
+        "difficulty": "hard",
+        "tags": [
+            "mirror-formula",
+            "lens-formula"
+        ]
+    },
+    {
+        "id": "phy_ch21_003",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Ray Optics & Optical Instruments",
+        "chapterNum": 21,
+        "type": "formula",
+        "front": "Magnification power of simple microscope, compound microscope, and telescope.",
+        "back": "Simple Microscope:\nM = 1 + D/f (D = 25 cm, least distance of distinct vision)\n\nCompound Microscope:\nM = (L/f₀)(1 + D/fe)\nL = tube length, f₀ = objective focal length, fe = eyepiece focal length\n\nAstronomical Telescope (normal adjustment):\nM = f₀/fe\nLength = f₀ + fe\n\nResolving Power:\nMicroscope: R = 1/dmin = 2NA/λ\nTelescope: R = 1/θ = D/1.22λ (D = aperture diameter)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.9, Pg. 198",
+        "difficulty": "hard",
+        "tags": [
+            "microscope",
+            "telescope",
+            "optical-instruments"
+        ]
+    },
+    {
+        "id": "phy_ch22_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Wave Optics",
+        "chapterNum": 22,
+        "type": "concept",
+        "front": "Huygens' Principle and conditions for constructive/destructive interference.",
+        "back": "Huygens' Principle: Every point on a wavefront acts as a secondary source of spherical wavelets.\n\nYoung's Double Slit Experiment:\nPath difference: Δx = d sinθ = d(y/D)\n\nConstructive Interference (bright fringes):\nΔx = nλ → y = nλD/d\n\nDestructive Interference (dark fringes):\nΔx = (2n+1)λ/2 → y = (2n+1)λD/2d\n\nFringe width: β = λD/d\n\nIntensity: I = I₁ + I₂ + 2√(I₁I₂)cosΔφ\nFor I₁ = I₂: I = 4I₀ cos²(Δφ/2)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.10, Pg. 210",
+        "difficulty": "medium",
+        "tags": [
+            "huygens",
+            "interference",
+            "ydse"
+        ]
+    },
+    {
+        "id": "phy_ch22_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Wave Optics",
+        "chapterNum": 22,
+        "type": "formula",
+        "front": "Diffraction and polarization of light formulas.",
+        "back": "Single Slit Diffraction:\nMinima: a sinθ = nλ (n = 1, 2, 3...)\nCentral maxima width: 2λD/a\nAngular width: 2λ/a\n\nDifference between Interference and Diffraction:\nInterference: Equal width fringes, equal intensity.\nDiffraction: Central max is widest, intensity decreases for higher orders.\n\nPolarization:\nBrewster's Angle: tan ip = n₂/n₁ (reflected and refracted rays are 90° apart)\nLaw of Malus: I = I₀ cos²θ (θ = angle between polarizer and analyzer)\n\nOnly transverse waves can be polarized.\nPolaroids used in sunglasses, 3D movies, stress analysis.",
+        "ncertRef": "NCERT Class 12 Physics, Ch.10, Pg. 220",
+        "difficulty": "hard",
+        "tags": [
+            "diffraction",
+            "polarization"
+        ]
+    },
+    {
+        "id": "phy_ch23_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Dual Nature of Radiation & Matter",
+        "chapterNum": 23,
+        "type": "formula",
+        "front": "Photoelectric Effect: Einstein's equation and threshold frequency.",
+        "back": "Einstein's Photoelectric Equation:\nhν = φ + Kmax\nKmax = hν - φ = hν - hν₀ = eV₀\n\nWhere:\nφ = work function (minimum energy to eject electron)\nν₀ = threshold frequency = φ/h\nλ₀ = threshold wavelength = hc/φ\nV₀ = stopping potential\n\nLaws of Photoelectric Effect:\n1. No emission below threshold frequency (independent of intensity)\n2. Kmax depends on frequency, not intensity\n3. Number of photoelectrons ∝ intensity\n4. Emission is instantaneous (no time lag)\n\nPhotocurrent vs Intensity: Linear increase with intensity at constant frequency.",
+        "ncertRef": "NCERT Class 12 Physics, Ch.11, Pg. 236",
+        "difficulty": "medium",
+        "tags": [
+            "photoelectric-effect",
+            "einstein"
+        ]
+    },
+    {
+        "id": "phy_ch23_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Dual Nature of Radiation & Matter",
+        "chapterNum": 23,
+        "type": "formula",
+        "front": "de Broglie wavelength and Davisson-Germer experiment.",
+        "back": "de Broglie Wavelength:\nλ = h/p = h/mv\n\nFor an electron accelerated through V volts:\nλ = h/√(2meV) = 12.27/√V Å\nλ (in nm) = 1.226/√V\n\nDavisson-Germer Experiment:\nDemonstrated wave nature of electrons.\nElectrons diffracted from Ni crystal.\nBragg's Law: 2d sinθ = nλ\n\nHeisenberg's Uncertainty Principle:\nΔx·Δp ≥ ħ/2 (where ħ = h/2π)\nΔE·Δt ≥ ħ/2",
+        "ncertRef": "NCERT Class 12 Physics, Ch.11, Pg. 244",
+        "difficulty": "medium",
+        "tags": [
+            "de-broglie",
+            "wave-particle-duality"
+        ]
+    },
+    {
+        "id": "phy_ch24_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Atoms",
+        "chapterNum": 24,
+        "type": "concept",
+        "front": "Bohr's model of hydrogen atom: postulates and energy levels.",
+        "back": "Bohr's Postulates:\n1. Electrons move in fixed circular orbits (stationary states) without radiating energy.\n2. Angular momentum is quantized: mvr = nh/2π (n = 1, 2, 3...)\n3. Energy is emitted/absorbed when electron jumps between orbits: ΔE = hν = Ef - Ei\n\nRadius of nth orbit: rn = n²h²ε₀/πme² = n²a₀\nBohr radius: a₀ = 0.529 Å\n\nVelocity in nth orbit: vn = e²/2ε₀nh = 2.18 × 10⁶/n m/s\n\nEnergy of nth orbit: En = -13.6/n² eV\n\nSpectral Series:\nLyman (n=1): UV\nBalmer (n=2): Visible (Hα = 656.3 nm)\nPaschen (n=3): IR\nBrackett (n=4): IR\nPfund (n=5): Far IR\n\nRydberg Formula: 1/λ = R(1/nf² - 1/ni²), R = 1.097 × 10⁷ m⁻¹",
+        "ncertRef": "NCERT Class 12 Physics, Ch.12, Pg. 258",
+        "difficulty": "hard",
+        "tags": [
+            "bohr-model",
+            "hydrogen-atom"
+        ]
+    },
+    {
+        "id": "phy_ch25_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Nuclei",
+        "chapterNum": 25,
+        "type": "formula",
+        "front": "Radioactive decay law, half-life, and mean life.",
+        "back": "Radioactive Decay Law:\ndN/dt = -λN (λ = decay constant)\nN = N₀e⁻λt\nActivity: R = λN = R₀e⁻λt\n\nHalf-Life (T½):\nT½ = ln2/λ = 0.693/λ\nN = N₀(1/2)ⁿ where n = number of half-lives = t/T½\n\nMean Life (τ):\nτ = 1/λ = T½/0.693 = 1.44 × T½\n\nUnits of Radioactivity:\n1 Bq = 1 decay/s (SI)\n1 Ci (Curie) = 3.7 × 10¹⁰ Bq\n1 R (Rutherford) = 10⁶ Bq\n\nMass defect: Δm = Zmp + (A-Z)mn - M\nBinding energy: B = Δm·c²\nBinding energy per nucleon ≈ 8 MeV for most nuclei (max for Fe-56 ~ 8.8 MeV)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.13, Pg. 278",
+        "difficulty": "medium",
+        "tags": [
+            "radioactivity",
+            "half-life",
+            "nuclear-physics"
+        ]
+    },
+    {
+        "id": "phy_ch25_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Nuclei",
+        "chapterNum": 25,
+        "type": "concept",
+        "front": "Nuclear fission and nuclear fusion with examples.",
+        "back": "Nuclear Fission:\nHeavy nucleus splits into lighter nuclei + neutrons + energy.\nExample: ²³⁵U + ¹n → ¹⁴¹Ba + ⁹²Kr + 3¹n + 200 MeV\nChain reaction: Controlled (reactor) vs Uncontrolled (bomb)\nCritical mass needed for sustained chain reaction.\n\nNuclear Fusion:\nLight nuclei combine to form heavier nucleus + energy.\nExample: ²H + ³H → ⁴He + ¹n + 17.6 MeV\nRequires very high temperature (≈10⁷ K) - thermonuclear reactions.\nSource of energy in stars (proton-proton cycle).\n\nControlled fusion still not achieved on Earth (ITER project in progress).",
+        "ncertRef": "NCERT Class 12 Physics, Ch.13, Pg. 285",
+        "difficulty": "medium",
+        "tags": [
+            "fission",
+            "fusion",
+            "nuclear-energy"
+        ]
+    },
+    {
+        "id": "phy_ch26_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Semiconductor Electronics",
+        "chapterNum": 26,
+        "type": "concept",
+        "front": "Intrinsic and extrinsic semiconductors - p-type and n-type.",
+        "back": "Intrinsic Semiconductor:\nPure semiconductor (Si, Ge).\nAt T > 0K, some electrons cross band gap (Eg) creating e⁻-hole pairs.\nne = nh = ni (intrinsic carrier concentration)\n\nExtrinsic Semiconductor (doping):\nn-type: Doped with pentavalent atoms (P, As, Sb).\nDonor level just below conduction band.\nMajority carriers: Electrons. Minority: Holes.\n\np-type: Doped with trivalent atoms (B, Al, Ga, In).\nAcceptor level just above valence band.\nMajority carriers: Holes. Minority: Electrons.\n\nBand gap energies:\nSi: 1.1 eV, Ge: 0.67 eV, GaAs: 1.43 eV\n\nAt 0 K: Semiconductor behaves as insulator.",
+        "ncertRef": "NCERT Class 12 Physics, Ch.14, Pg. 298",
+        "difficulty": "medium",
+        "tags": [
+            "semiconductors",
+            "doping"
+        ]
+    },
+    {
+        "id": "phy_ch26_002",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Semiconductor Electronics",
+        "chapterNum": 26,
+        "type": "concept",
+        "front": "PN Junction diode: forward bias, reverse bias, and applications.",
+        "back": "Forward Bias:\nP connected to +ve, N to -ve.\nBarrier potential decreases (≈0.7V for Si, 0.3V for Ge).\nCurrent flows when V > knee voltage.\n\nReverse Bias:\nP connected to -ve, N to +ve.\nBarrier potential increases.\nOnly small reverse saturation current flows (due to minority carriers).\nAt breakdown voltage: Zener breakdown (heavily doped) or Avalanche breakdown.\n\nDiode Applications:\n1. Half-wave rectifier: Efficiency = 40.6%\n2. Full-wave rectifier: Efficiency = 81.2%\n3. Zener diode: Voltage regulation (operates in reverse breakdown)\n4. LED: Forward bias → light emission\n5. Solar cell: Converts light → electricity\n\nRipple factor: γ = Vrms/Vdc\nFor half-wave: γ = 1.21, For full-wave: γ = 0.48",
+        "ncertRef": "NCERT Class 12 Physics, Ch.14, Pg. 306",
+        "difficulty": "hard",
+        "tags": [
+            "pn-junction",
+            "diode",
+            "rectifier"
+        ]
+    },
+    {
+        "id": "phy_ch26_003",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Semiconductor Electronics",
+        "chapterNum": 26,
+        "type": "concept",
+        "front": "Logic gates: symbols and truth tables (AND, OR, NOT, NAND, NOR, XOR).",
+        "back": "AND: Y = A·B (both 1 → 1)\nOR: Y = A+B (any 1 → 1)\nNOT: Y = Ā (inverts)\nNAND: Y = (A·B)' (universal gate)\nNOR: Y = (A+B)' (universal gate)\nXOR: Y = A⊕B = ĀB + AḂ (output 1 when inputs differ)\n\nNAND and NOR are universal gates - can implement any logic using only them.\n\nBoolean Laws:\nA + 0 = A, A·1 = A, A·Ā = 0, A+Ā = 1\nDe Morgan's: (A·B)' = Ā+Ḃ, (A+B)' = Ā·Ḃ\n\nTransistor as switch: CE configuration\nβ = IC/IB, α = IC/IE\nCut-off region (switch OFF), Saturation region (switch ON), Active region (amplifier)",
+        "ncertRef": "NCERT Class 12 Physics, Ch.14, Pg. 324",
+        "difficulty": "hard",
+        "tags": [
+            "logic-gates",
+            "digital-electronics"
+        ]
+    },
+    {
+        "id": "phy_ch27_001",
+        "subject": "Physics",
+        "classNum": "12",
+        "chapter": "Experimental Skills",
+        "chapterNum": 27,
+        "type": "concept",
+        "front": "List important physics experiments for NEET with key formulas.",
+        "back": "1. Vernier Calipers: Least count = 1 MSD - 1 VSD = 0.1 mm\n2. Screw Gauge: LC = Pitch/No. of divisions on circular scale = 0.01 mm\n3. Simple Pendulum: T = 2π√(L/g), find g\n4. Ohm's Law: V = IR using voltmeter and ammeter\n5. Meter Bridge: X = (100-l)R/l (finding unknown resistance)\n6. Potentiometer: Compare emfs, E₁/E₂ = l₁/l₂\n7. Focal length of convex lens: 1/f = 1/v - 1/u\n8. Focal length of concave mirror: 1/f = 1/u + 1/v\n9. Refractive index of glass slab: n = real depth/apparent depth\n10. Verification of Snell's law using glass prism\n11. Characteristic curves of PN junction\n12. Zener diode as voltage regulator\n13. Logic gates verification using ICs\n14. Conversion of galvanometer to voltmeter/ammeter",
+        "ncertRef": "NCERT Class 12 Physics, Ch.15 & Lab Manual",
+        "difficulty": "medium",
+        "tags": [
+            "experiments",
+            "practical"
+        ]
+    }
+]

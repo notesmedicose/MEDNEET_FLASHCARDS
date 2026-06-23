@@ -1,0 +1,38 @@
+# Flutter/Dart
+**/build/
+*.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+*.iml
+.idea/
+.vscode/
+
+# Android
+**/android/.gradle/
+**/android/app/build/
+**/android/local.properties
+
+# iOS
+**/ios/.generated/
+**/ios/Pods/
+**/ios/build/
+
+# macOS
+.metadata
+
+# Large binary files - NCERT PDFs
+neet ug/
+
+# HTML files with API keys
+*.html
+
+# Node (if any)
+node_modules/
+
+# Extra dirs at root
+lib/
+
+# OS
+.DS_Store
+Thumbs.db

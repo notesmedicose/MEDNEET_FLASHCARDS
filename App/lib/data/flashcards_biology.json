@@ -1,0 +1,835 @@
+[
+    {
+        "id": "bio_ch1_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "The Living World",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "What are the 7 defining characteristics of living organisms?",
+        "back": "1. Growth (increase in cell number/mass)\n2. Reproduction (asexual/sexual - not essential for all)\n3. Metabolism (anabolism + catabolism - defining feature of life)\n4. Cellular organization (all living have cells)\n5. Consciousness (ability to sense environment & respond)\n6. Movement (internal/cellular or external/locomotory)\n7. Adaptation (evolve traits for survival)\n\nNote: Reproduction is NOT a defining property (mules, worker bees, infertile humans don't reproduce but are alive). Metabolism is the defining feature of life.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.1, Pg. 4",
+        "difficulty": "easy",
+        "tags": [
+            "living-world",
+            "characteristics"
+        ]
+    },
+    {
+        "id": "bio_ch1_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "The Living World",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "Binomial nomenclature rules and taxonomic hierarchy.",
+        "back": "Binomial Nomenclature (Carolus Linnaeus):\nTwo names: Genus (capital) + species (small)\nItalicized/underlined, in Latin\nAuthor's name abbreviated after species\nExample: Homo sapiens Linnaeus\n\nTaxonomic Hierarchy:\nKingdom → Phylum/Division → Class → Order → Family → Genus → Species\n\nMnemonic: Keep Pots Clean Or Family Gets Sick\n\nTaxon: Any level in the hierarchy (e.g., Insecta is a taxon at Class level).\nSystematics: Study of identification, nomenclature, and classification.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.1, Pg. 8",
+        "difficulty": "easy",
+        "tags": [
+            "taxonomy",
+            "nomenclature"
+        ]
+    },
+    {
+        "id": "bio_ch2_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Biological Classification",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "Whittaker's Five Kingdom Classification (1969).",
+        "back": "1. Monera: Prokaryotes, no nuclear membrane (Bacteria, Cyanobacteria)\n2. Protista: Unicellular eukaryotes (Amoeba, Paramecium, Euglena, Diatoms)\n3. Fungi: Heterotrophic, chitin cell wall, saprophytic/parasitic\n4. Plantae: Autotrophic, cellulosic cell wall, photosynthetic\n5. Animalia: Heterotrophic, no cell wall, motile\n\nCriteria: Cell structure, body organization, mode of nutrition, reproduction, phylogeny.\nViruses: Not included (acellular, obligate parasites).\nViroids: Naked RNA (T.O. Diener).\nPrions: Infectious proteins (Mad Cow disease).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.2, Pg. 16",
+        "difficulty": "medium",
+        "tags": [
+            "classification",
+            "five-kingdom"
+        ]
+    },
+    {
+        "id": "bio_ch2_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Biological Classification",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "Kingdom Monera: Archaebacteria, Eubacteria, and Cyanobacteria features.",
+        "back": "Archaebacteria: Extreme environments.\nHalophiles (salt), Thermoacidophiles (hot springs), Methanogens (ruminant gut).\n\nEubacteria (True bacteria):\nCocci, Bacilli, Spirilli, Vibrio shapes.\nGram +ve (thick peptidoglycan) vs Gram -ve (thin + outer membrane).\nAutotrophic: Chemosynthetic/Photosynthetic. Heterotrophic: Decomposers/Parasites.\n\nCyanobacteria (Blue-green algae): Photosynthetic, fix N₂ (Anabaena, Nostoc).\n\nMycoplasma: Smallest living cells, no cell wall, pleomorphic.\nReproduction: Binary fission, conjugation, endospore formation.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.2, Pg. 18",
+        "difficulty": "medium",
+        "tags": [
+            "monera",
+            "bacteria"
+        ]
+    },
+    {
+        "id": "bio_ch2_003",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Biological Classification",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "Kingdom Protista: Major groups with examples.",
+        "back": "Chrysophytes: Diatoms + Golden algae.\nCell walls are made of silica (diatomaceous earth).\n\nDinoflagellates: Marine, red/blue/green, bioluminescent. Cell wall has cellulose plates.\nExample: Gonyaulax (red tide).\n\nEuglenoids: Freshwater, mixotrophic. Pellicle instead of cell wall.\nExample: Euglena (has eyespot, flagella).\n\nSlime Moulds: Saprophytic, multinucleate, form fruiting bodies.\n\nProtozoans:\nAmoeboid (Amoeba, Entamoeba)\nFlagellated (Trypanosoma - sleeping sickness)\nCiliated (Paramecium)\nSporozoans (Plasmodium - malaria)",
+        "ncertRef": "NCERT Class 11 Biology, Ch.2, Pg. 22",
+        "difficulty": "medium",
+        "tags": [
+            "protista",
+            "protozoa",
+            "diatoms"
+        ]
+    },
+    {
+        "id": "bio_ch3_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Plant Kingdom",
+        "chapterNum": 3,
+        "type": "concept",
+        "front": "Algae classification: Chlorophyceae, Phaeophyceae, Rhodophyceae.",
+        "back": "Chlorophyceae (Green algae):\nPigments: Chl a, b; stored food: Starch; Cell wall: Cellulose.\nExamples: Chlamydomonas, Volvox, Spirogyra, Ulothrix, Chara.\n\nPhaeophyceae (Brown algae):\nPigments: Chl a, c, fucoxanthin; stored food: Laminarin, Mannitol.\nExamples: Laminaria, Fucus, Sargassum, Dictyota.\n\nRhodophyceae (Red algae):\nPigments: Chl a, d, phycoerythrin (gives red color).\nStored food: Floridean starch.\nExamples: Polysiphonia, Porphyra, Gracilaria, Gelidium (agar source).\n\nImportant: Algae produce 70% of atmospheric O₂.\nEconomic: Agar (Gelidium), Carrageenan (Chondrus), Algin (brown algae).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.3, Pg. 30",
+        "difficulty": "medium",
+        "tags": [
+            "algae",
+            "plant-kingdom"
+        ]
+    },
+    {
+        "id": "bio_ch3_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Plant Kingdom",
+        "chapterNum": 3,
+        "type": "concept",
+        "front": "Bryophyta, Pteridophyta, Gymnosperms and Angiosperms key features.",
+        "back": "Bryophyta (Amphibians of plant kingdom):\nNo vascular tissue, need water for fertilization.\nGametophyte dominant. Sporophyte dependent.\nLiverworts: Marchantia (vegetative propagation by gemmae)\nMosses: Funaria, Sphagnum (peat moss, fuel).\n\nPteridophyta: First vascular plants (cryptogams).\nSporophyte dominant, require water for fertilization.\nExamples: Selaginella, Equisetum, Pteris, Adiantum, Dryopteris.\n\nGymnosperms: Naked seeds, no fruit. Ovules not enclosed in ovary.\nExamples: Cycas (male/female on different plants), Pinus (pines), Ginkgo biloba (living fossil).\n\nAngiosperms: Flowering plants, seeds enclosed in fruit.\nMonocots (1 cotyledon, parallel venation, fibrous roots)\nDicots (2 cotyledons, reticulate venation, tap roots)",
+        "ncertRef": "NCERT Class 11 Biology, Ch.3, Pg. 38",
+        "difficulty": "medium",
+        "tags": [
+            "bryophyta",
+            "pteridophyta",
+            "gymnosperms",
+            "angiosperms"
+        ]
+    },
+    {
+        "id": "bio_ch4_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Animal Kingdom",
+        "chapterNum": 4,
+        "type": "concept",
+        "front": "Animal classification basis: symmetry, germ layers, coelom, segmentation.",
+        "back": "Levels of Organization:\nCellular (Porifera) → Tissue (Cnidaria) → Organ (Platyhelminthes) → Organ System (higher).\n\nSymmetry: Asymmetrical (Porifera), Radial (Cnidaria), Bilateral (most).\n\nGerm Layers: Diploblastic (2: ecto+endo, Cnidaria) vs Triploblastic (3: ecto+meso+endo).\n\nCoelom: Acoelomate (Platyhelminthes), Pseudocoelomate (Nematoda), Coelomate (true, Annelida+).\n\nSegmentation: Metameric (Annelida, Arthropoda, Chordata).\n\nNotochord: Present in Chordates at some stage.\n\nPhylogenetic tree: Porifera → Cnidaria → Ctenophora → Platyhelminthes → Aschelminthes → Annelida → Arthropoda → Mollusca → Echinodermata → Hemichordata → Chordata.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.4, Pg. 46",
+        "difficulty": "medium",
+        "tags": [
+            "animal-classification",
+            "symmetry",
+            "coelom"
+        ]
+    },
+    {
+        "id": "bio_ch4_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Animal Kingdom",
+        "chapterNum": 4,
+        "type": "concept",
+        "front": "Phylum Arthropoda, Mollusca, Echinodermata, Hemichordata, Chordata.",
+        "back": "Arthropoda (largest phylum):\nJointed appendages, exoskeleton (chitin), open circulatory system.\nExamples: Apis (honeybee), Bombyx (silkworm), Laccifer (lac), Anopheles/Culex (mosquitoes), Palamnaeus (scorpion), Cancer (crab).\n\nMollusca (second largest):\nSoft body, mantle, calcareous shell, muscular foot.\nExamples: Pila (snail), Octopus, Loligo (squid), Sepia (cuttlefish), Dentalium (tusk shell), Aplysia (sea hare).\n\nEchinodermata:\nSpiny skin, water vascular system, tube feet. Adults radial, larvae bilateral.\nExamples: Asterias (starfish), Echinus (sea urchin), Antedon (feather star), Cucumaria (sea cucumber), Holothuria.\n\nHemichordata: Proboscis + collar + trunk. (Balanoglossus).\n\nChordata: Notochord, dorsal nerve cord, pharyngeal slits, post-anal tail (at some stage).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.4, Pg. 54",
+        "difficulty": "medium",
+        "tags": [
+            "arthropoda",
+            "mollusca",
+            "echinodermata",
+            "chordata"
+        ]
+    },
+    {
+        "id": "bio_ch5_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Morphology of Flowering Plants",
+        "chapterNum": 5,
+        "type": "concept",
+        "front": "Root and stem modifications with examples.",
+        "back": "Root Modifications:\nStorage: Tap (carrot, radish, turnip, beet), Adventitious (sweet potato, dahlia).\nSupport: Prop (banyan), Stilt (maize, sugarcane), Clinging (betel).\nRespiratory: Pneumatophores (Rhizophora, mangroves).\nNodular: N₂-fixing (legumes + Rhizobium).\n\nStem Modifications:\nUnderground: Rhizome (ginger, turmeric), Tuber (potato), Bulb (onion), Corm (colocasia, gladiolus).\nAerial: Runner (grass), Sucker (chrysanthemum, banana), Stolon (mint, strawberry), Offset (Eichhornia, Pistia).\nCladode/Phylloclade: Opuntia (cactus).\nThorn: Citrus, Bougainvillea (axillary).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.5, Pg. 66",
+        "difficulty": "medium",
+        "tags": [
+            "root-modifications",
+            "stem-modifications",
+            "morphology"
+        ]
+    },
+    {
+        "id": "bio_ch5_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Morphology of Flowering Plants",
+        "chapterNum": 5,
+        "type": "concept",
+        "front": "Types of placentation with examples.",
+        "back": "1. Marginal: Ovary with one cavity, ovules along the ridge where carpels fuse.\nExample: Pea (legumes), beans.\n\n2. Axile: Ovary divided into loculi, ovules on central axis.\nExample: Tomato, lemon, China rose, okra.\n\n3. Parietal: Ovary one-chambered, ovules on the wall or specific junctions.\nExample: Mustard, Argemone, Cucumber (Cucurbitaceae).\n\n4. Free Central: Ovules on central axis, septa absent.\nExample: Primrose, Dianthus.\n\n5. Basal: Ovary one-chambered, single ovule at base.\nExample: Sunflower, marigold, Asteraceae.\n\n6. Superficial: Ovary one-chambered, ovules all over the inner surface.\nExample: Nymphaea (water lily).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.5, Pg. 76",
+        "difficulty": "hard",
+        "tags": [
+            "placentation",
+            "flower",
+            "morphology"
+        ]
+    },
+    {
+        "id": "bio_ch7_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Structural Organization in Animals",
+        "chapterNum": 7,
+        "type": "concept",
+        "front": "Animal tissues: Epithelial types and locations.",
+        "back": "1. Simple Squamous: Single layer flat cells.\nLocation: Air sacs (alveoli), blood vessels (endothelium), Bowman's capsule.\n\n2. Simple Cuboidal: Cube-shaped cells.\nLocation: Kidney tubules, thyroid follicles, ducts of glands.\n\n3. Simple Columnar: Tall cells, often with microvilli.\nLocation: Stomach, intestine (absorption).\n\n4. Pseudostratified: Appears layered but isn't. Often ciliated.\nLocation: Trachea, bronchi (ciliated).\n\n5. Stratified Squamous: Multiple layers, protective.\nLocation: Skin (keratinized), mouth, oesophagus (non-keratinized).\n\n6. Glandular Epithelium: Unicellular (goblet cells) or multicellular (salivary glands).\n\n7. Transitional: Stretchable, in urinary bladder, ureters.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.7, Pg. 101",
+        "difficulty": "medium",
+        "tags": [
+            "epithelial-tissue",
+            "animal-tissues"
+        ]
+    },
+    {
+        "id": "bio_ch8_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Cell: The Unit of Life",
+        "chapterNum": 8,
+        "type": "concept",
+        "front": "Cell theory and differences between prokaryotic and eukaryotic cells.",
+        "back": "Cell Theory (Schleiden & Schwann, 1839):\n1. All living organisms composed of cells.\n2. Cell is basic structural & functional unit of life.\n3. All cells arise from pre-existing cells (Virchow: Omnis cellula e cellula).\n\nProkaryotic vs Eukaryotic:\nNucleus: Absent (nucleoid) vs Present with membrane.\nOrganelles: 70S ribosomes only vs Membrane-bound organelles present.\nSize: 0.1-5μm vs 10-100μm.\nCell wall: Peptidoglycan (bacteria) vs Cellulose/Chitin.\nDivision: Binary fission vs Mitosis/Meiosis.\n\nProkaryotic cell structures:\nCell envelope: Glycocalyx (capsule/slime layer) → Cell wall → Cell membrane.\nMesosomes: Invaginations of membrane, help in respiration, DNA replication.\nNucleoid: Single circular DNA (no histone proteins).\nPlasmids: Small circular extra-chromosomal DNA.\nPili/Fimbriae: Attachment structures. Flagella: Locomotion.\n\nGram positive: Thick peptidoglycan (stains purple).\nGram negative: Thin peptidoglycan + outer membrane (stains pink).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.8, Pg. 117",
+        "difficulty": "easy",
+        "tags": [
+            "cell-theory",
+            "prokaryote",
+            "eukaryote"
+        ]
+    },
+    {
+        "id": "bio_ch9_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Biomolecules",
+        "chapterNum": 9,
+        "type": "concept",
+        "front": "Structure and functions of proteins, carbohydrates, lipids, nucleic acids.",
+        "back": "Carbohydrates: Cₙ(H₂O)ₘ.\nMonosaccharides (glucose, fructose), Disaccharides (sucrose, maltose, lactose), Polysaccharides (starch, cellulose, glycogen, chitin).\n\nProteins: 20 amino acids (9 essential). Peptide bonds.\nPrimary (sequence) → Secondary (α-helix, β-sheet) → Tertiary (3D folding) → Quaternary (Hb).\nFibrous (keratin, collagen) vs Globular (Hb, enzymes).\n\nLipids: Fats (saturated/unsaturated), phospholipids (membrane), steroids (cholesterol), waxes.\n\nNucleic Acids:\nDNA: Deoxyribose, A-T(2 bonds), G-C(3 bonds).\nRNA: Ribose, A-U, G-C. Types: mRNA, tRNA(cloverleaf), rRNA.\nNucleotide: Nitrogen base + pentose sugar + phosphate.\nNucleoside: Base + sugar only.\n\nEnzymes: Active site, substrate specificity. Lower activation energy.\nFactors: Temp, pH, substrate conc, inhibitors (competitive/non-competitive).\nCo-factors: Co-enzymes (NAD, FAD), prosthetic groups (heme), metal ions (Mg²⁺, Zn²⁺).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.9, Pg. 143",
+        "difficulty": "medium",
+        "tags": [
+            "biomolecules",
+            "proteins",
+            "enzymes"
+        ]
+    },
+    {
+        "id": "bio_ch10_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Cell Cycle & Cell Division",
+        "chapterNum": 10,
+        "type": "concept",
+        "front": "Cell cycle phases: Interphase (G1, S, G2) and M-phase.",
+        "back": "Cell Cycle: G₁ → S → G₂ → M → Cytokinesis.\n\nInterphase (90% of time, resting but metabolically active):\nG₁ phase: Cell growth, organelle duplication, protein & RNA synthesis.\nS phase: DNA replication (DNA content doubles from 2C→4C).\nG₂ phase: Continued growth, preparation for mitosis, tubulin synthesis.\n\nM-Phase (Mitosis):\nProphase: Chromatin condenses, nuclear membrane breaks, spindle forms.\nMetaphase: Chromosomes align at metaphase plate (equatorial).\nAnaphase: Sister chromatids separate and move to poles. (Shortest phase)\nTelophase: Nuclear membrane reforms, chromosomes decondense.\nCytokinesis: Division of cytoplasm.\nIn plants: Cell plate formation (fragmoplast). In animals: Cleavage furrow.\n\nSignificance: Growth, repair, asexual reproduction. Maintains chromosome number.\n\nCheckpoints: G₁/S (restriction point), G₂/M, M (spindle assembly checkpoint).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.10, Pg. 162",
+        "difficulty": "medium",
+        "tags": [
+            "cell-cycle",
+            "mitosis",
+            "interphase"
+        ]
+    },
+    {
+        "id": "bio_ch10_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Cell Cycle & Cell Division",
+        "chapterNum": 10,
+        "type": "concept",
+        "front": "Meiosis: Phases, significance, and comparison with mitosis.",
+        "back": "Meiosis: Reduces chromosome number from 2n to n. Occurs in germ cells.\n\nMeiosis I (Reductional division):\nProphase I: Leptotene (condensation), Zygotene (synapsis, bivalent formation), Pachytene (crossing over between non-sister chromatids), Diplotene (chiasmata visible), Diakinesis (terminalization).\nMetaphase I: Bivalents align at equator. Homologous pairs separate.\nAnaphase I: Homologous chromosomes separate (not sister chromatids).\nTelophase I: Two haploid cells.\n\nMeiosis II (Equational division, similar to mitosis):\nProphase II → Metaphase II → Anaphase II → Telophase II.\n\nResult: 4 haploid cells (genetically different due to crossing over).\n\nMitosis vs Meiosis:\nMitosis: Same chromosome number (2n→2n), no genetic variation.\nMeiosis: Halves chromosome number (2n→n), crossing over creates variation.\n\nSignificance of Meiosis: Genetic diversity, maintenance of constant chromosome number in sexual reproduction.\n\nSynaptonemal complex: Protein structure holding homologous chromosomes together during synapsis.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.10, Pg. 168",
+        "difficulty": "hard",
+        "tags": [
+            "meiosis",
+            "mitosis",
+            "cell-division"
+        ]
+    },
+    {
+        "id": "bio_ch11_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Transport in Plants",
+        "chapterNum": 11,
+        "type": "concept",
+        "front": "Means of transport: diffusion, active transport, facilitated diffusion.",
+        "back": "Diffusion: Passive movement from high to low concentration. No energy required.\nRate depends on: Temperature, gradient, membrane permeability.\nMovement of gases (O₂, CO₂) across membranes.\n\nFacilitated Diffusion: Passive, mediated by carrier proteins/porins.\nSaturation kinetics (Vmax, Km). No ATP required.\nUniport (one molecule), Symport (same direction), Antiport (opposite).\n\nActive Transport: Against concentration gradient, requires ATP (energy).\nCarrier proteins like pumps (Na⁺/K⁺ ATPase, Ca²⁺ ATPase).\nExpends energy; can transport against 1000-fold gradient.\n\nWater Potential (Ψ): Ψ = Ψs + Ψp + Ψm.\nPure water Ψ = 0. Solute added → Ψ becomes negative (more negative = lower potential).\nWater moves from high Ψ (less negative) to low Ψ (more negative).\n\nOsmosis: Water moves across semi-permeable membrane from high water potential to low.\nTurgor pressure (wall pressure, opposite).\nPlasmolysis: Cell shrinks in hypertonic solution.\nImbibition: Water absorption by solids (seeds swell).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.11, Pg. 180",
+        "difficulty": "medium",
+        "tags": [
+            "transport",
+            "diffusion",
+            "osmosis",
+            "water-potential"
+        ]
+    },
+    {
+        "id": "bio_ch11_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Transport in Plants",
+        "chapterNum": 11,
+        "type": "concept",
+        "front": "Transpiration, translocation in phloem, and ascent of sap.",
+        "back": "Transpiration: Loss of water vapor from plant leaves (stomata).\nTypes: Stomatal (90-95%), Cuticular (5-10%), Lenticular (<1%).\nStomata: Guard cells (kidney/dumb-bell) control opening/closing.\nOpening: K⁺ entry (proton pump), turgid guard cells.\nClosing: ABA (stress hormone), water stress, dark, high CO₂.\nFactors: Light (opening), CO₂ (low→open), Temp, Humidity, Wind.\nSignificance: Creates transpiration pull, cooling, mineral transport.\nTranspiration pull: Cohesion-tension theory (water molecules form continuous column in xylem).\n\nAscent of Sap: Root pressure (guttation - drops on leaf margins) → Transpiration pull.\nXylem: Tracheids + vessels (dead cells, continuous tube).\n\nPhloem Transport (Translocation):\nSource (leaves, storage organs) → Sink (growing parts, fruits).\nMass flow/Hypothesis (Münch): Pressure gradient due to loading of sucrose at source.\nATP is used for loading at source and unloading at sink.\nCompanion cells: Help in loading/unloading (via plasmodesmata).\nRinging/Girdling: Removing phloem kills tree; xylem still conducts water.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.11, Pg. 188",
+        "difficulty": "hard",
+        "tags": [
+            "transpiration",
+            "phloem",
+            "ascent-of-sap"
+        ]
+    },
+    {
+        "id": "bio_ch12_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Mineral Nutrition",
+        "chapterNum": 12,
+        "type": "concept",
+        "front": "Essential mineral elements and their classification.",
+        "back": "Essential Elements (17 total): C, H, O (from H₂O, CO₂).\n\nMacronutrients (6, in large amounts): N, P, K, Ca, Mg, S.\n\nMicronutrients (8, in trace amounts): Fe, Mn, Cu, Mo, Zn, B, Cl, Ni.\n\nFunctions:\nN: Proteins, nucleic acids\nP: ATP, nucleic acids, phospholipids\nK: Stomatal opening, enzyme activation\nCa: Cell wall (calcium pectate), membrane structure\nMg: Chlorophyll (central atom), enzyme activator\nS: Amino acids (cysteine, methionine)\nFe: Cytochromes, electron transport\nMn: Photolysis of water\nZn: Auxin (IAA) synthesis\nB: Cell elongation, pollen germination\n\nDeficiency symptoms:\nChlorosis (yellowing): N, K, Mg, S, Fe, Mn\nNecrosis (tissue death): Ca, Mg, Cu, K\nStunted growth: N, P, K\nDelayed flowering: S, Mo\n\nHydroponics: Growing plants in nutrient solution (method to study essentiality).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.12, Pg. 196",
+        "difficulty": "medium",
+        "tags": [
+            "mineral-nutrition",
+            "essential-elements"
+        ]
+    },
+    {
+        "id": "bio_ch12_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Mineral Nutrition",
+        "chapterNum": 12,
+        "type": "concept",
+        "front": "Nitrogen cycle and biological nitrogen fixation.",
+        "back": "Nitrogen Cycle:\nN₂ (atmospheric) → NH₃ (fixation) → NO₂⁻ (nitrification by Nitrosomonas) → NO₃⁻ (nitrification by Nitrobacter) → Plants absorb NO₃⁻ → Proteins → Decomposition → NH₃.\nDenitrification: NO₃⁻ → N₂ (Pseudomonas, denitrifying bacteria).\n\nBiological Nitrogen Fixation (BNF):\nOnly by prokaryotes (Rhizobium, Frankia, Azotobacter, Anabaena, Nostoc).\n\nRhizobium: Symbiotic with leguminous plants. Forms root nodules.\nFrankia: Symbiotic with non-legumes (Alnus, Casuarina).\nAzospirillum/Azotobacter: Free-living N₂ fixers.\n\nNodule formation (Legumes):\nRoot hair curling → infection thread → nodule formation.\nLeghaemoglobin: Pink pigment, protects nitrogenase from O₂.\n\nNitrogenase enzyme: Converts N₂ → 2NH₃. Requires ATP (16 ATP per N₂), anaerobic conditions.\nMo-Fe protein (component of nitrogenase).\n\nHaber process: Industrial N₂ fixation (high T, P).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.12, Pg. 204",
+        "difficulty": "hard",
+        "tags": [
+            "nitrogen-cycle",
+            "nitrogen-fixation",
+            "rhizobium"
+        ]
+    },
+    {
+        "id": "bio_ch13_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Photosynthesis in Higher Plants",
+        "chapterNum": 13,
+        "type": "concept",
+        "front": "Photosynthesis: pigments, photosystems, light and dark reactions.",
+        "back": "Pigments:\nChlorophyll a (primary, blue-green), Chlorophyll b (yellow-green), Carotenoids (orange, photoprotective), Xanthophylls (yellow).\n\nAbsorption spectrum: Wavelengths absorbed by each pigment.\nAction spectrum: Wavelengths that drive photosynthesis (Engelmann's experiment with Cladophora).\n\nPhotosystems:\nPS II (P680): Absorbs 680nm. Splits water → O₂ + 4H⁺ + 4e⁻.\nPS I (P700): Absorbs 700nm. Reduces NADP⁺ → NADPH.\n\nLight Reactions (Thylakoid membrane):\nNon-cyclic photophosphorylation:\ne⁻ flow: H₂O → PSII → PQ → Cytochrome b6f → PC → PSI → Fd → NADP⁺\nProduces: ATP + NADPH + O₂.\n\nCyclic photophosphorylation:\nOnly PS I involved. e⁻ cycles back. Produces ATP only, no NADPH, no O₂.\n\nDark Reactions (Calvin Cycle, Stroma):\nC₃ cycle: RuBP + CO₂ (Rubisco) → 2 × 3-PGA → G3P → Glucose + RuBP regeneration.\nRequires: 3 ATP + 2 NADPH per CO₂ fixed.\n\nC₄ Pathway (Kranz anatomy): Mesophyll → PEP carboxylase (fixes CO₂ into oxaloacetate/malate) → Bundle sheath → Calvin cycle.\nOvercomes photorespiration. Examples: Maize, sugarcane, sorghum.\n\nPhotorespiration: Rubisco fixes O₂ instead of CO₂. Wastes energy, reduces efficiency. C₄ plants avoid it.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.13, Pg. 214",
+        "difficulty": "hard",
+        "tags": [
+            "photosynthesis",
+            "calvin-cycle",
+            "c4-pathway",
+            "photorespiration"
+        ]
+    },
+    {
+        "id": "bio_ch14_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Respiration in Plants",
+        "chapterNum": 14,
+        "type": "concept",
+        "front": "Glycolysis, Kreb's cycle, and electron transport chain (ETC).",
+        "back": "Glycolysis (Cytoplasm, EMP pathway):\nGlucose (6C) → 2 Pyruvate (3C) + 2 ATP + 2 NADH.\nNo O₂ required.\n\nLink Reaction (Pyruvate → Acetyl CoA):\nMitochondrial matrix. Pyruvate + CoA + NAD⁺ → Acetyl CoA + CO₂ + NADH.\n\nKrebs Cycle (TCA Cycle, Matrix):\nAcetyl CoA enters cycle → 2 CO₂ + 1 ATP + 3 NADH + 1 FADH₂ per turn.\n2 turns per glucose → 6 NADH + 2 FADH₂ + 2 ATP.\n\nETC (Inner mitochondrial membrane):\nNADH → Complex I → Q → Complex III → Cyt c → Complex IV → O₂ (H₂O formed).\nFADH₂ → Complex II → Q → Complex III → Cyt c → Complex IV.\n\nChemiosmosis: H⁺ gradient across inner membrane → ATP synthase (oxidative phosphorylation).\nO₂ is the final electron acceptor.\n\nTotal ATP per glucose: 36-38 (glycolysis 2 + TCA 2 + ETC 32-34).\n\nFermentation (Anaerobic):\nAlcoholic: Pyruvate → Ethanol + CO₂ (yeast).\nLactic acid: Pyruvate → Lactate (muscle cells during O₂ deficit).\n\nRQ (Respiratory Quotient) = CO₂ released / O₂ consumed.\nCarbohydrate: ~1. Fats: <1. Proteins: ~0.8-0.9.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.14, Pg. 232",
+        "difficulty": "hard",
+        "tags": [
+            "respiration",
+            "glycolysis",
+            "krebs-cycle",
+            "etc"
+        ]
+    },
+    {
+        "id": "bio_ch15_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Plant Growth & Development",
+        "chapterNum": 15,
+        "type": "concept",
+        "front": "Plant hormones: auxins, gibberellins, cytokinins, ABA, ethylene.",
+        "back": "Auxin (IAA): Cell elongation, apical dominance, rooting, phototropism.\nSynthetic: NAA, 2,4-D (herbicide).\n\nGibberellins (GA): Stem elongation, bolting, seed germination (hydrolyzes starch), fruit growth (grapes).\n\nCytokinins: Cell division, shoot formation, delay senescence.\nProduced in roots. Kinetin (synthetic), Zeatin (natural).\n\nEthylene (C₂H₄): Fruit ripening, abscission, senescence.\nGaseous hormone. Ethephon (synthetic source).\nTriple response in seedlings: Inhibits stem elongation, thickens stem, horizontal growth.\n\nABA (Abscisic Acid): Stress hormone, stomatal closure, dormancy.\nAlso called: Stress hormone, dormin.\nAntagonistic to gibberellins in seed germination.\n\nPhotoperiodism: Response to day/night length. (Short day, Long day, Day neutral plants).\nFlorigen: Hypothetical flowering hormone (FT protein).\n\nPhytochrome: Light receptor pigment (Pr ↔ Pfr conversion).\nPfr is active form, triggers flowering in LDP, inhibits in SDP.\n\nVernalization: Cold treatment required for flowering (e.g., winter wheat).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.15, Pg. 252",
+        "difficulty": "hard",
+        "tags": [
+            "plant-hormones",
+            "auxin",
+            "gibberellin",
+            "ethylene",
+            "aba"
+        ]
+    },
+    {
+        "id": "bio_ch16_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Digestion & Absorption",
+        "chapterNum": 16,
+        "type": "concept",
+        "front": "Human digestive system and digestive enzymes.",
+        "back": "Alimentary Canal:\nMouth → Pharynx → Oesophagus → Stomach → Small intestine → Large intestine → Anus.\nAccessory organs: Liver, Pancreas, Salivary glands, Gall bladder.\n\nDigestive Juices:\nSaliva (pH 6.8): Ptyalin (starch → maltose), lingual lipase.\n\nGastric juice (pH ~2, HCL + Pepsinogen + Prorennin + Gastric lipase):\nPepsin: Protein → Peptides.\nRennin: Milk coagulation (infants).\nHCl: Activates pepsinogen, kills bacteria, provides acidic medium.\n\nPancreatic juice (alkaline):\nTrypsinogen → Trypsin (proteins → peptides)\nChymotrypsinogen → Chymotrypsin\nProcarboxypeptidase → Carboxypeptidase\nPancreatic amylase (starch → maltose)\nLipase (fats → diglycerides + fatty acids)\nNucleases (DNA/RNA → nucleotides)\n\nBile (Liver): Emulsifies fats, no enzymes. Bilirubin (yellow, heme breakdown).\n\nIntestinal juice (Succus entericus):\nPeptidases, Disaccharidases (maltase, sucrase, lactase), Nucleotidases, Lipases.\n\nAbsorption: Villi (increase surface area). Microvilli (brush border).\nLacteal (lymphatic) absorbs fats. Blood capillaries absorb other nutrients.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.16, Pg. 264",
+        "difficulty": "medium",
+        "tags": [
+            "digestion",
+            "enzymes",
+            "absorption"
+        ]
+    },
+    {
+        "id": "bio_ch17_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Breathing & Exchange of Gases",
+        "chapterNum": 17,
+        "type": "concept",
+        "front": "Human respiratory system and mechanism of breathing.",
+        "back": "Respiratory Tract:\nNasal cavity → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli.\n\nAlveoli: Site of gas exchange. Surrounded by capillaries.\nSurfactant: Phospholipid, reduces surface tension, prevents alveolar collapse.\n\nMechanism of Breathing (Boyles Law):\nInspiration: Diaphragm contracts (down) + External intercostals contract → Volume increases, pressure decreases → Air in.\nExpiration: Diaphragm relaxes (up) + Internal intercostals contract → Volume decreases, pressure increases → Air out.\n\nRespiratory Volumes:\nTV (Tidal Volume): ~500 mL air per breath.\nIRV (Inspiratory Reserve): ~2500-3000 mL.\nERV (Expiratory Reserve): ~1000-1200 mL.\nRV (Residual Volume): ~1100-1200 mL (can't be expelled).\n\nCapacities:\nVC (Vital Capacity) = IRV + TV + ERV = ~4000-4800 mL.\nTLC (Total Lung Capacity) = VC + RV = ~5500-6000 mL.\n\nO₂ Transport: 97% bound to Hb (oxyhemoglobin), 3% dissolved in plasma.\nO₂-Hb dissociation curve: Shifted right by ↓pH, ↑CO₂, ↑Temp (Bohr effect).\n\nCO₂ Transport: 70% as HCO₃⁻ (bicarbonate), 20-25% bound to Hb (carbaminohemoglobin), 7% dissolved.\nCO₂ + H₂O → H₂CO₃ → H⁺ + HCO₃⁻ (Carbonic anhydrase in RBC).\n\nHaldane Effect: Deoxygenated Hb carries more CO₂.\n\nRespiratory Disorders: Asthma, Emphysema, Pneumonia, Bronchitis.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.17, Pg. 276",
+        "difficulty": "medium",
+        "tags": [
+            "respiration",
+            "lungs",
+            "gas-exchange"
+        ]
+    },
+    {
+        "id": "bio_ch17_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Breathing & Exchange of Gases",
+        "chapterNum": 17,
+        "type": "concept",
+        "front": "Transport of oxygen and carbon dioxide in blood.",
+        "back": "O₂ Transport:\n97-98% carried by Hb (oxyhemoglobin).\n1 mL O₂ per 1.34 g Hb.\nHb + O₂ ⇌ HbO₂ (reversible, depends on pO₂).\nO₂ capacity: 20 mL O₂ per 100 mL blood.\n\nFactors affecting O₂-Hb affinity:\n↓pH (Bohr shift): Right shift → more O₂ released to tissues.\n↑Temp, ↑CO₂, ↑2,3-BPG (DPG) → Right shift.\nFetal Hb: Higher O₂ affinity (binds O₂ more strongly).\n\nCO₂ Transport:\nDissolved (7%): As dissolved CO₂.\nBicarbonate (70%): Major form.\nRBC: CO₂ + H₂O → H₂CO₃ → H⁺ + HCO₃⁻ (catalyzed by carbonic anhydrase).\nHCO₃⁻ diffuses to plasma, Cl⁻ enters RBC (chloride shift).\n\nCarbamino compounds (23%): CO₂ binds directly to Hb (no O₂ binding site).\nDeoxyhemoglobin binds more CO₂ (Haldane effect).\n\nIn lungs: Reverse reactions → CO₂ released and exhaled.\n\nRespiratory Center: Medulla (rhythmic center) + Pons (pneumotaxic center).\nPeripheral chemoreceptors: Carotid & aortic bodies (sense O₂, CO₂, pH).\nCentral chemoreceptors: Medulla (sense CO₂/pH in CSF).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.17, Pg. 282",
+        "difficulty": "medium",
+        "tags": [
+            "oxygen-transport",
+            "co2-transport",
+            "hemoglobin"
+        ]
+    },
+    {
+        "id": "bio_ch18_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Body Fluids & Circulation",
+        "chapterNum": 18,
+        "type": "concept",
+        "front": "Blood components and functions.",
+        "back": "Blood: Connective tissue. pH ~7.4, volume ~5-6 L (adult).\n\nPlasma (55%): Water (90-92%) + Proteins (7-8%) + Ions + Nutrients + Hormones.\nProteins: Albumin (osmotic balance), Globulins (antibodies), Fibrinogen (clotting).\n\nFormed Elements (45%):\n1. RBCs (Erythrocytes): 5-5.5 million/mm³. No nucleus, no mitochondria. Life span ~120 days.\nBiconcave disc shape. Hb content: 12-16 g/dL.\nFormed in red bone marrow (erythropoietin hormone).\n\n2. WBCs (Leukocytes): 6000-8000/mm³.\nGranulocytes: Neutrophils (60%, phagocytosis), Eosinophils (allergy), Basophils (histamine, heparin).\nAgranulocytes: Monocytes (macrophages), Lymphocytes (B cells → antibodies, T cells → cell-mediated).\n\n3. Platelets (Thrombocytes): 1.5-3.5 lakh/mm³. Cell fragments. Blood clotting (thromboplastin).\nLife span ~5-9 days.\n\nBlood Groups (ABO):\nA: A antigen, anti-B antibodies\nB: B antigen, anti-A antibodies\nAB: Both antigens, no antibodies (universal recipient)\nO: No antigens, both antibodies (universal donor)\n\nRh factor: Rh+ (has D antigen), Rh- (no D antigen).\nRh incompatibility: Rh- mother + Rh+ fetus → Erythroblastosis fetalis.\n\nCoagulation: Injury → Thromboplastin → Prothrombin (Ca²⁺, Vit K) → Thrombin → Fibrinogen → Fibrin (clot).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.18, Pg. 292",
+        "difficulty": "medium",
+        "tags": [
+            "blood",
+            "rbc",
+            "wbc",
+            "platelets",
+            "blood-groups"
+        ]
+    },
+    {
+        "id": "bio_ch18_002",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Body Fluids & Circulation",
+        "chapterNum": 18,
+        "type": "concept",
+        "front": "Structure and working of the human heart.",
+        "back": "Heart: 4-chambered (2 atria + 2 ventricles).\nPericardium: Double-walled membrane around heart (pericardial fluid reduces friction).\n\nChambers:\nRight Atrium: Receives deoxygenated blood via SVC, IVC, coronary sinus.\nRight Ventricle: Pumps to lungs via pulmonary artery.\nLeft Atrium: Receives oxygenated blood from lungs via 4 pulmonary veins.\nLeft Ventricle: Pumps to body via aorta (thickest wall).\n\nValves:\nAV valves: Tricuspid (right), Bicuspid/Mitral (left). Chordae tendineae attach to papillary muscles.\nSemilunar valves: Pulmonary (RV → pulmonary artery), Aortic (LV → aorta).\n\nCoronary Circulation: Left & right coronary arteries supply heart. Coronary veins → coronary sinus.\n\nCardiac Cycle:\nAtrial systole: 0.1 sec, blood pushed to ventricles.\nVentricular systole: 0.3 sec, blood pushed to arteries.\nJoint diastole: 0.4 sec, all chambers relaxed.\n\nHeart Sounds:\nLub (S1): Closure of AV valves (systole start).\nDub (S2): Closure of semilunar valves (diastole start).\n\nCardiac Output = Stroke volume × Heart rate ≈ 4-5 L/min (at rest).\n\nSA Node (pacemaker): 70-75 beats/min → AV Node (delay 0.1 sec) → Bundle of His → Purkinje fibers.\n\nECG: P wave (atrial depolarization), QRS complex (ventricular depolarization), T wave (ventricular repolarization).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.18, Pg. 300",
+        "difficulty": "hard",
+        "tags": [
+            "heart",
+            "cardiac-cycle",
+            "ecg"
+        ]
+    },
+    {
+        "id": "bio_ch19_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Excretory Products & Their Elimination",
+        "chapterNum": 19,
+        "type": "concept",
+        "front": "Structure of nephron and urine formation.",
+        "back": "Kidney: Bean-shaped, ~10-12 cm. Cortex (outer) + Medulla (inner pyramids).\nNephrons: ~1 million per kidney. Structural and functional unit.\n\nNephron Parts:\nRenal Corpuscle: Glomerulus (capillary network) + Bowman's capsule.\nPCT (Proximal Convoluted Tubule): Reabsorption of glucose, amino acids, Na⁺, HCO₃⁻, H₂O. Secretion of H⁺, NH₃.\nLoop of Henle: Descending (water permeable) + Ascending (Na⁺/Cl⁻ transport). Creates medullary gradient.\nDCT (Distal Convoluted Tubule): Reabsorption of Na⁺, water. Secretion of K⁺, H⁺.\nCollecting Duct: Fine-tuning of water reabsorption (ADH).\n\nUrine Formation:\n1. Glomerular Filtration: Blood filtered through glomerulus (fenestrated capillaries).\nGFR ~125 mL/min. Filtrate: No cells, no proteins.\n2. Reabsorption: Essential substances removed from filtrate back to blood.\n3. Secretion: Wastes added to filtrate from blood.\n\nConcentration of urine: Counter-current mechanism (Loop of Henle + vasa recta) creates hypertonic medullary interstitium. Collecting duct (ADH dependent) concentrates urine.\n\nRegulation:\nADH (Vasopressin): ↑ water reabsorption in collecting duct.\nAldosterone (Adrenal cortex): ↑ Na⁺ reabsorption in DCT (water follows).\nANF (Atrial Natriuretic Factor): Opposite of aldosterone - ↓ Na⁺ reabsorption.\nRenin-Angiotensin: ↑ BP, ↑ GFR.\n\nNormal urine: 1-1.5 L/day. pH ~6.0. Yellow (urochrome).\nUrea (25 g/day), Uric acid, Creatinine, NH₃.\n\nDialysis: Artificial kidney for renal failure.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.19, Pg. 312",
+        "difficulty": "hard",
+        "tags": [
+            "nephron",
+            "urine-formation",
+            "kidney",
+            "adn"
+        ]
+    },
+    {
+        "id": "bio_ch20_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Locomotion & Movement",
+        "chapterNum": 20,
+        "type": "concept",
+        "front": "Skeletal system: bones, joints, and their types.",
+        "back": "Axial Skeleton (80 bones): Skull, vertebral column, sternum, ribs.\n\nAppendicular Skeleton (126 bones):\nPectoral girdle: Clavicle + Scapula (upper limb attachment).\nPelvic girdle: Ilium + Ischium + Pubis (coxal bones), lower limb attachment.\n\nUpper limb: Humerus → Radius + Ulna → Carpals (8) → Metacarpals (5) → Phalanges (14).\nLower limb: Femur → Tibia + Fibula → Patella (knee cap) → Tarsals (7) → Metatarsals (5) → Phalanges (14).\n\nJoints:\nFibrous (immovable): Sutures of skull.\nCartilaginous (slightly movable): Intervertebral discs, pubic symphysis.\nSynovial (freely movable):\n- Ball and socket: Shoulder, hip. (Multiaxial)\n- Hinge: Knee, elbow, ankle. (Uniaxial)\n- Pivot: Neck (atlantoaxial), radius-ulna.\n- Condyloid: Wrist.\n- Saddle: Thumb (carpometacarpal).\n- Gliding: Carpal/tarsal bones.\n\nBone matrix: Collagen fibers + Ca₃(PO₄)₂, CaCO₃.\nOsteoblasts (bone forming), Osteoclasts (bone resorbing), Osteocytes (mature).\n\nOsteoporosis: ↓ Bone density (Ca deficiency, menopause).\nArthritis: Inflammation of joints.",
+        "ncertRef": "NCERT Class 11 Biology, Ch.20, Pg. 324",
+        "difficulty": "medium",
+        "tags": [
+            "skeleton",
+            "bones",
+            "joints"
+        ]
+    },
+    {
+        "id": "bio_ch21_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Neural Control & Coordination",
+        "chapterNum": 21,
+        "type": "concept",
+        "front": "Structure of neuron, types of neurons, and nerve impulse conduction.",
+        "back": "Neuron:\nDendrites (receive signals) → Cell body (Soma, contains nucleus) → Axon (conducts impulse) → Axon terminal (synaptic knob).\n\nTypes:\nSensory (afferent): Carry impulse from receptors to CNS.\nMotor (efferent): Carry impulse from CNS to effectors.\nInterneurons: Connect sensory and motor within CNS.\n\nMyelinated vs Unmyelinated:\nMyelinated: Schwann cells wrapped, saltatory conduction (faster).\nUnmyelinated: No myelin, continuous conduction (slower).\n\nResting Membrane Potential (-70 mV):\nNa⁺ outside (high), K⁺ inside (high). Na⁺/K⁺ ATPase pump (3 Na⁺ out, 2 K⁺ in).\nMembrane polarized.\n\nAction Potential:\nDepolarization: Na⁺ channels open, Na⁺ enters → +40 mV.\nRepolarization: K⁺ channels open, K⁺ exits, Na⁺ channels inactivate.\nHyperpolarization: Slight overshoot.\nAll-or-none principle.\n\nSynapse:\nElectrical: Direct ion flow (gap junctions).\nChemical: Neurotransmitters (ACh, dopamine, serotonin, GABA, glutamate).\nACh released → binds postsynaptic receptor → depolarization (EPSP) or hyperpolarization (IPSP).\n\nNeurotransmitter is broken down (acetylcholinesterase) or reabsorbed.\n\nCNS: Brain (Cerebrum, Cerebellum, Brainstem) + Spinal cord.\nPNS: Cranial (12 pairs) + Spinal nerves (31 pairs).\nAutonomic NS: Sympathetic (fight/flight) & Parasympathetic (rest/digest).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.21, Pg. 340",
+        "difficulty": "hard",
+        "tags": [
+            "neuron",
+            "nerve-impulse",
+            "synapse",
+            "cns"
+        ]
+    },
+    {
+        "id": "bio_ch22_001",
+        "subject": "Biology",
+        "classNum": "11",
+        "chapter": "Chemical Coordination & Integration",
+        "chapterNum": 22,
+        "type": "concept",
+        "front": "Endocrine glands and their hormones.",
+        "back": "Pituitary (Master Gland): Adenohypophysis (anterior) + Neurohypophysis (posterior).\nAnterior: GH (growth), TSH, ACTH, FSH, LH, PRL.\nPosterior: Oxytocin (uterine contraction), ADH (water reabsorption).\n\nThyroid: T₃/T₄ (metabolism), Calcitonin (↓ blood Ca).\nGoiter: Iodine deficiency. Hypothyroidism: Cretinism (children), Myxedema (adults).\nHyperthyroidism: Graves disease, exophthalmos.\n\nParathyroid: PTH (↑ blood Ca, ↓ blood phosphate).\n\nAdrenal Cortex: Glucocorticoids (cortisol), Mineralocorticoids (aldosterone), Androgens.\nAdrenal Medulla: Adrenaline (epinephrine) + Noradrenaline. Fight/flight response.\n\nPancreas (Islets of Langerhans):\nα-cells: Glucagon (↑ blood glucose).\nβ-cells: Insulin (↓ blood glucose).\nDiabetes: Type 1 (autoimmune, no insulin) vs Type 2 (insulin resistance).\n\nGonads:\nTestes: Testosterone (male secondary sex characteristics).\nOvaries: Estrogen (female characteristics), Progesterone (pregnancy maintenance).\n\nPineal: Melatonin (circadian rhythm).\nThymus: Thymosins (T-cell maturation, atrophies with age).\n\nHormone action: Steroid hormones (nuclear receptors) vs Peptide hormones (membrane receptors, second messengers like cAMP).",
+        "ncertRef": "NCERT Class 11 Biology, Ch.22, Pg. 352",
+        "difficulty": "hard",
+        "tags": [
+            "endocrine-glands",
+            "hormones",
+            "pituitary",
+            "thyroid"
+        ]
+    },
+    {
+        "id": "bio_ch23_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Reproduction in Organisms",
+        "chapterNum": 23,
+        "type": "concept",
+        "front": "Asexual vs sexual reproduction with examples.",
+        "back": "Asexual Reproduction: Single parent, offspring identical (clone). No gamete formation.\nTypes:\n- Binary fission: Amoeba, Paramecium, Euglena.\n- Multiple fission: Plasmodium.\n- Budding: Hydra, Yeast.\n- Fragmentation: Spirogyra (filament breaks into pieces).\n- Regeneration: Hydra, Planaria.\n- Spore formation: Rhizopus, Penicillium.\n- Vegetative propagation: Runner (strawberry), Sucker (banana), Tuber (potato), Bulb (onion).\n\nSexual Reproduction: Two parents, gamete formation (meiosis), variation.\nPhases:\nJuvenile phase → Reproductive phase → Senescent phase.\n\nEvents:\nPre-fertilization: Gametogenesis, Gamete transfer (pollination in plants).\nFertilization: Syngamy (external/internal).\nPost-fertilization: Zygote → Embryo.\n\nUnisexual (dioecious): Male and female on separate individuals.\nBisexual (monoecious/hermaphrodite): Both sexes in same individual.\n\nExternal fertilization: Water (fish, amphibians). Fewer offspring protected.\nInternal fertilization: Land animals (reptiles, birds, mammals). More offspring protection.\n\nParthenogenesis: Development without fertilization (honeybees, rotifers).\n\nIn plants: Pollination (self/cross). Endosperm development (3n in angiosperms).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.1, Pg. 4",
+        "difficulty": "medium",
+        "tags": [
+            "asexual-reproduction",
+            "sexual-reproduction",
+            "gametogenesis"
+        ]
+    },
+    {
+        "id": "bio_ch24_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Sexual Reproduction in Flowering Plants",
+        "chapterNum": 24,
+        "type": "concept",
+        "front": "Structure of anther, pollen grain, and embryo sac.",
+        "back": "Anther: Dithecous, 4 microsporangia.\nMicrosporogenesis: Pollen mother cell (2n) → Meiosis → 4 haploid pollen grains (n).\n\nPollen Grain: 2 cells - Vegetative cell (larger, food reserve) + Generative cell (divides to form 2 male gametes).\nIntine (inner wall, cellulose+pectin) + Exine (outer, sporopollenin - most resistant organic material).\n\nPistil: Stigma + Style + Ovary.\nOvule: Nucellus + integuments (1 or 2) + funicle (stalk).\nEmbryo sac (female gametophyte): 7 cells, 8 nuclei.\nEgg apparatus: 2 synergids + 1 egg cell.\nCentral cell: 2 polar nuclei (fused → secondary nucleus 2n).\n3 antipodal cells (opposite end).\n\nMegasporogenesis: MMC (2n) → Meiosis → 4 megaspores (3 degenerate, 1 functional).\n\nPollination:\nSelf-pollination: Autogamy (same flower), Geitonogamy (different flower, same plant).\nCross-pollination (Xenogamy): Genetic variation.\nAgents: Wind (anemophily), Water (hydrophily), Insects (entomophily), Birds (ornithophily), Bats (chiropterophily).\n\nDouble Fertilization:\n1 pollen tube → 2 male gametes.\nOne male gamete + egg → Zygote (2n).\nSecond male gamete + 2 polar nuclei → Triploid endosperm (3n).\nOnly in angiosperms.\n\nEndosperm: Nuclear (free nuclei, e.g., coconut water), Cellular (wall formation), Helobial (intermediate).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.2, Pg. 22",
+        "difficulty": "hard",
+        "tags": [
+            "anther",
+            "pollen",
+            "embryo-sac",
+            "double-fertilization"
+        ]
+    },
+    {
+        "id": "bio_ch25_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Human Reproduction",
+        "chapterNum": 25,
+        "type": "concept",
+        "front": "Male and female reproductive systems.",
+        "back": "Male System:\nTestes (paired): In scrotum (temp 2-3°C below body). Seminiferous tubules (spermatogenesis).\nLeydig cells: Testosterone. Sertoli cells: Nourish sperm.\nEpididymis: Sperm storage & maturation.\nVas deferens → Ejaculatory duct → Urethra.\nAccessory glands: Seminal vesicles (fructose), Prostate (alkaline fluid), Bulbourethral (mucus).\nSemen: Sperm + seminal plasma (fructose, enzymes).\n\nFemale System:\nOvaries (paired): Produce ova, estrogen, progesterone.\nOviduct (Fallopian tube): Fimbriae (catch ovum) → Ampulla (fertilization site) → Isthmus → Uterus.\nUterus: Endometrium (inner, menstrual), Myometrium (muscular, contractions), Perimetrium (outer).\nCervix → Vagina.\n\nSpermatogenesis (Seminiferous tubules):\nSpermatogonia (2n) → Mitosis → Primary spermatocyte → Meiosis I → 2 Secondary spermatocytes → Meiosis II → 4 Spermatids → Spermiogenesis → Spermatozoa.\n\nSperm: Head (acrosome - enzymes) → Neck (mitochondria) → Middle piece → Tail (flagellum).\n\nOogenesis:\nOogonia (2n) → Primary oocyte (arrested in Prophase I) → Each month, 1 resumes meiosis I → Secondary oocyte (arrested in Metaphase II) + 1 polar body.\nOvulation: Release of secondary oocyte (Metaphase II).\n\nMenstrual Cycle (~28 days):\nFollicular phase (FSH): Follicle growth, estrogen ↑.\nOvulation (LH surge): Day 14.\nLuteal phase: Corpus luteum secretes progesterone.\nIf no fertilization: Corpus luteum degenerates → menstruation.\n\nFertilization: In ampulla of fallopian tube. Sperm capacitation. Acrosome reaction.\n\nPregnancy: Implantation (blastocyst in endometrium). hCG (corpus luteum maintenance).\nPlacenta: Nutrient/gas exchange. Produces hCG, hPL, estrogen, progesterone.\nParturition: Oxytocin triggers uterine contractions.\nLactation: Prolactin (milk production), Oxytocin (milk ejection).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.3, Pg. 38",
+        "difficulty": "hard",
+        "tags": [
+            "reproductive-system",
+            "spermatogenesis",
+            "oogenesis",
+            "menstrual-cycle"
+        ]
+    },
+    {
+        "id": "bio_ch26_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Reproductive Health",
+        "chapterNum": 26,
+        "type": "concept",
+        "front": "Contraceptive methods: barrier, hormonal, IUD, surgical.",
+        "back": "Natural Methods: Periodic abstinence, Withdrawal, Lactational amenorrhea.\n\nBarrier Methods:\nCondom (male/female): Prevents STDs + pregnancy.\nDiaphragm, Cervical cap: Used with spermicides.\n\nIUD (Intrauterine Device):\nNon-medicated: Lippes loop.\nCopper-releasing: CuT (Cu ions spermicidal).\nHormonal: LNG-20 (progesterone, thickens cervical mucus).\n\nOral Contraceptives (Pills): Saheli (once a week, non-steroidal), Mala-D.\nContains estrogen + progesterone. Inhibits ovulation, thickens mucus.\n\nImplants (Norplant): Progesterone under skin.\nInjectables (Depo-Provera): Progesterone.\n\nSurgical:\nVasectomy (male): Vas deferens cut/tied.\nTubectomy (female): Fallopian tubes cut/tied.\n\nMTP (Medical Termination of Pregnancy): Safe up to 12 weeks (1st trimester).\nLegalized in India (1971).\n\nSTDs: Syphilis, Gonorrhea, Chlamydia, Trichomoniasis, Genital herpes, HIV.\nPrevention: Use condoms, avoid multiple partners.\n\nInfertility: ART (Assisted Reproductive Technology):\nIVF (Test tube baby), ZIFT, GIFT, ICSI, AI (Artificial Insemination).\nSurrogacy: Another woman carries the embryo.\nSI: Sperm bank.\n\nAmniocentesis: Fetal sex determination (banned for sex selection in India).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.4, Pg. 60",
+        "difficulty": "medium",
+        "tags": [
+            "contraception",
+            "ivf",
+            "reproductive-health"
+        ]
+    },
+    {
+        "id": "bio_ch27_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Principles of Inheritance & Variation",
+        "chapterNum": 27,
+        "type": "concept",
+        "front": "Mendel's laws of inheritance and monohybrid/dihybrid cross ratios.",
+        "back": "Mendel's Laws:\n1st (Law of Segregation): Alleles separate during gamete formation.\n2nd (Law of Independent Assortment): Genes for different traits segregate independently.\n\nMonohybrid cross: 3:1 (Phenotypic), 1:2:1 (Genotypic).\nTest cross (F1 × recessive): 1:1.\n\nDihybrid cross (e.g., YyRr × YyRr): 9:3:3:1 (Phenotypic).\n\nComplete dominance: One allele masks the other (T>t, Y>y).\n\nIncomplete dominance: 1:2:1 phenotype ratio (Snapdragon - RR=red, Rr=pink).\n\nCodominance: Both alleles expressed equally (ABO blood groups - IA, IB, i).\n\nMultiple alleles: ABO system (IA, IB, i). 3 alleles → 6 genotypes, 4 phenotypes.\n\nPleiotropy: One gene affects multiple traits (Sickle cell anemia - HbS affects RBC shape, health, malaria resistance).\n\nPolygenic inheritance: Multiple genes for one trait (Skin color, height).\n\nLinkage & Recombination:\nGenes on same chromosome linked. Crossing over recombines.\nRecombination frequency ∝ distance between genes.\nMorgan's fruit fly experiments (linked genes on X chromosome).\n\nChromosomal theory: Sutton & Boveri (genes on chromosomes).\n\nSex determination: XX-XY (humans, Drosophila), ZZ-ZW (birds, moths), XO (grasshopper).\n\nPedigree analysis: Autosomal dominant/recessive vs X-linked (hemophilia, color blindness).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.5, Pg. 76",
+        "difficulty": "hard",
+        "tags": [
+            "mendel",
+            "inheritance",
+            "genetics",
+            "pedigree"
+        ]
+    },
+    {
+        "id": "bio_ch27_002",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Principles of Inheritance & Variation",
+        "chapterNum": 27,
+        "type": "concept",
+        "front": "Chromosomal disorders: Down, Turner, Klinefelter, and mutations.",
+        "back": "Aneuploidy: Gain/loss of chromosome (non-disjunction in meiosis).\n\nDown Syndrome (Trisomy 21):\n47 chromosomes. Mental retardation, flat face, short stature, simian crease, protruding tongue.\n\nTurner Syndrome (Monosomy X, 45,X0):\nFemales. Short stature, webbed neck, sterile (no ovaries), no secondary sex characteristics.\n\nKlinefelter Syndrome (47,XXY):\nMales. Tall, sterile, feminine development (breasts, less body hair), low IQ.\n\nEdwards Syndrome (Trisomy 18): Severe, early death.\nPatau Syndrome (Trisomy 13): Severe congenital defects.\n\nCri-du-chat: Deletion in chromosome 5 (cat-like cry, mental retardation).\n\nSex chromosome abnormalities: XXX (female, normal), XYY (male, tall, normal).\n\nMutations:\nPoint mutation: Single base change. (Sickle cell - Glu→Val in β-globin).\nFrameshift: Insertion/deletion alters reading frame.\n\nMutation types: Silent, Missense (different amino acid), Nonsense (stop codon).\n\nMendelian Disorders:\nAutosomal recessive: Sickle cell anemia, Thalassemia, Phenylketonuria, Cystic fibrosis, Albinism.\nAutosomal dominant: Huntington's chorea, Marfan syndrome, Achondroplasia.\nX-linked recessive: Hemophilia (A, B), Color blindness, Duchenne muscular dystrophy.\nX-linked dominant: Vitamin D-resistant rickets.\nY-linked: Hairy ears (holandric).\n\nSickle cell anemia: HbS (Glu→Val at position 6), provides malaria resistance in heterozygotes.",
+        "ncertRef": "NCERT Class 12 Biology, Ch.5, Pg. 92",
+        "difficulty": "hard",
+        "tags": [
+            "chromosomal-disorders",
+            "mutation",
+            "down-syndrome"
+        ]
+    },
+    {
+        "id": "bio_ch28_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Molecular Basis of Inheritance",
+        "chapterNum": 28,
+        "type": "concept",
+        "front": "DNA structure, replication, transcription, translation.",
+        "back": "DNA Structure (Watson & Crick, 1953):\nDouble helix, antiparallel (5'→3', 3'→5').\nNucleotides = Sugar (deoxyribose) + Phosphate + Base (A,T,G,C).\nA=T (2 H-bonds), G≡C (3 H-bonds).\n10 base pairs per turn (34 Å).\nMajor/minor grooves.\n\nSemi-conservative Replication (Meselson & Stahl):\nDNA helicase unwinds. DNA polymerase III adds dNTPs (5'→3').\nLeading strand (continuous), Lagging strand (Okazaki fragments).\nDNA ligase joins fragments.\n\nTranscription (DNA → RNA, Eukaryotes):\nRNA polymerase I (rRNA), II (mRNA), III (tRNA).\nPre-mRNA: Capping, Poly-A tail, Splicing (exons join, introns removed).\nTemplate strand (3'→5') vs Coding strand (5'→3').\n\nGenetic Code:\nTriplet (codon). 64 codons, 61 sense + 3 stop codons (UAA, UAG, UGA).\nStart codon: AUG (Methionine). Universal, degenerate, unambiguous.\n\nTranslation (mRNA → Protein, Ribosomes):\ntRNA (cloverleaf) has anticodon + amino acid.\nInitiation (AUG, Met), Elongation (peptide bonds by peptidyl transferase, rRNA), Termination (stop codon, release factors).\n\nRegulation (Lac Operon - Jacob & Monod):\nInducer (lactose) binds repressor → repressor releases operator → RNA polymerase transcribes structural genes (ZYA).\n\nHuman Genome Project: 2.5 billion bp, ~20,000-25,000 genes.\n\nDNA Fingerprinting: VNTR (variable number tandem repeats). Southern blotting.\n\nRNA World: Early life used RNA as genetic material + enzyme (ribozyme).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.6, Pg. 106",
+        "difficulty": "hard",
+        "tags": [
+            "dna",
+            "replication",
+            "transcription",
+            "translation"
+        ]
+    },
+    {
+        "id": "bio_ch29_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Evolution",
+        "chapterNum": 29,
+        "type": "concept",
+        "front": "Theories of evolution: Lamarck, Darwin, modern synthetic theory.",
+        "back": "Lamarckism (Lamark): Use & disuse + Inheritance of acquired characters. Example: Giraffe's long neck.\nRejected (Weismann's germplasm theory).\n\nDarwinism (Natural Selection):\n1. Overpopulation (struggle for existence)\n2. Variation (natural variation in traits)\n3. Survival of the fittest (advantageous traits survive)\n4. Descent with modification\n\nObjections: No explanation for origin of variation, no mechanism for inheritance.\n\nModern Synthetic Theory (Neo-Darwinism):\nEvolution = Genetic variation (mutation, recombination, gene flow) + Natural selection + Genetic drift + Hardy-Weinberg equilibrium.\n\nHardy-Weinberg Principle: p² + 2pq + q² = 1 (allele frequencies constant).\nFactors disrupting HW: Natural selection, Genetic drift, Gene flow, Mutation, Non-random mating.\n\nGenetic Drift: Random change in allele frequency (bottleneck effect, founder effect).\n\nEvidence for Evolution:\n- Fossil records (transitional forms: Archaeopteryx - reptile/bird)\n- Homologous organs (same structure, different function - forelimbs of vertebrates)\n- Analogous organs (different structure, similar function - wing of bird/butterfly)\n- Biochemical similarities (DNA/protein sequence)\n- Embryological (von Baer law, recapitulation theory: Haeckel)\n- Biogeography\n\nAdaptive Radiation: Darwin's finches (Galapagos), Marsupials (Australia).\n\nHuman Evolution: Dryopithecus → Ramapithecus → Australopithecus → Homo habilis → Homo erectus (Java/Beijing) → Homo sapiens neanderthalensis → Homo sapiens sapiens (Cro-Magnon).\n\nOrigin of Life: Miller-Urey experiment (amino acids from inorganic precursors).\nOparin-Haldane theory: Coacervates (protobionts).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.7, Pg. 134",
+        "difficulty": "medium",
+        "tags": [
+            "evolution",
+            "darwin",
+            "natural-selection",
+            "human-evolution"
+        ]
+    },
+    {
+        "id": "bio_ch30_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Human Health & Disease",
+        "chapterNum": 30,
+        "type": "concept",
+        "front": "Common diseases: Bacterial, viral, protozoan, fungal, helminthic.",
+        "back": "Bacterial:\n- Typhoid (Salmonella typhi): Widal test. Chronic fever, abdominal pain.\n- Pneumonia (Streptococcus pneumoniae/Haemophilus influenzae): Lungs infected, alveoli fill with fluid.\n- Plague (Yersinia pestis): Bubonic/pneumonic.\n- Cholera (Vibrio cholerae): Watery diarrhea.\n- TB (Mycobacterium tuberculosis): Lungs.\n- Tetanus (Clostridium tetani): Spores in soil, neurotoxin.\n- Diphtheria (Corynebacterium diphtheriae): Throat, pseudomembrane.\n\nViral:\n- Common cold (Rhinovirus)\n- Influenza (Orthomyxovirus): H1N1, H5N1\n- HIV (Retrovirus, RNA): Attacks helper T-cells (CD4⁺). AIDS.\n- Hepatitis B (DNA virus, Hepadnavirus): Liver, blood-borne.\n- Rabies (Rhabdovirus): Neurotropic, fatal.\n- Dengue (Flavivirus): Mosquito-borne (Aedes).\n- Polio (Picornavirus, Enterovirus)\n\nProtozoan:\n- Malaria (Plasmodium vivax/falciparum): Female Anopheles mosquito. Fever cycles, RBC lysis.\n- Amoebic dysentery (Entamoeba histolytica): Intestinal.\n- Sleeping sickness (Trypanosoma gambiense): Tsetse fly.\n- Kala-azar (Leishmania donovani): Sand fly.\n\nFungal: Ringworm (Microsporum, Trichophyton, Epidermophyton).\nHelminthic: Ascariasis (roundworm), Filariasis/Elephantiasis (Wuchereria bancrofti), Taeniasis (tapeworm).\n\nImmunity:\nInnate (non-specific): Barriers - Physical (skin), Physiological (pH), Cellular (phagocytes), Cytokine (interferons).\nAcquired (specific): Active (infection/vaccination) vs Passive (antibodies from mother/antisera).\n\nAntigen vs Antibody:\nAntigen: Triggers immune response.\nAntibody (Ig): B-cells produce. 5 types (IgG, IgA, IgM, IgE, IgD).\n\nVaccines: Attenuated/inactivated pathogens. BCG (TB), DPT, Polio (Sabin/Oral), MMR.\n\nAutoimmune: Rheumatoid arthritis, Lupus, Type 1 diabetes.\nAllergy: IgE mediated. Histamine (antihistamines).\n\nCancer: Benign vs Malignant (metastasis).\nOncogenes (ras, myc) & Tumor suppressor genes (p53, Rb - retinoblastoma).\nChemotherapy, Radiotherapy, Immunotherapy (α-interferon).\n\nDrugs: Opioids (morphine, heroin - opium poppy), Cannabinoids (marijuana, ganja - Cannabis), Coca alkaloids (cocaine - coca leaves).\nAddiction & Dependence.",
+        "ncertRef": "NCERT Class 12 Biology, Ch.8, Pg. 150",
+        "difficulty": "hard",
+        "tags": [
+            "diseases",
+            "immunity",
+            "vaccines",
+            "cancer"
+        ]
+    },
+    {
+        "id": "bio_ch31_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Microbes in Human Welfare",
+        "chapterNum": 31,
+        "type": "concept",
+        "front": "Microbes in household products, industrial products, sewage treatment, and biogas.",
+        "back": "Household:\n- Curd: Lactobacillus (acidifies milk).\n- Dosa/idli batter: Leuconostoc, Streptococcus.\n- Bread: Saccharomyces cerevisiae (yeast, CO₂ causes dough to rise).\n- Cheese: Swiss cheese (Propionibacterium, holes), Roquefort (Penicillium roqueforti).\n- Toddy: Natural fermentation of sap.\n\nIndustrial:\n- Alcoholic beverages: Yeast fermentation (wine → grapes, beer → barley, whiskey → grains).\n- Antibiotics: Penicillin (Fleming), Streptomycin (Waksman).\n- Organic acids: Acetic acid (Acetobacter), Citric acid (Aspergillus niger), Lactic acid (Lactobacillus).\n- Vitamins: B₁₂ (Pseudomonas), Riboflavin.\n- Enzymes: Lipase (detergents), Pectinase (fruit juice clarification), Streptokinase (clot buster).\n- Cyclosporin A (Trichoderma polysporum): Immunosuppressant.\n- Statins (Monascus purpureus): Cholesterol-lowering.\n\nSewage Treatment:\nPrimary: Sedimentation (physical).\nSecondary: Activated sludge (aerobic, bacteria degrade organic matter).\nMethane (biogas) from sludge.\n\nBiogas: Methanobacterium/Methanococcus (anaerobic). Cow dung (gobar) → methane + CO₂ + H₂.\n\nBiocontrol: Bacillus thuringiensis (Bt toxin), Trichoderma (biopesticide), Baculovirus (NPV).\n\nBiofertilizers: Rhizobium (N₂-fixing), Azospirillum/Azotobacter (free-living N₂ fixers), Mycorrhiza (fungal association, increases P uptake), Cyanobacteria (Anabaena, Nostoc).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.10, Pg. 184",
+        "difficulty": "medium",
+        "tags": [
+            "microbes",
+            "biogas",
+            "antibiotics",
+            "biofertilizers"
+        ]
+    },
+    {
+        "id": "bio_ch32_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Biotechnology: Principles & Processes",
+        "chapterNum": 32,
+        "type": "concept",
+        "front": "Tools of genetic engineering: restriction enzymes, vectors, competent cells.",
+        "back": "Restriction Enzymes (Molecular Scissors):\nCut DNA at specific palindromic sequences (recognition sites).\nProduce sticky ends (overhangs) or blunt ends.\nExample: EcoRI (E. coli, GAATTC), HindIII.\nNomenclature: Genus, species, strain, order.\n\nCloning Vectors:\nPlasmids (pBR322), Bacteriophages (λ phage), Cosmids, BACs, YACs.\nFeatures:\n- Origin of replication (ori): For replication.\n- Selectable marker: Antibiotic resistance (ampᴿ, tetᴿ).\n- Multiple cloning sites (MCS)/polylinker.\n- Small size, high copy number.\n\nCompetent Cell Preparation:\n- CaCl₂ treatment (heat shock, 42°C).\n- Electroporation (high voltage pulse).\n- Microinjection, Biolistics (gene gun), Liposome-mediated.\n\nRecombinant DNA Technology:\nIsolation of DNA → Restriction digestion → Ligation (DNA ligase) → Transformation into host → Selection → Expression.\n\nPCR (Polymerase Chain Reaction - Kary Mullis):\nDenaturation (94°C, dsDNA→ssDNA), Annealing (50-65°C, primers bind), Extension (72°C, Taq polymerase).\n30 cycles → 2³⁰ copies.\nUses: DNA fingerprinting, diagnostics, genetic engineering.\n\nGel Electrophoresis: Separate DNA fragments by size (agarose gel).\nEthidium bromide visualization under UV.\nSouthern blotting: Transfer to nitrocellulose membrane, probe hybridization.\n\nDNA sequencing: Sanger's dideoxy method (ddNTPs terminate chain).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.11, Pg. 196",
+        "difficulty": "hard",
+        "tags": [
+            "biotechnology",
+            "restriction-enzymes",
+            "pcr",
+            "vectors"
+        ]
+    },
+    {
+        "id": "bio_ch33_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Biotechnology & Its Applications",
+        "chapterNum": 33,
+        "type": "concept",
+        "front": "Applications: transgenic organisms, gene therapy, insulin, Bt cotton, RNAi.",
+        "back": "Transgenic Animals:\n- Rosie (cow): Human α-lactalbumin in milk.\n- Mice: Used to study cancer, gene function, vaccine testing.\n\nTransgenic Plants:\n- Bt Cotton: Bacillus thuringiensis toxin gene (cryIAc → bollworm resistance).\n- Bt Corn, Bt Rice (insect resistant).\n- Bt toxins: Cry proteins (cryIA, cryIIAb, cryIIIB) - specific to insects, harmless to mammals.\n- Flavr Savr tomato (delayed ripening - antisense technology).\n- Golden Rice: β-carotene (vitamin A) enriched. Uses genes from daffodil + bacteria.\n- RNAi (RNA interference): dsRNA silences specific mRNA (nematode resistance in plants).\n\nGene Therapy:\n- SCID (Severe Combined Immunodeficiency): Adenosine deaminase (ADA) deficiency.\n- First gene therapy: 1990, ex vivo (lymphocytes with functional ADA gene).\n- In vivo (direct delivery) vs Ex vivo (cells removed, modified, reinserted).\n\nHuman Insulin (Humulin):\n- Eli Lilly (1983). E. coli with human insulin A & B chains.\n- Proinsulin (A-B-C) → C-peptide removed to get active insulin.\n\nMolecular Diagnosis:\n- PCR: Detect HIV, Hepatitis.\n- ELISA: Antigen-antibody reaction.\n- DNA probes (RFLP, VNTR).\n\nEthical Issues: GMO safety, biopiracy (neem, turmeric, basmati patents), patenting life forms.\n\nBiopiracy: Illegal patenting of indigenous resources.\n\nGEAC (Genetic Engineering Appraisal Committee): Indian regulatory body.",
+        "ncertRef": "NCERT Class 12 Biology, Ch.12, Pg. 210",
+        "difficulty": "hard",
+        "tags": [
+            "biotech-applications",
+            "bt-cotton",
+            "gene-therapy",
+            "transgenic"
+        ]
+    },
+    {
+        "id": "bio_ch34_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Organisms & Populations",
+        "chapterNum": 34,
+        "type": "concept",
+        "front": "Ecology: organisms, abiotic factors, population attributes.",
+        "back": "Abiotic Factors:\nTemperature: Most important, determines enzyme activity, metabolism.\nWater: Aquatic/terrestrial adaptations.\nLight: Photosynthesis, photoperiodism.\nSoil: pH, nutrients, texture.\n\nResponses to environment:\nRegulate: Maintain constant internal conditions (endotherms).\nConform: Internal conditions match external (ectotherms, most plants).\nMigrate: Move to favorable conditions.\nSuspend: Dormancy (hibernation, aestivation, diapause in insects).\n\nPopulation Attributes:\nBirth rate (Natality), Death rate (Mortality), Immigration, Emigration.\nPopulation density (N): Number of individuals per unit area.\nAge distribution: Pre-reproductive, Reproductive, Post-reproductive.\nSex ratio.\n\nPopulation Growth:\nExponential: dN/dt = rN (J-shaped). r = intrinsic rate of increase.\nLogistic: dN/dt = rN(K-N)/K (S-shaped). K = carrying capacity.\n\nLife History: r-selection (many small offspring, early maturity, short-lived) vs K-selection (few large offspring, late maturity, long-lived, competitive).\n\nSpecies Interactions:\nPredation (+,-), Competition (-,-), Parasitism (+,-), Commensalism (+,0), Mutualism (+,+), Amensalism (-,0).\nCompetitive Exclusion Principle (Gause): Two species cannot coexist indefinitely on same limiting resource.\nResource partitioning: Niche differentiation reduces competition.\n\nParasitism: Ectoparasites (lice, ticks) vs Endoparasites (tapeworm, Plasmodium).\n\nMutualism: Lichen (fungus + algae), Mycorrhiza (fungus + roots), Pollination, Rhizobium.\n\nCommensalism: Barnacles on whale, Orchids on tree (epiphyte).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.13, Pg. 224",
+        "difficulty": "medium",
+        "tags": [
+            "ecology",
+            "population",
+            "species-interactions"
+        ]
+    },
+    {
+        "id": "bio_ch35_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Ecosystem",
+        "chapterNum": 35,
+        "type": "concept",
+        "front": "Ecosystem structure: productivity, decomposition, energy flow, pyramids.",
+        "back": "Ecosystem Components: Abiotic (non-living) + Biotic (producers, consumers, decomposers).\n\nProductivity:\nGPP (Gross Primary Productivity): Total photosynthesis by producers.\nNPP (Net Primary Productivity): GPP - Respiration = Available to consumers.\nSecondary Productivity: Rate of biomass assimilation by consumers.\n\nDecomposition:\nFragmentation → Leaching → Catabolism → Humification → Mineralization.\nRate depends on: Temperature, moisture, soil composition.\nDetritivores (earthworms, millipedes) speed up decomposition.\n\nEnergy Flow: 10% Law (Lindemann). Only 10% energy transferred to next trophic level.\nUnidirectional (Sun → heat).\n\nEcological Pyramids:\nPyramid of Number: Upright (grassland) or Inverted (tree→insects).\nPyramid of Biomass: Upright (forest) or Inverted (aquatic).\nPyramid of Energy: Always upright.\n\nFood Chain:\nGrazing (Grass → Deer → Lion) vs Detritus (Dead matter → Detritivore → Consumer).\n\nFood Web: Interconnected food chains, more stable.\n\nBiomagnification: DDT, Hg (mercury) concentration increases up the food chain.\n\nStanding Crop: Total biomass at a given time.\n\nEcological Succession:\nPrimary (bare rock → pioneer species → climax community) vs Secondary (after disturbance, soil present).\nHydrosere (water → forest) vs Lithosere (bare rock → forest).\nClimax community: Stable, self-perpetuating.\n\nPioneer species: Lichens (on rocks), Phytoplankton (in water).\n\nNutrient Cycling: Carbon (CO₂ → photosynthesis → respiration → CO₂) & Phosphorus (sedimentary cycle, slow).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.14, Pg. 240",
+        "difficulty": "hard",
+        "tags": [
+            "ecosystem",
+            "energy-flow",
+            "decomposition",
+            "pyramids"
+        ]
+    },
+    {
+        "id": "bio_ch36_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Biodiversity & Conservation",
+        "chapterNum": 36,
+        "type": "concept",
+        "front": "Biodiversity: levels, gradients, threats, and conservation methods.",
+        "back": "Levels: Genetic, Species, Ecological diversity.\n\nBiodiversity Hotspots: 25 globally, 4 in India (Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland).\nCriteria: High species richness + High endemism + Threatened (>1500 endemic vascular plants, >70% habitat lost).\n\nSpecies Diversity: Species richness (number) x Evenness (relative abundance).\n\nAlpha (local), Beta (between habitats), Gamma (regional) diversity.\n\nSpecies-Area Relationship: S = CA^z. z ≈ 0.1-0.2 (mainland), 0.6-1.0 (island).\n\nLatitudinal Gradient: Species diversity ↑ toward equator (more sunlight, more niches).\n\nIndia: 8% of world's species on 2.4% land area.\nMega-diversity country.\n\nThreats:\nHabitat loss (main cause), Poaching, Climate change, Pollution, Invasive species.\n\nIUCN Red List: Categories (Extinct → Extinct in Wild → Critically Endangered → Endangered → Vulnerable → Near Threatened → Least Concern).\n\nExtinct species: Dodo, Thylacine, Quagga.\nCritically Endangered: Asiatic cheetah (Extinct in India), Pink-headed duck, Great Indian bustard.\n\nEx-situ Conservation (off-site): Zoos, Botanical gardens, Gene banks, Seed banks, Cryopreservation.\n\nIn-situ Conservation (on-site):\nNational Parks: 106 (India). Example: Kaziranga (rhino), Jim Corbett (tiger).\nWildlife Sanctuaries: 565+.\nBiosphere Reserves: 18 (Nilgiri, Nanda Devi, Sundarbans).\nSacred groves: Protected by local communities.\n\nProject Tiger: 1973, Jim Corbett. 51 tiger reserves.\nProject Elephant: 1992.\n\nCBD (Convention on Biological Diversity): 1992, Rio Summit.\n\nWildlife Protection Act: 1972 (India).\n\nEndemism: Species found only in one region. Western Ghats, Madagascar.\n\nHotspots: Conservation International. 36 hotspots worldwide (2020).",
+        "ncertRef": "NCERT Class 12 Biology, Ch.15, Pg. 256",
+        "difficulty": "medium",
+        "tags": [
+            "biodiversity",
+            "hotspots",
+            "conservation",
+            "national-parks"
+        ]
+    },
+    {
+        "id": "bio_ch37_001",
+        "subject": "Biology",
+        "classNum": "12",
+        "chapter": "Environmental Issues",
+        "chapterNum": 37,
+        "type": "concept",
+        "front": "Pollution: air, water, soil, noise, and their control.",
+        "back": "Air Pollution:\nSources: Vehicles (CO, NOx, PM), Industry (SO₂, fly ash), Burning.\n\nGreenhouse Gases: CO₂, CH₄, N₂O, CFCs. Global warming.\nClimate change → Rising sea levels, extreme weather.\n\nOzone Depletion: CFCs → O₃ hole over Antarctica.\nOzone (O₃) in stratosphere blocks UV rays.\nMontreal Protocol (1987): Phase out CFCs.\n\nPhotochemical Smog: NOx + VOCs + sunlight → O₃, PAN, aldehydes. Eye irritation, breathing problems.\n\nParticulates: PM 2.5 & PM 10 (respirable, health hazard).\n\nControl: Electrostatic precipitator (fly ash), Scrubber (SO₂), Catalytic converter (CO, NOx in vehicles).\n\nEuro/Bharat Stage emission norms.\n\nWater Pollution:\nSources: Domestic sewage (BOD, COD), Industrial waste (heavy metals: Hg, Pb, Cd), Agricultural runoff (fertilizers: eutrophication).\n\nBOD: O₂ required by microbes to decompose organic matter. High BOD = more pollution.\nEutrophication: Excess nutrients (N, P) → algal bloom → O₂ depletion → fish death.\n\nBiochemical effects:\nMinamata disease (Hg poisoning, Japan).\nItai-itai disease (Cd poisoning).\n\nControl: Sewage treatment plant (primary + secondary).\n\nGanga Action Plan: 1985.\n\nNoise Pollution: >80 dB causes hearing loss. Control: Green mufflers (dense trees).\n\nSolid Waste:\nBiodegradable vs Non-biodegradable.\nReduce, Reuse, Recycle.\nLandfills, Composting, Incineration.\nE-waste (electronic waste, toxic metals).\n\nRadioactive Waste: Nuclear power plants → deep geological disposal.\n\nDefoliants: Agent Orange (Vietnam war, dioxin contaminant).\n\nCNG: Compressed Natural Gas (Delhi public transport). Less pollution.\n\nKyoto Protocol: 1997, reduce greenhouse gas emissions.\n\nCOP summits: Climate change negotiations.",
+        "ncertRef": "NCERT Class 12 Biology, Ch.16, Pg. 270",
+        "difficulty": "medium",
+        "tags": [
+            "pollution",
+            "global-warming",
+            "ozone",
+            "conservation"
+        ]
+    }
+]

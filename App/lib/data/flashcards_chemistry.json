@@ -1,0 +1,567 @@
+[
+    {
+        "id": "chm_ch1_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "chapterNum": 1,
+        "type": "concept",
+        "front": "Define mole, molar mass, and Avogadro's number.",
+        "back": "Mole: Amount of substance containing Avogadro's number (6.022×10²³) of particles.\nMolar Mass: Mass of 1 mole of substance (g/mol).\nAvogadro's Number: NA = 6.022×10²³ particles/mol.\n\nNumber of moles n = Given mass/Molar mass = N/NA = V/22.4 L (at STP).\n1 amu = 1.66×10⁻²⁴ g = 1/12 × mass of one C-12 atom.\n\nSTP: 273 K, 1 atm → 1 mole gas = 22.4 L.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.1, Pg. 4",
+        "difficulty": "easy",
+        "tags": [
+            "mole-concept",
+            "stoichiometry",
+            "fundamentals"
+        ]
+    },
+    {
+        "id": "chm_ch1_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Some Basic Concepts of Chemistry",
+        "chapterNum": 1,
+        "type": "formula",
+        "front": "Percentage composition, empirical formula, and molecular formula.",
+        "back": "% element = (Mass of element/Mass of compound) × 100\n\nEmpirical Formula: Simplest whole number ratio of atoms.\nMolecular Formula = (Empirical Formula)n\nn = Molecular Mass/Empirical Formula Mass\n\nMass % = (Mass of solute/Mass of solution) × 100\nMole fraction = moles of component/total moles\nMolarity (M) = moles of solute/volume in L\nMolality (m) = moles of solute/mass of solvent in kg\nppm = (Mass of solute/Mass of solution) × 10⁶",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.1, Pg. 9",
+        "difficulty": "medium",
+        "tags": [
+            "percentage-composition",
+            "empirical-formula",
+            "concentration"
+        ]
+    },
+    {
+        "id": "chm_ch2_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Structure of Atom",
+        "chapterNum": 2,
+        "type": "concept",
+        "front": "Bohr's model: postulates, limitations, and energy expressions.",
+        "back": "Postulates:\n1. Electrons revolve in fixed circular orbits (stationary states).\n2. Angular momentum is quantized: mvr = nh/2π.\n3. Energy emitted/absorbed when e⁻ jumps orbits: ΔE = hν.\n\nEnergy of nth orbit: En = -13.6/n² eV (for H atom)\nRadius: rn = 0.529 × n² Å\nVelocity: vn = 2.18×10⁶/n m/s\n\nLimitations:\n- Fails for multi-electron atoms.\n- Cannot explain fine structure, Zeeman effect.\n- Violates Heisenberg's Uncertainty Principle.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.2, Pg. 23",
+        "difficulty": "medium",
+        "tags": [
+            "bohr-model",
+            "atomic-structure"
+        ]
+    },
+    {
+        "id": "chm_ch2_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Structure of Atom",
+        "chapterNum": 2,
+        "type": "formula",
+        "front": "Quantum numbers: n, l, m, s — their allowed values and significance.",
+        "back": "Principal (n): 1,2,3... Shell (K,L,M,N). Energy & size.\nAzimuthal (l): 0 to n-1. Subshell (s,p,d,f). Shape & angular momentum.\nMagnetic (m): -l to +l (incl. 0). Orientation in space.\nSpin (s): +½ or -½. Electron spin direction.\n\nPauli's Exclusion: No two electrons can have same set of all 4 QNs.\nHund's Rule: Each orbital in subshell gets 1 e⁻ before pairing.\nAufbau Principle: Fill from lowest energy (n+l rule).\n\n(n+l) rule: Lower n+l fills first. If same n+l, lower n fills first.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.2, Pg. 35",
+        "difficulty": "medium",
+        "tags": [
+            "quantum-numbers",
+            "electronic-configuration"
+        ]
+    },
+    {
+        "id": "chm_ch2_003",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Structure of Atom",
+        "chapterNum": 2,
+        "type": "formula",
+        "front": "de Broglie wavelength and Heisenberg's Uncertainty Principle.",
+        "back": "de Broglie: λ = h/mv = h/p\nFor e⁻ accelerated through V volts: λ = 12.27/√V Å\n\nHeisenberg's Uncertainty Principle:\nΔx·Δp ≥ h/4π (or ħ/2)\nΔE·Δt ≥ h/4π\n\nIt's impossible to simultaneously determine both position and momentum of a microscopic particle with absolute precision.\n\nPhotoelectric Effect: hν = hν₀ + ½mv²\nWork function: φ₀ = hν₀\nThreshold frequency: ν₀ = φ₀/h",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.2, Pg. 30",
+        "difficulty": "hard",
+        "tags": [
+            "de-broglie",
+            "uncertainty-principle",
+            "quantum-mechanics"
+        ]
+    },
+    {
+        "id": "chm_ch3_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Classification of Elements & Periodicity",
+        "chapterNum": 3,
+        "type": "concept",
+        "front": "State Mendeleev's and Modern Periodic Law. Write periodic trends.",
+        "back": "Mendeleev's Law: Properties of elements are periodic function of their atomic masses.\nModern Law: Properties are periodic function of their atomic numbers.\n\nPeriodic Trends:\nAtomic Radius: ↓ across period, ↑ down group\nIonization Energy: ↑ across period, ↓ down group\nElectronegativity: ↑ across period, ↓ down group\nElectron Gain Enthalpy: More negative across period, less negative down group (exceptions at stable configurations).\n\ns-block: ns¹⁻² (alkali + alkaline earth)\np-block: np¹⁻⁶\nd-block: (n-1)d¹⁻¹⁰ ns¹⁻² (transition elements)\nf-block: (n-2)f¹⁻¹⁴ (inner transition, lanthanides/actinides)",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.3, Pg. 48",
+        "difficulty": "medium",
+        "tags": [
+            "periodic-table",
+            "periodicity"
+        ]
+    },
+    {
+        "id": "chm_ch4_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Chemical Bonding & Molecular Structure",
+        "chapterNum": 4,
+        "type": "concept",
+        "front": "Types of chemical bonds: ionic, covalent, coordinate, metallic.",
+        "back": "Ionic Bond: Complete transfer of e⁻ (electrovalent). High m.p., soluble in water, conduct electricity in solution.\nCovalent Bond: Sharing of e⁻ pairs. Low m.p., insoluble, non-conductor.\nCoordinate Bond: Both shared e⁻ come from one atom only (dative bond).\nMetallic Bond: Electrostatic attraction between metal cations and delocalised e⁻ sea.\n\nFajan's Rules for ionic/covalent character:\n- Small cation + large anion → more covalent\n- Higher charge → more covalent\n\nPolarisability: Tendency of anion to get distorted.\nPolarising Power: Tendency of cation to distort anion.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.4, Pg. 70",
+        "difficulty": "medium",
+        "tags": [
+            "chemical-bonding",
+            "ionic",
+            "covalent"
+        ]
+    },
+    {
+        "id": "chm_ch4_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Chemical Bonding & Molecular Structure",
+        "chapterNum": 4,
+        "type": "formula",
+        "front": "VSEPR theory and molecular shapes with examples.",
+        "back": "VSEPR: Electron pairs (bonded + lone) arrange to minimize repulsion.\nLP-LP > LP-BP > BP-BP repulsion.\n\nShapes:\n2 BP → Linear (BeCl₂, CO₂) 180°\n3 BP → Trigonal planar (BF₃) 120°\n4 BP → Tetrahedral (CH₄) 109.5°\n3 BP + 1 LP → Pyramidal (NH₃) 107°\n2 BP + 2 LP → Bent/V-shape (H₂O) 104.5°\n5 BP → Trigonal bipyramidal (PCl₅)\n6 BP → Octahedral (SF₆)\n\nHybridization: sp (linear), sp² (trigonal), sp³ (tetrahedral), sp³d (TBP), sp³d² (octahedral)",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.4, Pg. 81",
+        "difficulty": "medium",
+        "tags": [
+            "vsepr",
+            "molecular-geometry",
+            "hybridization"
+        ]
+    },
+    {
+        "id": "chm_ch5_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Thermodynamics",
+        "chapterNum": 5,
+        "type": "concept",
+        "front": "State First Law of Thermodynamics. Write ΔU = q + w sign conventions.",
+        "back": "First Law: Energy can neither be created nor destroyed; ΔU = q + w.\n\nSign Conventions:\nq > 0: Heat absorbed by system (endothermic)\nq < 0: Heat released by system (exothermic)\nw > 0: Work done on system\nw < 0: Work done by system\n\nEnthalpy: H = U + PV\nΔH = ΔU + PΔV (at constant P)\nΔH = qp (heat at constant pressure)\nΔU = qv (heat at constant volume)\n\nRelation: ΔH = ΔU + ΔngRT\n\nStandard enthalpy of formation (ΔfH°): Heat change when 1 mole of compound is formed from its elements in standard states.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.5, Pg. 100",
+        "difficulty": "medium",
+        "tags": [
+            "thermodynamics",
+            "enthalpy",
+            "first-law"
+        ]
+    },
+    {
+        "id": "chm_ch5_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Thermodynamics",
+        "chapterNum": 5,
+        "type": "formula",
+        "front": "Hess's Law, bond enthalpy, and spontaneity (Gibbs free energy).",
+        "back": "Hess's Law: ΔH for a reaction is same whether it occurs in one step or multiple steps (path independent).\n\nBond Enthalpy: Energy required to break 1 mole of bonds in gaseous state.\nΔrH = Σ(bond enthalpies of reactants) - Σ(bond enthalpies of products)\n\nSpontaneity:\nΔG = ΔH - TΔS\nΔG < 0: Spontaneous\nΔG = 0: Equilibrium\nΔG > 0: Non-spontaneous\n\nΔG° = -RT ln K = -2.303 RT log K\nK = equilibrium constant\n\nAt equilibrium: ΔG = 0 → ΔH = TΔS",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.5, Pg. 113",
+        "difficulty": "hard",
+        "tags": [
+            "hess-law",
+            "gibbs-free-energy",
+            "spontaneity"
+        ]
+    },
+    {
+        "id": "chm_ch6_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Equilibrium",
+        "chapterNum": 6,
+        "type": "formula",
+        "front": "Law of chemical equilibrium, Kc, Kp, and their relation.",
+        "back": "For aA + bB ⇌ cC + dD:\nKc = [C]^c[D]^d / [A]^a[B]^b\nKp = (PC)^c(PD)^d / (PA)^a(PB)^b\n\nRelation: Kp = Kc (RT)^Δng\nΔng = (c+d) - (a+b) = moles of gaseous products - gaseous reactants\n\nIf K > 1: Products favored at equilibrium\nIf K < 1: Reactants favored at equilibrium\nIf K = 1: Equal concentrations\n\nReaction Quotient Q:\nQ > K → reverse direction\nQ < K → forward direction\nQ = K → at equilibrium\n\nLe Chatelier's Principle: System shifts to counteract any change in concentration, pressure, or temperature.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.6, Pg. 128",
+        "difficulty": "medium",
+        "tags": [
+            "equilibrium",
+            "kc",
+            "kp",
+            "le-chatelier"
+        ]
+    },
+    {
+        "id": "chm_ch6_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Equilibrium",
+        "chapterNum": 6,
+        "type": "formula",
+        "front": "Ionic equilibrium: pH, pOH, Ka, Kb, buffer solutions.",
+        "back": "Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ M² (at 25°C)\npH = -log[H⁺], pOH = -log[OH⁻]\npH + pOH = 14\n\nAcid Dissociation: Ka = [H⁺][A⁻]/[HA]\npKa = -log Ka\nBase Dissociation: Kb = [BH⁺][OH⁻]/[B]\npKb = -log Kb\nKa × Kb = Kw (for conjugate pairs)\n\nBuffer Solution:\nHenderson-Hasselbalch:\npH = pKa + log([salt]/[acid])\npOH = pKb + log([salt]/[base])\n\nSalt Hydrolysis:\npH of salt of weak acid + strong base: pH = ½pKw + ½pKa + ½log C\n\nSolubility Product: Ksp = [A⁺]ᵃ[B⁻]ᵇ\nPrecipitation occurs when ionic product > Ksp.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.6, Pg. 142",
+        "difficulty": "hard",
+        "tags": [
+            "ionic-equilibrium",
+            "ph",
+            "buffer",
+            "ksp"
+        ]
+    },
+    {
+        "id": "chm_ch7_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Redox Reactions",
+        "chapterNum": 7,
+        "type": "concept",
+        "front": "Oxidation number rules and balancing redox reactions.",
+        "back": "Rules for ON:\n1. Free element: ON = 0\n2. Monatomic ion: ON = charge\n3. H: +1 (except metal hydrides: -1)\n4. O: -2 (except peroxides: -1, OF₂: +2)\n5. F: always -1\n6. Sum of ON in neutral compound = 0\n7. Sum of ON in polyatomic ion = charge\n\nBalancing Redox (Half-Reaction Method):\n1. Write oxidation and reduction half-reactions\n2. Balance atoms (except O, H)\n3. Balance O with H₂O, H with H⁺ (acidic), or OH⁻ (basic)\n4. Balance charge with e⁻\n5. Make e⁻ lost = e⁻ gained, add half-reactions\n\nOxidizing agent: gets reduced (ON ↓)\nReducing agent: gets oxidized (ON ↑)\n\nDisproportionation: Same element undergoes both oxidation and reduction.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.7, Pg. 160",
+        "difficulty": "medium",
+        "tags": [
+            "redox",
+            "oxidation-number"
+        ]
+    },
+    {
+        "id": "chm_ch8_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Organic Chemistry: Basic Principles",
+        "chapterNum": 8,
+        "type": "concept",
+        "front": "IUPAC nomenclature rules for organic compounds.",
+        "back": "Steps:\n1. Select longest carbon chain (parent chain).\n2. Number from end nearest substituent/lowest locant.\n3. Identify and name substituents (alkyl, halo, functional groups).\n4. Write: locant-substituent prefix-parent-suffix (primary suffix for saturation, secondary for functional group).\n\nPriority order for functional groups (higher = main suffix):\n-COOH > -SO₃H > -COOR > -COX > -CONH₂ > -CN > -CHO > -CO- > -OH > -NH₂ > alkene/alkyne > alkyl/halo\n\nFor alkenes/alkynes: Number from end nearest multiple bond.\n\nCommon vs IUPAC names:\nHCHO: Formaldehyde (common) = Methanal (IUPAC)\nCH₃COOH: Acetic acid = Ethanoic acid\nCH₃COCH₃: Acetone = Propanone",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.8, Pg. 178",
+        "difficulty": "medium",
+        "tags": [
+            "iupac",
+            "nomenclature",
+            "organic"
+        ]
+    },
+    {
+        "id": "chm_ch8_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Organic Chemistry: Basic Principles",
+        "chapterNum": 8,
+        "type": "concept",
+        "front": "Types of organic reactions: substitution, addition, elimination, rearrangement.",
+        "back": "Substitution: Atom/group replaced by another.\n- SN1: Unimolecular, carbocation intermediate, racemization, follows 1st order.\n- SN2: Bimolecular, one step, inversion, follows 2nd order.\n\nAddition: Unsaturated → saturated (π bond breaks).\n- Electrophilic: Alkene + HX, X₂, H₂O (Markovnikov's rule).\n- Anti-Markovnikov: With HBr + peroxide (free radical).\n\nElimination: Saturated → unsaturated (β-elimination).\n- E1: Carbocation, follows 1st order.\n- E2: One step, follows 2nd order.\n\nRearrangement: Carbon skeleton changes (carbocation rearrangement).\n\nMarkovnikov's Rule: H⁺ adds to C with more H (in asymmetric alkene).\nSaytzeff's Rule: In elimination, more substituted alkene is major product (more stable alkene).",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.8, Pg. 192",
+        "difficulty": "hard",
+        "tags": [
+            "organic-reactions",
+            "mechanisms"
+        ]
+    },
+    {
+        "id": "chm_ch9_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Hydrocarbons",
+        "chapterNum": 9,
+        "type": "concept",
+        "front": "Alkanes, alkenes, alkynes: preparation and chemical properties.",
+        "back": "Alkanes (CₙH₂ₙ₊₂):\nPrep: Hydrogenation, Wurtz reaction (2RX + 2Na → RR + 2NaX), Decarboxylation.\nReactions: Halogenation (free radical), combustion, cracking.\n\nAlkenes (CₙH₂ₙ):\nPrep: Dehydration of alcohol, dehydrohalogenation, Kolbe's electrolysis.\nReactions: Electrophilic addition (HX, X₂, H₂O), ozonolysis, polymerization.\n\nAlkynes (CₙH₂ₙ₋₂):\nPrep: Dehydrohalogenation of vicinal dihalides, CaC₂ + H₂O → C₂H₂.\nReactions: Addition (H₂, X₂, HX), acidic H (replace with Ag/Cu), hydration to carbonyl.\n\nTest for unsaturation: Br₂ water (decolorizes) + Baeyer's reagent (KMnO₄, decolorizes).\nTest for alkyne (terminal): AgNO₃/alc. NH₃ → white ppt (Ag-acetylide).",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.9, Pg. 210",
+        "difficulty": "hard",
+        "tags": [
+            "hydrocarbons",
+            "alkanes",
+            "alkenes",
+            "alkynes"
+        ]
+    },
+    {
+        "id": "chm_ch10_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "s-Block Elements",
+        "chapterNum": 10,
+        "type": "concept",
+        "front": "Alkali metals (Group 1): trends and important reactions.",
+        "back": "General: ns¹, electropositive, low IE, +1 oxidation state.\n\nTrends (↓ group):\n- Atomic radius ↑, IE ↓, EN ↓\n- Density ↑, m.p. ↓ (except Ga)\n- Reactivity ↑ (with H₂O, O₂, halogens)\n\nReactions:\n2M + 2H₂O → 2MOH + H₂↑\n4Li + O₂ → 2Li₂O (oxide)\n2Na + O₂ → Na₂O₂ (peroxide)\nK + O₂ → KO₂ (superoxide)\n2Na + 2NH₃(l) → 2NaNH₂ + H₂ (sodamide)\n\nFlame colors: Li (crimson), Na (golden yellow), K (lilac/pale violet), Rb (red-violet), Cs (blue).\n\nAnomalous Li: Small size, high polarizing power → forms Li₂O (other: peroxides/superoxides), LiOH is weaker base.\n\nImportant compounds:\nNaOH (caustic soda), Na₂CO₃ (washing soda), NaHCO₃ (baking soda), NaCl (common salt).",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.10, Pg. 238",
+        "difficulty": "medium",
+        "tags": [
+            "s-block",
+            "alkali-metals"
+        ]
+    },
+    {
+        "id": "chm_ch10_002",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "s-Block Elements",
+        "chapterNum": 10,
+        "type": "concept",
+        "front": "Alkaline earth metals (Group 2): trends and important compounds.",
+        "back": "General: ns², +2 oxidation state, harder than alkali metals.\n\nTrends (↓ group):\n- Atomic radius ↑, IE ↓ (higher than Group 1)\n- Reactivity increases (but less reactive than alkali metals)\n- Solubility of hydroxides ↑, sulfates ↓\n\nReactions:\nM + 2H₂O → M(OH)₂ + H₂ (Be doesn't react with water)\n2Mg + O₂ → 2MgO (brilliant white flame)\nCa + 2H₂O → Ca(OH)₂ + H₂ (lime water)\n\nFlame colors: Ca (brick red), Sr (crimson red), Ba (apple green), Ra (carmine red).\n\nImportant compounds:\nCaO: Quicklime, Ca(OH)₂: Slaked lime (lime water)\nCaCO₃: Limestone, MgSO₄·7H₂O: Epsom salt\nCaSO₄·½H₂O: Plaster of Paris\nBaSO₄: Barytes (used in X-ray, insoluble)\n\nAnomalous Be: No reaction with water, amphoteric oxide, forms covalent compounds.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.10, Pg. 248",
+        "difficulty": "medium",
+        "tags": [
+            "s-block",
+            "alkaline-earth-metals"
+        ]
+    },
+    {
+        "id": "chm_ch11_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "p-Block Elements",
+        "chapterNum": 11,
+        "type": "concept",
+        "front": "Group 13 (Boron Family): Trends and compounds.",
+        "back": "General: ns²np¹, +3 oxidation state (Tl shows +1 stable, inert pair effect).\n\nTrends (↓ group):\n- Atomic radius ↑\n- IE ↓, but unusually high for B due to small size.\n- m.p. ↓ (B very high, rest low)\n\nBoron: Metalloid, electron deficient (forms electron deficient compounds like BF₃, B₂H₆).\nBorax: Na₂B₄O₇·10H₂O → used for Borax bead test.\nDiborane (B₂H₆): Banana bonds, 3c-2e bonds (B-H-B bridges).\n\nReactions:\n2Al + 6HCl → 2AlCl₃ + 3H₂\n2Al + 2NaOH + 6H₂O → 2Na[Al(OH)₄] + 3H₂ (amphoteric)\n\nImportant:\nAlCl₃: Lewis acid, used in Friedel-Crafts reaction.\nBoron: Used in nuclear reactors (B₄C), borosilicate glass (Pyrex).\nAlum: K₂SO₄·Al₂(SO₄)₃·24H₂O.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.11, Pg. 260",
+        "difficulty": "hard",
+        "tags": [
+            "p-block",
+            "boron-family"
+        ]
+    },
+    {
+        "id": "chm_ch12_001",
+        "subject": "Chemistry",
+        "classNum": "11",
+        "chapter": "Organic Chemistry: Some Basic Principles",
+        "chapterNum": 12,
+        "type": "concept",
+        "front": "Electromeric, inductive, resonance, and hyperconjugation effects.",
+        "back": "Inductive Effect (I): σ-bond polarization through C-C chain.\n-I: F, Cl, Br, I, OH, NH₂, CN, NO₂, COOH\n+I: Alkyl groups (CH₃-, C₂H₅-)\n\nElectromeric Effect (E): Complete transfer of π electrons.\n+E: C=C, C=O (when attacked by electrophile)\n-E: C=C, C=O (when attacked by nucleophile)\n\nResonance: Delocalization of π electrons through conjugated system.\nConditions: Planar, parallel p-orbitals, conjugated.\nResonance energy = Energy of most stable contributing structure - Actual energy.\nMore R.E. → more stable molecule.\n\nHyperconjugation: No-bond resonance involving σ(C-H) → π*.\nMore α-H → more hyperconjugation → more stable alkene/carbocation.\nStability: 3° carbocation > 2° > 1° > CH₃⁺ (due to hyperconjugation + inductive).\n\nSteric Inhibition of Resonance (SIR): ortho-substitution prevents coplanarity.",
+        "ncertRef": "NCERT Class 11 Chemistry, Ch.12, Pg. 276",
+        "difficulty": "hard",
+        "tags": [
+            "electronic-effects",
+            "resonance",
+            "organic-chemistry"
+        ]
+    },
+    {
+        "id": "chm_ch13_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Solutions",
+        "chapterNum": 13,
+        "type": "formula",
+        "front": "Raoult's Law, ideal and non-ideal solutions, azeotropes.",
+        "back": "Raoult's Law: For a solution, partial pressure = mole fraction × vapor pressure of pure component.\nPA = XA·PA°, PB = XB·PB°\n\nIdeal Solution: ΔHmix = 0, ΔVmix = 0. Follows Raoult's law.\nExamples: Benzene+Toluene, Hexane+Heptane.\n\nNon-ideal (Positive deviation): PA > XA·PA° → ΔHmix > 0, ΔVmix > 0.\nExample: Ethanol+H₂O, Acetone+CS₂.\n\nNon-ideal (Negative deviation): PA < XA·PA° → ΔHmix < 0, ΔVmix < 0.\nExample: Acetone+Chloroform, HNO₃+H₂O.\n\nAzeotrope: Constant boiling mixture. Cannot be separated by distillation.\nMinimum boiling azeotrope (positive deviation): Ethanol+H₂O (95.6%, 78.1°C).\nMaximum boiling azeotrope (negative deviation): HNO₃+H₂O (68%, 120.5°C).",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.1, Pg. 4",
+        "difficulty": "medium",
+        "tags": [
+            "solutions",
+            "raoult-law",
+            "azeotropes"
+        ]
+    },
+    {
+        "id": "chm_ch13_002",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Solutions",
+        "chapterNum": 13,
+        "type": "formula",
+        "front": "Colligative properties: Relative lowering of VP, elevation of BP, depression of FP, osmotic pressure.",
+        "back": "Relative Lowering of Vapor Pressure:\nΔP/P° = Xsolute = nsolute/(nsolute + nsolvent)\n\nElevation of Boiling Point:\nΔTb = Kb × m\nKb = RTb²/1000Lv (molal elevation constant)\n\nDepression of Freezing Point:\nΔTf = Kf × m\nKf = RTf²/1000Lf\n\nOsmotic Pressure:\nπ = iCRT (for electrolytes)\nπ = CRT (for non-electrolytes)\n\nVan't Hoff Factor: i = observed colligative property/theoretical value\ni = 1 + α(n-1) for dissociation (α = degree of dissociation)\ni = 1 - α for association\n\nFor electrolytes: ΔTf = iKfm\n\nReverse osmosis: Applied pressure > π → pure solvent from solution.\nUsed in water purification, desalination.",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.1, Pg. 18",
+        "difficulty": "hard",
+        "tags": [
+            "colligative-properties",
+            "osmotic-pressure",
+            "van't-hoff"
+        ]
+    },
+    {
+        "id": "chm_ch14_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Electrochemistry",
+        "chapterNum": 14,
+        "type": "formula",
+        "front": "Nernst equation, standard electrode potential, and electrochemical series.",
+        "back": "Nernst Equation:\nEcell = E°cell - (RT/nF) ln Q\nAt 25°C: Ecell = E°cell - (0.0591/n) log Q\n\nFor half-cell: Mⁿ⁺/M:\nE = E° - (0.0591/n) log(1/[Mⁿ⁺])\n\nElectrochemical Series (Standard Reduction Potentials):\n↓ E° (reduction potential):\nF₂/F⁻ = +2.87 V (strongest oxidizing agent)\nLi⁺/Li = -3.04 V (strongest reducing agent)\n\nEMF of cell:\nE°cell = E°cathode - E°anode (reduction potentials)\nΔG° = -nFE°cell\nΔG° = -RT ln K\n\nFaraday's Laws:\n1st: Mass deposited ∝ charge passed (w = ZIt)\n2nd: w₁/w₂ = E₁/E₂ (E = equivalent weight)\n1 Faraday = 96485 C/mol = charge on 1 mole of e⁻\n\nConductivity: κ = 1/ρ (ρ = resistivity)\nMolar conductivity: Λm = κ/C\nΛm = Λm° - A√C (Kohlrausch's law)\n\nKohlrausch's Law: Λm° = λ°(cation) + λ°(anion)",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.2, Pg. 38",
+        "difficulty": "hard",
+        "tags": [
+            "electrochemistry",
+            "nernst",
+            "faraday"
+        ]
+    },
+    {
+        "id": "chm_ch15_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Chemical Kinetics",
+        "chapterNum": 15,
+        "type": "formula",
+        "front": "Rate laws, order of reaction, integrated rate equations.",
+        "back": "Rate = -d[R]/dt = k[R]ⁿ\n\nZero Order: [R] = -kt + [R]₀. t½ = [R]₀/2k. Units: M/s\n\nFirst Order:\n[R] = [R]₀e⁻ᵏᵗ\nk = (2.303/t) log([R]₀/[R])\nt½ = 0.693/k (independent of initial concentration!)\nUnits: s⁻¹\n\nSecond Order:\n1/[R] = 1/[R]₀ + kt\nt½ = 1/k[R]₀\nUnits: M⁻¹s⁻¹\n\nArrhenius Equation:\nk = Ae⁻ᴱᵃ/ᴿᵀ\nlog k = log A - Ea/(2.303 RT)\nlog(k₂/k₁) = (Ea/2.303R)(1/T₁ - 1/T₂)\n\nMolecularity: Number of molecules colliding in elementary step.\nOrder vs Molecularity: Order can be fractional/zero/negative; molecularity is always whole number.\n\nPseudo-first-order: When one reactant is in large excess (e.g., hydrolysis of ester).",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.3, Pg. 62",
+        "difficulty": "medium",
+        "tags": [
+            "chemical-kinetics",
+            "rate-law",
+            "arrhenius"
+        ]
+    },
+    {
+        "id": "chm_ch16_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "d- and f-Block Elements",
+        "chapterNum": 16,
+        "type": "concept",
+        "front": "Transition elements: properties and trends (d-block).",
+        "back": "General: (n-1)d¹⁻¹⁰ns¹⁻²; variable oxidation states; form colored compounds.\n\nTrends:\n- Atomic size: decreases across period (poor shielding of d e⁻).\n- IE: increases across.\n- Density: high, increases across.\n- m.p./b.p.: high due to strong metallic bonding (unpaired d e⁻).\n\nVariable OS:\nMn: +2 to +7 (maximum = +7)\nCr: +3, +6 most stable.\nFe: +2, +3 most common.\nCu: +1, +2.\nHighest OS corresponds to group number (Sc+3, Ti+4, V+5, Cr+6, Mn+7).\n\nColor: Due to d-d transitions (unpaired e⁻ absorb visible light).\nZn²⁺, Sc³⁺, Ti⁴⁺ are colorless (d⁰ or d¹⁰).\n\nMagnetic: Paramagnetic (unpaired e⁻), Diamagnetic (all paired).\n\nCatalytic: Fe (Haber), V₂O₅ (Contact), Ni (hydrogenation), Pt/Pd (hydrogenation).\n\nK₂Cr₂O₇ (Potassium dichromate): Orange, strong oxidizing agent in acidic medium.\nKMnO₄ (Potassium permanganate): Purple, strong oxidizing agent, self-indicator.\n\nLanthanoid Contraction: Decrease in size from Ce to Lu due to poor shielding of 4f e⁻.\nConsequences: Similar properties of post-lanthanide elements (Zr & Hf, Nb & Ta).",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.4, Pg. 86",
+        "difficulty": "hard",
+        "tags": [
+            "d-block",
+            "transition-elements"
+        ]
+    },
+    {
+        "id": "chm_ch17_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Coordination Compounds",
+        "chapterNum": 17,
+        "type": "concept",
+        "front": "Werner's theory, IUPAC nomenclature, and isomerism in coordination compounds.",
+        "back": "Werner's Theory: Metals have primary (ionizable) and secondary (non-ionizable) valencies.\n\nIUPAC Naming:\n[Co(NH₃)₆]Cl₃ → Hexaamminecobalt(III) chloride\nLigand order: alphabetically (ignoring prefixes di-, tri-).\n\nTypes of Ligands:\nMonodentate: NH₃, H₂O, Cl⁻, CN⁻, CO, NO₂⁻, SCN⁻\nBidentate: en (ethylenediamine), oxalate (C₂O₄²⁻)\nPolydentate: EDTA (hexadentate)\n\nChelation: Ligand binds through 2+ donor atoms → more stable (chelate effect).\n\nIsomerism:\n1. Stereoisomerism:\n   • Geometrical (cis-trans): Square planar [Pt(NH₃)₂Cl₂], Octahedral [Co(NH₃)₄Cl₂]⁺\n   • Optical: Non-superimposable mirror images.\n\n2. Structural Isomerism:\n   • Ionization: [Co(NH₃)₅Br]SO₄ vs [Co(NH₃)₅SO₄]Br\n   • Linkage: NO₂⁻ (nitro) vs ONO⁻ (nitrito)\n   • Coordination: [Co(NH₃)₆][Cr(CN)₆] vs [Cr(NH₃)₆][Co(CN)₆]",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.5, Pg. 108",
+        "difficulty": "hard",
+        "tags": [
+            "coordination-compounds",
+            "iupac",
+            "isomerism"
+        ]
+    },
+    {
+        "id": "chm_ch17_002",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Coordination Compounds",
+        "chapterNum": 17,
+        "type": "concept",
+        "front": "Crystal Field Theory (CFT) and Valence Bond Theory (VBT).",
+        "back": "VBT (Pauling): Metal-ligand bond through donation of lone pair → hybrid orbitals.\nInner orbital complexes: (n-1)d²sp³ (low spin, strong field ligands).\nOuter orbital complexes: ns np³ nd² (high spin, weak field ligands).\n\nCFT: Splitting of d-orbitals in presence of ligands.\n\nOctahedral: Δ₀ = 10 Dq. eg (dx²-y², dz²) higher, t2g (dxy, dyz, dzx) lower.\nTetrahedral: Δt = 4/9 Δ₀ (smaller splitting). e lower, t₂ higher.\nSquare planar: Large splitting → dx²-y² highest.\n\nStrong field ligands (CN⁻, CO, NH₃): Large Δ, low spin, pairing occurs.\nWeak field ligands (Cl⁻, H₂O, F⁻): Small Δ, high spin.\n\nSpectrochemical Series: I⁻ < Br⁻ < Cl⁻ < F⁻ < OH⁻ < H₂O < NH₃ < en < NO₂⁻ < CN⁻ < CO\n(weak → strong field ligands)\n\nColor: Due to d-d transitions (Δ = hν).\n\nMagnetic moment: μ = √(n(n+2)) BM (n = unpaired e⁻)."
+    },
+    {
+        "id": "chm_ch18_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Haloalkanes & Haloarenes",
+        "chapterNum": 18,
+        "type": "concept",
+        "front": "SN1 vs SN2 reactions, elimination vs substitution, Saytzeff rule.",
+        "back": "SN1: Unimolecular, 2 steps (polar protic solvent), carbocation intermediate, racemization, 3°>2°>1° alkyl.\nSN2: Bimolecular, 1 step (polar aprotic solvent), backside attack, inversion, 1°>2°>3°.\n\nNucleophilicity: In polar protic solvents: I⁻ > Br⁻ > Cl⁻ > F⁻ (size matters).\nIn polar aprotic: F⁻ > Cl⁻ > Br⁻ > I⁻ (charge density).\n\nElimination: E1 (carbocation, 3° favored) vs E2 (one step, requires β-H).\nSaytzeff Rule: More substituted alkene is major product (more stable).\nHoffmann Elimination: Less substituted alkene (bulky base, e.g., t-BuOK).\n\nFactors favoring SN2 vs E2:\n- Strong nucleophile (OH⁻, RO⁻) → SN2 (if 1°) or E2 (if 3°)\n- Bulky base (t-BuOK) → E2 (elimination)\n- High temperature → E2 favored\n\nHaloarenes: Less reactive than haloalkanes due to resonance stabilization.\nElectrophilic substitution: Ortho/para directing (halogens are o/p directors, but deactivating).\n\nGrignard Reagent: R-Mg-X (with dry ether). Reacts with H₂O, CO₂, carbonyl compounds.",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.6, Pg. 134",
+        "difficulty": "hard",
+        "tags": [
+            "haloalkanes",
+            "sn1-sn2",
+            "e1-e2"
+        ]
+    },
+    {
+        "id": "chm_ch19_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Alcohols, Phenols & Ethers",
+        "chapterNum": 19,
+        "type": "concept",
+        "front": "Preparation and properties of alcohols, phenols, and ethers.",
+        "back": "Alcohols (R-OH):\nPrep: Hydration of alkene, reduction of carbonyl, Grignard + carbonyl.\nReactions: Dehydration (E1/E2), oxidation (1°→aldehyde→acid, 2°→ketone, 3°→no oxidation), Lucas test (ZnCl₂/HCl, turbidity: 3° fastest).\n\nPhenols:\nAcidic: C₆H₅OH (pKa≈10) more acidic than alcohols (pKa≈16) but less than carboxylic acids.\nPrep: Cumene process, from diazonium salts.\nReactions: Electrophilic substitution (OH is o/p director, activating), Kolbe's reaction (salicylic acid), Reimer-Tiemann (o-hydroxybenzaldehyde).\n\nEthers (R-O-R'):\nWilliamson's Synthesis: R-O⁻Na⁺ + R'X → R-O-R' + NaX (SN2).\nCleavage: HI → RI + ROH (SN1/2).\n\nTest: Ceric ammonium nitrate → red color for alcohols. FeCl₃ → violet color for phenol.",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.7, Pg. 158",
+        "difficulty": "hard",
+        "tags": [
+            "alcohols",
+            "phenols",
+            "ethers"
+        ]
+    },
+    {
+        "id": "chm_ch20_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Aldehydes, Ketones & Carboxylic Acids",
+        "chapterNum": 20,
+        "type": "concept",
+        "front": "Nucleophilic addition reactions of aldehydes and ketones.",
+        "back": "Carbonyl group (C=O): Polar (δ+ C, δ- O). Aldehydes more reactive than ketones (steric + electronic).\n\nNucleophilic Addition:\n1. HCN → Cyanohydrin (used for α-hydroxy acid synthesis).\n2. NaHSO₃ → White crystalline bisulfite adduct.\n3. Grignard → Alcohols (with HCHO → 1°, other aldehydes → 2°, ketones → 3°).\n4. NH₃ derivatives → Oxime (NH₂OH), Hydrazone (NH₂NH₂), Semicarbazone.\n5. Alcohols → Hemiacetal → Acetal (with 2 moles ROH).\n\nReduction:\n- NaBH₄: Selective, reduces only C=O (not C=C).\n- LiAlH₄: Strong, reduces C=O, C=C, COOH, CN, etc.\n- Clemmensen (Zn-Hg/HCl): C=O → CH₂ (acidic conditions).\n- Wolff-Kishner (NH₂NH₂/KOH): C=O → CH₂ (basic conditions).\n\nOxidation:\n- Tollen's (Ag⁺/NH₃): Aldehyde → Ag mirror (ketones don't react).\n- Fehling's (Cu²⁺/tartrate): Aldehyde → red Cu₂O ppt.\n- Benedict's: Similar to Fehling's (citrate instead of tartrate).\n\nIodoform Test: CH₃-CO-R or CH₃-CH(OH)-R → yellow ppt of CHI₃.\n\nCarboxylic Acids: Acidic, form dimers in non-polar solvents (H-bonding).\nDecarboxylation: RCOONa + NaOH(CaO) → RH + Na₂CO₃ (heating).",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.8, Pg. 192",
+        "difficulty": "hard",
+        "tags": [
+            "aldehydes",
+            "ketones",
+            "carbonyl"
+        ]
+    },
+    {
+        "id": "chm_ch21_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Organic Compounds Containing Nitrogen",
+        "chapterNum": 21,
+        "type": "concept",
+        "front": "Amines: preparation, basicity, and diazotization.",
+        "back": "Amines (R-NH₂, R₂NH, R₃N):\nPrep: Reduction of nitro compounds (Sn/HCl → ArNH₂), Hoffmann bromamide (RCONH₂ + Br₂/NaOH → RNH₂), Gabriel phthalimide (1° aliphatic amines).\n\nBasicity: In gas phase: 3° > 2° > 1° > NH₃ (alkyl groups donate e⁻).\nIn aqueous: 2° > 1° > 3° > NH₃ (solvation + steric).\nAromatic amines: Less basic than aliphatic (lone pair delocalized in ring).\n\nCarbylamine Reaction: 1° amine + CHCl₃ + alc. KOH → RNC (isocyanide, foul smell).\n\nHinsberg Test:\n- 1° amine + Hinsberg reagent (C₆H₅SO₂Cl) → soluble in KOH.\n- 2° amine → insoluble precipitate.\n- 3° amine → no reaction (HCl salt).\n\nDiazotization:\nArNH₂ + NaNO₂ + 2HCl (0-5°C) → ArN₂⁺Cl⁻ (diazonium salt).\n\nReactions of Diazonium Salts:\n- Substitution: Coupling (→ azo dye), Sandmeyer (→ ArCl/Br/CN), Gatterman (→ ArCl/Br using Cu), replacement with H₂O (→ ArOH), KI (→ ArI).\n\nAzo Dye Formation: ArN₂⁺ + phenol/amine → colored azo compound (used as dyes).\n\nNitro compounds: Reduction → amines (Sn/HCl), further → azoxy, azo, hydrazo (depending on pH).",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.9, Pg. 224",
+        "difficulty": "hard",
+        "tags": [
+            "amines",
+            "diazotization",
+            "organic-nitrogen"
+        ]
+    },
+    {
+        "id": "chm_ch22_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Biomolecules",
+        "chapterNum": 22,
+        "type": "concept",
+        "front": "Carbohydrates, proteins, nucleic acids, and vitamins.",
+        "back": "Carbohydrates: Cₙ(H₂O)ₘ.\nMonosaccharides: Glucose, Fructose (C₆H₁₂O₆) - reducing sugars.\nDisaccharides: Sucrose (non-reducing), Maltose, Lactose (reducing).\nPolysaccharides: Starch (amylose+amylopectin), Cellulose (β-1,4-linkage), Glycogen.\n\nProteins: Polymers of α-amino acids linked by peptide bonds.\nStructure: Primary (sequence), Secondary (α-helix, β-sheet), Tertiary (3D folding), Quaternary (multiple subunits).\nDenaturation: Loss of biological activity (heat, pH change).\n\nNucleic Acids:\nDNA: Deoxyribose, A-T (2 H-bonds), G-C (3 H-bonds). Double helix (Watson-Crick).\nRNA: Ribose, A-U, G-C. Types: mRNA, tRNA, rRNA.\n\nVitamins:\nFat-soluble: A, D, E, K (stored in liver).\nWater-soluble: B-complex, C (excreted in urine, not stored).\nDeficiency diseases:\nA → Night blindness, D → Rickets, B₁ → Beri-beri, B₃ → Pellagra, C → Scurvy.\n\nEnzymes: Biological catalysts, mostly proteins.\nLock and Key vs Induced Fit model.\n\nHormones: Chemical messengers (steroid, peptide, amino acid derivatives).",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.10, Pg. 252",
+        "difficulty": "hard",
+        "tags": [
+            "biomolecules",
+            "carbohydrates",
+            "proteins",
+            "vitamins"
+        ]
+    },
+    {
+        "id": "chm_ch23_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Polymers",
+        "chapterNum": 23,
+        "type": "concept",
+        "front": "Types of polymerization: addition, condensation, copolymers, biodegradable polymers.",
+        "back": "Addition Polymers: Chain growth via repeated addition of monomers.\nExamples: Polyethylene (PE), Polypropylene (PP), Polystyrene (PS), Polyvinyl chloride (PVC), Teflon (PTFE).\n\nCondensation Polymers: Step growth with elimination of small molecules (H₂O, NH₃).\nExamples: Nylon-66 (hexamethylene diamine + adipic acid), Nylon-6 (caprolactam), Terylene/Dacron (ethylene glycol + terephthalic acid).\n\nCopolymers: Two or more different monomers.\nExamples: Buna-S (styrene + butadiene), Buna-N (acrylonitrile + butadiene).\n\nBiodegradable Polymers:\nPHBV (Poly-β-hydroxybutyrate-co-β-hydroxyvalerate)\nPLA (Polylactic acid)\nNylon-2-nylon-6\n\nThermoplastics: Soften on heating (PE, PP, PVC).\nThermosetting: Harden irreversibly (Bakelite, Melamine-formaldehyde).\n\nRubber: Natural (polyisoprene) → Vulcanization (S+heating) adds cross-links.\nSynthetic rubbers: Neoprene (chloroprene), Buna-S, Buna-N.\n\nImportant monomers:\nTeflon: Tetrafluoroethylene (CF₂=CF₂)\nPVC: Vinyl chloride (CH₂=CHCl)\nPolystyrene: Styrene (C₆H₅CH=CH₂)",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.11, Pg. 274",
+        "difficulty": "medium",
+        "tags": [
+            "polymers",
+            "polymerization"
+        ]
+    },
+    {
+        "id": "chm_ch24_001",
+        "subject": "Chemistry",
+        "classNum": "12",
+        "chapter": "Chemistry in Everyday Life",
+        "chapterNum": 24,
+        "type": "concept",
+        "front": "Drugs: classification, drug-target interaction, and common medicines.",
+        "back": "Drug-Target Interaction:\nEnzymes: Competitive (binds active site) vs Non-competitive (allosteric site).\nReceptors: Chemical messengers bind to receptors → response.\n\nClasses of Drugs:\nAntacids: Neutralize excess HCl (Mg(OH)₂, Al(OH)₃, Ranitidine).\nHistamine antagonists: Cimetidine, Ranitidine (ulcer treatment).\n\nAntibiotics:\nBactericidal: Kill bacteria (Penicillin, Aminoglycosides).\nBacteriostatic: Stop growth (Tetracycline, Erythromycin).\nBroad spectrum (Chloramphenicol, Ofloxacin) vs Narrow spectrum (Penicillin).\n\nAntiseptics: Applied on living tissue (Dettol, Savlon, Iodine, H₂O₂).\nDisinfectants: Applied on inanimate objects (1% phenol, SO₂, formaldehyde).\n\nTranquilizers: Treat anxiety/mental stress (Equanil, Valium, Serotonin).\nAnalgesics: Relieve pain.\n- Narcotic (Morphine, Codeine) — addictive.\n- Non-narcotic (Aspirin, Paracetamol, Ibuprofen, Naproxen).\n\nAntipyretics: Reduce fever (Aspirin, Paracetamol).\nAntimalarials: Quinine, Chloroquine.\n\nArtificial Sweeteners: Saccharin, Aspartame, Alitame, Sucralose.\nFood Preservatives: Na-benzoate, Na-metabisulfite.\n\nSoaps: Na/K salts of fatty acids.\nDetergents: Synthetic surfactants (alkylbenzenesulfonates).\n- Anionic: Sodium alkylbenzenesulfonate.\n- Cationic: Cetyltrimethylammonium bromide.\n- Non-ionic: Polyethylene glycol ethers.",
+        "ncertRef": "NCERT Class 12 Chemistry, Ch.12, Pg. 288",
+        "difficulty": "medium",
+        "tags": [
+            "chemistry-in-everyday-life",
+            "drugs",
+            "medicines"
+        ]
+    }
+]
