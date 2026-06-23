@@ -31,7 +31,7 @@ neet ug/
 node_modules/
 
 # Extra dirs at root
-lib/
+/lib/
 
 # OS
 .DS_Store

@@ -56,8 +56,10 @@ class _PlatformWebViewState extends State<PlatformWebView> {
       ..style.width = '100%'
       ..style.height = '100%';
 
-    // Trigger onPageStarted
-    widget.onPageStarted(widget.url);
+    // Defer callbacks to after the build phase to avoid setState() during build
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      widget.onPageStarted(widget.url);
+    });
     
     // Listen to iframe load event to fire onPageFinished
     _iframe.onLoad.listen((event) {
@@ -71,7 +73,9 @@ class _PlatformWebViewState extends State<PlatformWebView> {
       (int viewId) => _iframe,
     );
 
-    widget.onControllerCreated(PlatformWebViewWebController(_iframe));
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      widget.onControllerCreated(PlatformWebViewWebController(_iframe));
+    });
   }
 
   @override
