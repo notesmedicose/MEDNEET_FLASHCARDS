@@ -5,6 +5,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../theme/app_theme.dart';
 import '../theme/theme_provider.dart';
 import '../providers/flashcard_provider.dart';
+import '../providers/auth_provider.dart';
 import 'flashcards/deck_list_screen.dart';
 import 'flashcards/bookmarked_cards_screen.dart';
 import 'flashcards/progress_screen.dart';
@@ -51,6 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final isDark = context.watch<ThemeProvider>().isDarkMode;
     final themeProvider = context.read<ThemeProvider>();
     final provider = context.watch<FlashcardProvider>();
+    final authProvider = context.watch<AuthProvider>();
     final xpSystem = provider.xpSystem;
 
     return Scaffold(
@@ -69,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               children: [
                 // ── Global Custom App Bar ──
-                _buildAppBar(xpSystem, isDark, themeProvider),
+                _buildAppBar(xpSystem, isDark, themeProvider, authProvider),
 
                 // ── Main Page Content ──
                 Expanded(
@@ -102,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildAppBar(dynamic xpSystem, bool isDark, ThemeProvider themeProvider) {
+  Widget _buildAppBar(dynamic xpSystem, bool isDark, ThemeProvider themeProvider, AuthProvider authProvider) {
     final textColor = isDark ? AppTheme.textPrimary : AppTheme.lightTextPrimary;
     final subColor = isDark ? AppTheme.accentGreen.withOpacity(0.8) : AppTheme.lightPrimaryGreen.withOpacity(0.8);
 
@@ -232,7 +234,95 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+
+          // User Profile / Log Out Menu
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              if (value == 'logout') {
+                context.read<AuthProvider>().signOut();
+              }
+            },
+            offset: const Offset(0, 48),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                enabled: false,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      authProvider.isGuest ? 'Guest User' : (authProvider.currentUser?.displayName ?? 'NEET Student'),
+                      style: GoogleFonts.inter(fontWeight: FontWeight.bold, fontSize: 13, color: textColor),
+                    ),
+                    Text(
+                      authProvider.isGuest ? 'Limited local stats' : (authProvider.currentUser?.email ?? ''),
+                      style: GoogleFonts.inter(fontSize: 10, color: subColor),
+                    ),
+                  ],
+                ),
+              ),
+              const PopupMenuDivider(),
+              PopupMenuItem<String>(
+                value: 'logout',
+                child: Row(
+                  children: [
+                    const Icon(Icons.logout_rounded, size: 16, color: AppTheme.errorRed),
+                    const SizedBox(width: 8),
+                    Text(
+                      'Log Out',
+                      style: GoogleFonts.inter(fontSize: 13, color: AppTheme.errorRed, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+            child: Container(
+              margin: const EdgeInsets.only(left: 8),
+              width: 34,
+              height: 34,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: isDark ? AppTheme.cardBorder : AppTheme.lightCardBorder,
+                  width: 1.5,
+                ),
+              ),
+              child: ClipOval(
+                child: authProvider.currentUser?.photoUrl != null
+                    ? Image.network(
+                        authProvider.currentUser!.photoUrl!,
+                        fit: BoxFit.cover,
+                        errorBuilder: (_, __, ___) => _buildAvatarFallback(authProvider, isDark),
+                      )
+                    : _buildAvatarFallback(authProvider, isDark),
+              ),
+            ),
+          ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildAvatarFallback(AuthProvider authProvider, bool isDark) {
+    if (authProvider.isGuest) {
+      return Container(
+        color: isDark ? AppTheme.cardDark : AppTheme.lightBg,
+        child: Icon(Icons.person_outline_rounded, size: 16, color: isDark ? AppTheme.textSecondary : AppTheme.lightTextSecondary),
+      );
+    }
+    final name = authProvider.currentUser?.displayName ?? 'N';
+    final initial = name.isNotEmpty ? name[0].toUpperCase() : 'N';
+    return Container(
+      color: isDark ? AppTheme.accentGreen.withOpacity(0.12) : AppTheme.lightPrimaryGreen.withOpacity(0.12),
+      child: Center(
+        child: Text(
+          initial,
+          style: GoogleFonts.outfit(
+            fontWeight: FontWeight.bold,
+            fontSize: 14,
+            color: isDark ? AppTheme.accentGreen : AppTheme.lightPrimaryGreen,
+          ),
+        ),
       ),
     );
   }

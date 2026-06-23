@@ -1,0 +1,14 @@
+# Keystore properties template for MEDNEET Play Store release.
+# Copy this file to "key.properties" and update it with your own keystore paths and passwords.
+
+# The alias of the key inside the keystore
+keyAlias=upload
+
+# The password for the key
+keyPassword=your_key_password_here
+
+# The path to your release keystore file (e.g. upload-keystore.jks)
+storeFile=upload-keystore.jks
+
+# The password for the keystore itself
+storePassword=your_store_password_here
