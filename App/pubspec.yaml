@@ -28,6 +28,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
@@ -36,3 +37,10 @@ flutter:
     - lib/data/flashcards_physics.json
     - lib/data/flashcards_chemistry.json
     - lib/data/flashcards_biology.json
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#0A0E21"
+  adaptive_icon_foreground: "assets/logo.png"
