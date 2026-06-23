@@ -155,6 +155,14 @@ class FlashcardProvider extends ChangeNotifier {
   Future<void> toggleBookmark() async {
     if (_currentCard == null) return;
     await _db.toggleBookmark(_currentCard!.id);
+    
+    // Update local provider state so UI updates immediately
+    final index = _currentCards.indexWhere((c) => c.id == _currentCard!.id);
+    if (index != -1) {
+      _currentCards[index] = _currentCards[index].copyWith(bookmarked: !_currentCards[index].bookmarked);
+    }
+    _currentCard = _currentCard!.copyWith(bookmarked: !_currentCard!.bookmarked);
+
     await loadDecks();
     notifyListeners();
   }

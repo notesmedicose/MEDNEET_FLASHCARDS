@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
@@ -9,9 +10,16 @@ class FlashcardDatabase {
   static Database? _database;
   static final FlashcardDatabase instance = FlashcardDatabase._();
 
+  // In-memory web fallback stores
+  final List<Flashcard> _webFlashcards = [];
+  XPSystem _webXpSystem = XPSystem();
+
   FlashcardDatabase._();
 
   Future<Database> get database async {
+    if (kIsWeb) {
+      throw UnsupportedError('SQLite database is not supported on web. Use in-memory fallbacks.');
+    }
     if (_database != null) return _database!;
     _database = await _initDatabase();
     return _database!;
@@ -80,12 +88,27 @@ class FlashcardDatabase {
   }
 
   Future<int> insertFlashcard(Flashcard card) async {
+    if (kIsWeb) {
+      final idx = _webFlashcards.indexWhere((c) => c.id == card.id);
+      if (idx != -1) {
+        _webFlashcards[idx] = card;
+      } else {
+        _webFlashcards.add(card);
+      }
+      return 1;
+    }
     final db = await database;
     return await db.insert('flashcards', card.toMap(),
         conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
   Future<void> insertFlashcards(List<Flashcard> cards) async {
+    if (kIsWeb) {
+      for (final card in cards) {
+        await insertFlashcard(card);
+      }
+      return;
+    }
     final db = await database;
     final batch = db.batch();
     for (final card in cards) {
@@ -96,12 +119,30 @@ class FlashcardDatabase {
   }
 
   Future<List<Flashcard>> getAllFlashcards() async {
+    if (kIsWeb) {
+      final list = List<Flashcard>.from(_webFlashcards);
+      list.sort((a, b) {
+        final comp = a.chapterNum.compareTo(b.chapterNum);
+        if (comp != 0) return comp;
+        return a.id.compareTo(b.id);
+      });
+      return list;
+    }
     final db = await database;
     final maps = await db.query('flashcards', orderBy: 'chapterNum ASC, id ASC');
     return maps.map((map) => Flashcard.fromMap(map)).toList();
   }
 
   Future<List<Flashcard>> getFlashcardsBySubject(String subject) async {
+    if (kIsWeb) {
+      final list = _webFlashcards.where((c) => c.subject == subject).toList();
+      list.sort((a, b) {
+        final comp = a.chapterNum.compareTo(b.chapterNum);
+        if (comp != 0) return comp;
+        return a.id.compareTo(b.id);
+      });
+      return list;
+    }
     final db = await database;
     final maps = await db.query(
       'flashcards',
@@ -113,6 +154,26 @@ class FlashcardDatabase {
   }
 
   Future<List<Flashcard>> getDueFlashcards({String? subject, int limit = 20}) async {
+    if (kIsWeb) {
+      final nowStr = DateTime.now().toIso8601String();
+      final list = _webFlashcards.where((c) {
+        final isDue = c.nextReviewDate == null || c.nextReviewDate!.toIso8601String().compareTo(nowStr) <= 0;
+        if (subject != null) {
+          return isDue && c.subject == subject;
+        }
+        return isDue;
+      }).toList();
+      list.sort((a, b) {
+        final statusComp = a.status.compareTo(b.status);
+        if (statusComp != 0) return statusComp;
+        if (a.nextReviewDate == null && b.nextReviewDate == null) return 0;
+        if (a.nextReviewDate == null) return -1;
+        if (b.nextReviewDate == null) return 1;
+        return a.nextReviewDate!.compareTo(b.nextReviewDate!);
+      });
+      return list.take(limit).toList();
+    }
+
     final db = await database;
     final now = DateTime.now().toIso8601String();
     String? where;
@@ -137,6 +198,9 @@ class FlashcardDatabase {
   }
 
   Future<List<Flashcard>> getFlashcardsByDeck(String deckName) async {
+    if (kIsWeb) {
+      return _webFlashcards.where((c) => c.deckName == deckName).toList();
+    }
     final db = await database;
     final maps = await db.query(
       'flashcards',
@@ -148,6 +212,15 @@ class FlashcardDatabase {
   }
 
   Future<List<Flashcard>> getBookmarkedFlashcards() async {
+    if (kIsWeb) {
+      final list = _webFlashcards.where((c) => c.bookmarked).toList();
+      list.sort((a, b) {
+        final comp = a.subject.compareTo(b.subject);
+        if (comp != 0) return comp;
+        return a.chapterNum.compareTo(b.chapterNum);
+      });
+      return list;
+    }
     final db = await database;
     final maps = await db.query(
       'flashcards',
@@ -158,6 +231,14 @@ class FlashcardDatabase {
   }
 
   Future<List<Flashcard>> searchFlashcards(String query) async {
+    if (kIsWeb) {
+      final q = query.toLowerCase();
+      return _webFlashcards.where((c) {
+        return c.front.toLowerCase().contains(q) ||
+               c.back.toLowerCase().contains(q) ||
+               c.chapter.toLowerCase().contains(q);
+      }).take(50).toList();
+    }
     final db = await database;
     final maps = await db.query(
       'flashcards',
@@ -169,6 +250,13 @@ class FlashcardDatabase {
   }
 
   Future<void> updateFlashcard(Flashcard card) async {
+    if (kIsWeb) {
+      final idx = _webFlashcards.indexWhere((c) => c.id == card.id);
+      if (idx != -1) {
+        _webFlashcards[idx] = card;
+      }
+      return;
+    }
     final db = await database;
     await db.update(
       'flashcards',
@@ -179,6 +267,14 @@ class FlashcardDatabase {
   }
 
   Future<void> toggleBookmark(String cardId) async {
+    if (kIsWeb) {
+      final idx = _webFlashcards.indexWhere((c) => c.id == cardId);
+      if (idx != -1) {
+        final card = _webFlashcards[idx];
+        _webFlashcards[idx] = card.copyWith(bookmarked: !card.bookmarked);
+      }
+      return;
+    }
     final db = await database;
     await db.execute(
       'UPDATE flashcards SET bookmarked = CASE WHEN bookmarked = 1 THEN 0 ELSE 1 END WHERE id = ?',
@@ -187,6 +283,58 @@ class FlashcardDatabase {
   }
 
   Future<List<Deck>> getDecks() async {
+    if (kIsWeb) {
+      final nowStr = DateTime.now().toIso8601String();
+      final decksMap = <String, Map<String, dynamic>>{};
+      for (final card in _webFlashcards) {
+        final name = card.deckName;
+        if (!decksMap.containsKey(name)) {
+          decksMap[name] = {
+            'deckName': name,
+            'subject': card.subject,
+            'chapterNum': card.chapterNum,
+            'totalCards': 0,
+            'newCards': 0,
+            'dueCards': 0,
+            'masteredCards': 0,
+            'bookmarkedCards': 0,
+          };
+        }
+        final map = decksMap[name]!;
+        map['totalCards'] = (map['totalCards'] as int) + 1;
+        if (card.status == 0) {
+          map['newCards'] = (map['newCards'] as int) + 1;
+        }
+        if (card.nextReviewDate != null && card.nextReviewDate!.toIso8601String().compareTo(nowStr) <= 0) {
+          map['dueCards'] = (map['dueCards'] as int) + 1;
+        }
+        if (card.status == 3) {
+          map['masteredCards'] = (map['masteredCards'] as int) + 1;
+        }
+        if (card.bookmarked) {
+          map['bookmarkedCards'] = (map['bookmarkedCards'] as int) + 1;
+        }
+      }
+      final List<Deck> decks = decksMap.values.map((map) {
+        return Deck(
+          name: map['deckName'] as String,
+          subject: map['subject'] as String,
+          chapterNum: map['chapterNum'] as int,
+          totalCards: map['totalCards'] as int,
+          newCards: map['newCards'] as int,
+          dueCards: map['dueCards'] as int,
+          masteredCards: map['masteredCards'] as int,
+          bookmarkedCards: map['bookmarkedCards'] as int,
+        );
+      }).toList();
+      decks.sort((a, b) {
+        final subjectComp = a.subject.compareTo(b.subject);
+        if (subjectComp != 0) return subjectComp;
+        return a.chapterNum.compareTo(b.chapterNum);
+      });
+      return decks;
+    }
+
     final db = await database;
     final now = DateTime.now().toIso8601String();
     final results = await db.rawQuery('''
@@ -219,6 +367,17 @@ class FlashcardDatabase {
   }
 
   Future<int> getDueCount({String? subject}) async {
+    if (kIsWeb) {
+      final nowStr = DateTime.now().toIso8601String();
+      return _webFlashcards.where((c) {
+        final isDue = c.nextReviewDate == null || c.nextReviewDate!.toIso8601String().compareTo(nowStr) <= 0;
+        if (subject != null) {
+          return isDue && c.subject == subject;
+        }
+        return isDue;
+      }).length;
+    }
+
     final db = await database;
     final now = DateTime.now().toIso8601String();
     String where;
@@ -240,6 +399,9 @@ class FlashcardDatabase {
   }
 
   Future<XPSystem> getXPSystem() async {
+    if (kIsWeb) {
+      return _webXpSystem;
+    }
     final db = await database;
     final maps = await db.query('xp_system', where: 'id = 1');
     if (maps.isEmpty) {
@@ -249,11 +411,43 @@ class FlashcardDatabase {
   }
 
   Future<void> updateXPSystem(XPSystem xp) async {
+    if (kIsWeb) {
+      _webXpSystem = xp;
+      return;
+    }
     final db = await database;
     await db.update('xp_system', xp.toMap(), where: 'id = 1');
   }
 
   Future<void> addXP(int amount) async {
+    if (kIsWeb) {
+      final xp = _webXpSystem;
+      xp.totalXP += amount;
+
+      while (xp.totalXP >= xp.nextLevelXP) {
+        xp.totalXP -= xp.nextLevelXP;
+        xp.level++;
+      }
+
+      final today = DateTime.now();
+      if (xp.lastStudyDate != null) {
+        final diff = today.difference(xp.lastStudyDate!).inDays;
+        if (diff == 1) {
+          xp.currentStreak++;
+        } else if (diff > 1) {
+          xp.currentStreak = 1;
+        }
+      } else {
+        xp.currentStreak = 1;
+      }
+
+      xp.lastStudyDate = today;
+      xp.cardsReviewedToday++;
+      xp.streakCount = xp.currentStreak > xp.streakCount ? xp.currentStreak : xp.streakCount;
+      _webXpSystem = xp;
+      return;
+    }
+
     final xp = await getXPSystem();
     xp.totalXP += amount;
 
@@ -282,6 +476,14 @@ class FlashcardDatabase {
   }
 
   Future<void> seedFromJson(String subject) async {
+    if (kIsWeb) {
+      final existing = _webFlashcards.any((c) => c.subject == subject);
+      if (existing) return;
+      final cards = await loadFlashcardsFromJson(subject);
+      _webFlashcards.addAll(cards);
+      return;
+    }
+
     final cards = await loadFlashcardsFromJson(subject);
     if (cards.isEmpty) return;
 
@@ -334,6 +536,9 @@ class FlashcardDatabase {
   }
 
   Future<int> getCardCount() async {
+    if (kIsWeb) {
+      return _webFlashcards.length;
+    }
     final db = await database;
     return Sqflite.firstIntValue(
         await db.rawQuery('SELECT COUNT(*) FROM flashcards')) ?? 0;
