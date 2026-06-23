@@ -26,6 +26,7 @@ neet ug/
 
 # HTML files with API keys
 *.html
+!App/web/*.html
 
 # Node (if any)
 node_modules/
