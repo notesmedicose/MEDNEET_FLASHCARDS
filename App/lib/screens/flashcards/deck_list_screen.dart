@@ -8,6 +8,8 @@ import '../../theme/theme_provider.dart';
 import '../../theme/app_theme.dart';
 import '../../models/flashcard_model.dart';
 import 'card_review_screen.dart';
+import 'card_carousel_screen.dart';
+import '../../widgets/study_mode_sheet.dart';
 
 class DeckListScreen extends StatefulWidget {
   const DeckListScreen({super.key});
@@ -840,21 +842,55 @@ class _DeckListScreenState extends State<DeckListScreen>
   // ─────────────────────────── HELPERS ───────────────────────────
 
   void _startDueReview(BuildContext context) {
-    context.read<FlashcardProvider>().loadDueCards().then((_) {
-      if (!mounted) return;
-      Navigator.of(this.context).push(MaterialPageRoute(
-        builder: (_) => const CardReviewScreen(),
-      ));
-    });
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => StudyModeBottomSheet(
+        title: 'Due Reviews',
+        onStartReview: () {
+          context.read<FlashcardProvider>().loadDueCards().then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardReviewScreen(),
+            ));
+          });
+        },
+        onStartCarousel: () {
+          context.read<FlashcardProvider>().loadDueCards().then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardCarouselScreen(title: 'Due Reviews'),
+            ));
+          });
+        },
+      ),
+    );
   }
 
   void _startDeckReview(BuildContext context, Deck deck) {
-    context.read<FlashcardProvider>().loadDeckCards(deck.name).then((_) {
-      if (!mounted) return;
-      Navigator.of(this.context).push(MaterialPageRoute(
-        builder: (_) => const CardReviewScreen(),
-      ));
-    });
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => StudyModeBottomSheet(
+        title: deck.name,
+        onStartReview: () {
+          context.read<FlashcardProvider>().loadDeckCards(deck.name).then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardReviewScreen(),
+            ));
+          });
+        },
+        onStartCarousel: () {
+          context.read<FlashcardProvider>().loadDeckCards(deck.name).then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => CardCarouselScreen(title: deck.name),
+            ));
+          });
+        },
+      ),
+    );
   }
 
   void _startCardReview(BuildContext context, FlashcardProvider provider) {

@@ -304,14 +304,16 @@ class _LoginScreenState extends State<LoginScreen> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     // Custom Vector Google Icon Representation
-                                    Container(
-                                      width: 20,
-                                      height: 20,
-                                      margin: const EdgeInsets.only(right: 12),
-                                      child: CustomPaint(
-                                        painter: GoogleIconPainter(),
+                                      Container(
+                                        width: 20,
+                                        height: 20,
+                                        margin: const EdgeInsets.only(right: 12),
+                                        child: CustomPaint(
+                                          painter: GoogleIconPainter(
+                                            backgroundColor: isDark ? AppTheme.surfaceDark.withOpacity(0.5) : Colors.white,
+                                          ),
+                                        ),
                                       ),
-                                    ),
                                     Text(
                                       'Continue with Gmail',
                                       style: GoogleFonts.inter(fontWeight: FontWeight.w700, fontSize: 14),
@@ -384,6 +386,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
 // Custom Painter to draw a clean vector Google G logo
 class GoogleIconPainter extends CustomPainter {
+  final Color backgroundColor;
+  GoogleIconPainter({this.backgroundColor = Colors.white});
+
   @override
   void paint(Canvas canvas, Size size) {
     final double w = size.width;
@@ -430,8 +435,8 @@ class GoogleIconPainter extends CustomPainter {
       ..lineTo(cx, cy);
     canvas.drawPath(bluePath, paint);
 
-    // Draw inner white circle cut-out
-    paint.color = Colors.white;
+    // Draw inner circle cut-out matching the parent's background color
+    paint.color = backgroundColor;
     canvas.drawCircle(Offset(cx, cy), r * 0.6, paint);
 
     // Draw Blue central horizontal bar for the "G" shape
@@ -440,5 +445,5 @@ class GoogleIconPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant GoogleIconPainter oldDelegate) => oldDelegate.backgroundColor != backgroundColor;
 }

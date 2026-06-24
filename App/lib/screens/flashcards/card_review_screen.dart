@@ -10,6 +10,7 @@ import '../../theme/theme_provider.dart';
 import '../../theme/app_theme.dart';
 import '../../models/flashcard_model.dart';
 import '../../widgets/chemistry_structure_widget.dart';
+import '../../widgets/report_dialog.dart';
 
 class CardReviewScreen extends StatefulWidget {
   const CardReviewScreen({super.key});
@@ -145,7 +146,24 @@ class _CardReviewScreenState extends State<CardReviewScreen> with TickerProvider
               ],
             ),
             actions: [
-              if (card != null)
+              if (card != null) ...[
+                IconButton(
+                  icon: const Icon(
+                    Icons.report_gmailerrorred_rounded,
+                    color: AppTheme.errorRed,
+                    size: 24,
+                  ),
+                  tooltip: 'Report error on card',
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (_) => ReportCardDialog(
+                        cardId: card.id,
+                        cardFront: card.front,
+                      ),
+                    );
+                  },
+                ),
                 IconButton(
                   icon: Icon(
                     provider.isCurrentCardBookmarked ? Icons.bookmark : Icons.bookmark_border,
@@ -154,6 +172,7 @@ class _CardReviewScreenState extends State<CardReviewScreen> with TickerProvider
                   ),
                   onPressed: () => provider.toggleBookmark(),
                 ),
+              ],
             ],
           ),
           body: card == null

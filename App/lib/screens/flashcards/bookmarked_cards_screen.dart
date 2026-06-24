@@ -8,6 +8,8 @@ import '../../theme/app_theme.dart';
 import '../../models/flashcard_model.dart';
 import '../../database/flashcard_database.dart';
 import 'card_review_screen.dart';
+import 'card_carousel_screen.dart';
+import '../../widgets/study_mode_sheet.dart';
 
 class BookmarkedCardsScreen extends StatefulWidget {
   const BookmarkedCardsScreen({super.key});
@@ -296,34 +298,62 @@ class _BookmarkedCardsScreenState extends State<BookmarkedCardsScreen> {
   }
 
   void _toggleBookmark(Flashcard card) async {
-    await FlashcardDatabase.instance.toggleBookmark(card.id);
-    // Refresh parent dashboard deck counts
+    await context.read<FlashcardProvider>().toggleBookmark(card.id);
     if (mounted) {
-      context.read<FlashcardProvider>().loadDecks();
       _refreshBookmarks();
     }
   }
 
   void _startBookmarksReview() {
-    final navigator = Navigator.of(context);
-    context.read<FlashcardProvider>().loadBookmarkedCards().then((_) {
-      if (!mounted) return;
-      navigator.push(MaterialPageRoute(
-        builder: (_) => const CardReviewScreen(),
-      )).then((_) => _refreshBookmarks());
-    });
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => StudyModeBottomSheet(
+        title: 'Bookmarked Cards',
+        onStartReview: () {
+          context.read<FlashcardProvider>().loadBookmarkedCards().then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardReviewScreen(),
+            )).then((_) => _refreshBookmarks());
+          });
+        },
+        onStartCarousel: () {
+          context.read<FlashcardProvider>().loadBookmarkedCards().then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardCarouselScreen(title: 'Bookmarks'),
+            )).then((_) => _refreshBookmarks());
+          });
+        },
+      ),
+    );
   }
 
   void _reviewSingleCard(Flashcard card) {
-    final navigator = Navigator.of(context);
-    // Load bookmarked cards then navigate to review screen
-    final provider = context.read<FlashcardProvider>();
-    provider.loadBookmarkedCards().then((_) {
-      if (!mounted) return;
-      navigator.push(MaterialPageRoute(
-        builder: (_) => const CardReviewScreen(),
-      )).then((_) => _refreshBookmarks());
-    });
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => StudyModeBottomSheet(
+        title: 'Bookmark Study',
+        onStartReview: () {
+          context.read<FlashcardProvider>().loadBookmarkedCards().then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardReviewScreen(),
+            )).then((_) => _refreshBookmarks());
+          });
+        },
+        onStartCarousel: () {
+          context.read<FlashcardProvider>().loadBookmarkedCards().then((_) {
+            if (!mounted) return;
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (_) => const CardCarouselScreen(title: 'Bookmarks'),
+            )).then((_) => _refreshBookmarks());
+          });
+        },
+      ),
+    );
   }
 
   String _cleanSnippet(String text) {

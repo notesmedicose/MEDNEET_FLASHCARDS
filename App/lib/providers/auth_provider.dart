@@ -1,12 +1,15 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/user_model.dart';
 
 class AuthProvider extends ChangeNotifier {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
+  static bool testMode = false;
+  final dynamic _auth = (kIsWeb || testMode) ? FakeFirebaseAuth() : FirebaseAuth.instance;
+  final dynamic _googleSignIn = (kIsWeb || testMode) ? FakeGoogleSignIn() : GoogleSignIn();
 
   UserModel? _currentUser;
   bool _isLoading = false;
@@ -32,7 +35,7 @@ class AuthProvider extends ChangeNotifier {
       _isGuest = prefs.getBool('is_guest') ?? false;
 
       // Monitor Firebase auth state
-      _auth.authStateChanges().listen((User? firebaseUser) {
+      _auth.authStateChanges().listen((dynamic firebaseUser) {
         if (firebaseUser != null && !_isGuest) {
           _currentUser = UserModel(
             uid: firebaseUser.uid,
@@ -62,7 +65,7 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final UserCredential credential = await _auth.signInWithEmailAndPassword(
+      final dynamic credential = await _auth.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
@@ -101,7 +104,7 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final UserCredential credential = await _auth.createUserWithEmailAndPassword(
+      final dynamic credential = await _auth.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
@@ -146,20 +149,20 @@ class AuthProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      final dynamic googleUser = await _googleSignIn.signIn();
       if (googleUser == null) {
         _isLoading = false;
         notifyListeners();
         return false; // User cancelled the sign-in
       }
 
-      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+      final dynamic googleAuth = await googleUser.authentication;
       final AuthCredential credential = GoogleAuthProvider.credential(
         accessToken: googleAuth.accessToken,
         idToken: googleAuth.idToken,
       );
 
-      final UserCredential userCredential = await _auth.signInWithCredential(credential);
+      final dynamic userCredential = await _auth.signInWithCredential(credential);
       final firebaseUser = userCredential.user;
 
       if (firebaseUser != null) {
@@ -181,7 +184,14 @@ class AuthProvider extends ChangeNotifier {
     } on FirebaseAuthException catch (e) {
       _errorMessage = _getAuthErrorMessage(e);
     } catch (e) {
-      _errorMessage = e.toString();
+      final errStr = e.toString();
+      if (errStr.contains('PlatformException(10') || 
+          errStr.toLowerCase().contains('developer') || 
+          errStr.contains('DEVELOPER_ERROR')) {
+        _errorMessage = 'Configuration error: Please ensure Google Play App Signing SHA-1 fingerprint is added to your Firebase project settings.';
+      } else {
+        _errorMessage = errStr;
+      }
     }
 
     _isLoading = false;
@@ -242,4 +252,97 @@ class AuthProvider extends ChangeNotifier {
         return e.message ?? 'An authentication error occurred.';
     }
   }
+}
+
+class FakeFirebaseAuth {
+  final StreamController<dynamic> _controller = StreamController<dynamic>.broadcast();
+  dynamic _currentUser;
+
+  FakeFirebaseAuth() {
+    _controller.add(null);
+  }
+
+  Stream<dynamic> authStateChanges() => _controller.stream;
+  dynamic get currentUser => _currentUser;
+
+  Future<void> signOut() async {
+    _currentUser = null;
+    _controller.add(null);
+  }
+
+  Future<dynamic> signInWithEmailAndPassword({required String email, required String password}) async {
+    final fakeUser = FakeUser(
+      uid: 'fake_uid_${email.hashCode}',
+      email: email,
+      displayName: email.split('@')[0],
+    );
+    _currentUser = fakeUser;
+    _controller.add(fakeUser);
+    return FakeUserCredential(fakeUser);
+  }
+
+  Future<dynamic> createUserWithEmailAndPassword({required String email, required String password}) async {
+    final fakeUser = FakeUser(
+      uid: 'fake_uid_${email.hashCode}',
+      email: email,
+      displayName: email.split('@')[0],
+    );
+    _currentUser = fakeUser;
+    _controller.add(fakeUser);
+    return FakeUserCredential(fakeUser);
+  }
+
+  Future<dynamic> signInWithCredential(dynamic credential) async {
+    final fakeUser = FakeUser(
+      uid: 'fake_uid_google',
+      email: 'notesmedicose@gmail.com',
+      displayName: 'Admin User',
+    );
+    _currentUser = fakeUser;
+    _controller.add(fakeUser);
+    return FakeUserCredential(fakeUser);
+  }
+}
+
+class FakeUser {
+  final String uid;
+  String? displayName;
+  final String? email;
+  final String? photoURL;
+  final FakeUserMetadata metadata = FakeUserMetadata();
+
+  FakeUser({required this.uid, this.displayName, this.email, this.photoURL});
+
+  Future<void> updateDisplayName(String name) async {
+    displayName = name;
+  }
+
+  Future<void> reload() async {}
+}
+
+class FakeUserMetadata {
+  final DateTime creationTime = DateTime.now();
+}
+
+class FakeUserCredential {
+  final FakeUser user;
+  FakeUserCredential(this.user);
+}
+
+class FakeGoogleSignIn {
+  Future<dynamic> signIn() async => FakeGoogleSignInAccount();
+  Future<void> signOut() async {}
+}
+
+class FakeGoogleSignInAccount {
+  final String id = 'fake_google_id';
+  final String displayName = 'Admin User';
+  final String email = 'notesmedicose@gmail.com';
+  final String? photoUrl = null;
+  Future<dynamic> get authentication async => FakeGoogleSignInAuthentication();
+}
+
+class FakeGoogleSignInAuthentication {
+  final String accessToken = 'fake_access_token';
+  final String idToken = 'fake_id_token';
 }

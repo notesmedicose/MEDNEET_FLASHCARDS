@@ -5,6 +5,8 @@ class UserModel {
   final String? photoUrl;
   final DateTime createdAt;
 
+  bool get isAdmin => email == 'notesmedicose@gmail.com';
+
   UserModel({
     required this.uid,
     required this.displayName,

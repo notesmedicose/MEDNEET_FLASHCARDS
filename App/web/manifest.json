@@ -1,11 +1,11 @@
 {
-    "name": "mednotes",
-    "short_name": "mednotes",
+    "name": "MEDNEET",
+    "short_name": "MEDNEET",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0A0E21",
+    "theme_color": "#00E676",
+    "description": "MEDNEET - NEET Prep App with Flashcards & Gamification",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

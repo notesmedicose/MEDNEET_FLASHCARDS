@@ -9,6 +9,7 @@ import '../providers/auth_provider.dart';
 import 'flashcards/deck_list_screen.dart';
 import 'flashcards/bookmarked_cards_screen.dart';
 import 'flashcards/progress_screen.dart';
+import 'flashcards/admin_dashboard_screen.dart';
 import '../widgets/bottom_nav.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -240,6 +241,10 @@ class _HomeScreenState extends State<HomeScreen> {
             onSelected: (value) {
               if (value == 'logout') {
                 context.read<AuthProvider>().signOut();
+              } else if (value == 'admin') {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => const AdminDashboardScreen(),
+                ));
               }
             },
             offset: const Offset(0, 48),
@@ -261,6 +266,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
+              if (authProvider.currentUser?.isAdmin == true) ...[
+                const PopupMenuDivider(),
+                PopupMenuItem<String>(
+                  value: 'admin',
+                  child: Row(
+                    children: [
+                      Icon(Icons.admin_panel_settings_rounded, size: 16, color: isDark ? AppTheme.accentGreen : AppTheme.lightPrimaryGreen),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Admin Panel',
+                        style: GoogleFonts.inter(
+                          fontSize: 13,
+                          color: isDark ? AppTheme.accentGreen : AppTheme.lightPrimaryGreen,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
               const PopupMenuDivider(),
               PopupMenuItem<String>(
                 value: 'logout',

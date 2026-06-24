@@ -13,6 +13,7 @@ class FlashcardDatabase {
   // In-memory web fallback stores
   final List<Flashcard> _webFlashcards = [];
   XPSystem _webXpSystem = XPSystem();
+  final List<Map<String, dynamic>> _webReports = [];
 
   FlashcardDatabase._();
 
@@ -29,8 +30,9 @@ class FlashcardDatabase {
     String path = '${(await getApplicationDocumentsDirectory()).path}/medneet_flashcards.db';
     return await openDatabase(
       path,
-      version: 1,
+      version: 2,
       onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
     );
   }
 
@@ -84,7 +86,37 @@ class FlashcardDatabase {
       CREATE INDEX idx_flashcards_next_review ON flashcards(nextReviewDate)
     ''');
 
+    await db.execute('''
+      CREATE TABLE reports (
+        id TEXT PRIMARY KEY,
+        cardId TEXT NOT NULL,
+        cardFront TEXT NOT NULL,
+        reason TEXT NOT NULL,
+        comment TEXT,
+        reportedBy TEXT NOT NULL,
+        reportedAt TEXT NOT NULL,
+        status TEXT DEFAULT 'pending'
+      )
+    ''');
+
     await db.insert('xp_system', {'id': 1});
+  }
+
+  Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      await db.execute('''
+        CREATE TABLE reports (
+          id TEXT PRIMARY KEY,
+          cardId TEXT NOT NULL,
+          cardFront TEXT NOT NULL,
+          reason TEXT NOT NULL,
+          comment TEXT,
+          reportedBy TEXT NOT NULL,
+          reportedAt TEXT NOT NULL,
+          status TEXT DEFAULT 'pending'
+        )
+      ''');
+    }
   }
 
   Future<int> insertFlashcard(Flashcard card) async {
@@ -542,5 +574,43 @@ class FlashcardDatabase {
     final db = await database;
     return Sqflite.firstIntValue(
         await db.rawQuery('SELECT COUNT(*) FROM flashcards')) ?? 0;
+  }
+
+  // Admin and Report support methods
+  Future<void> deleteFlashcard(String cardId) async {
+    if (kIsWeb) {
+      _webFlashcards.removeWhere((c) => c.id == cardId);
+      _webReports.removeWhere((r) => r['cardId'] == cardId);
+      return;
+    }
+    final db = await database;
+    await db.delete('flashcards', where: 'id = ?', whereArgs: [cardId]);
+    await db.delete('reports', where: 'cardId = ?', whereArgs: [cardId]);
+  }
+
+  Future<void> insertReport(Map<String, dynamic> report) async {
+    if (kIsWeb) {
+      _webReports.add(report);
+      return;
+    }
+    final db = await database;
+    await db.insert('reports', report, conflictAlgorithm: ConflictAlgorithm.replace);
+  }
+
+  Future<List<Map<String, dynamic>>> getAllReports() async {
+    if (kIsWeb) {
+      return List<Map<String, dynamic>>.from(_webReports);
+    }
+    final db = await database;
+    return await db.query('reports', orderBy: 'reportedAt DESC');
+  }
+
+  Future<void> deleteReport(String reportId) async {
+    if (kIsWeb) {
+      _webReports.removeWhere((r) => r['id'] == reportId);
+      return;
+    }
+    final db = await database;
+    await db.delete('reports', where: 'id = ?', whereArgs: [reportId]);
   }
 }

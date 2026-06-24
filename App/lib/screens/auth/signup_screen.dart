@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -47,6 +48,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ),
         );
       }
+    }
+  }
+
+  void _handleGoogleSignUp() async {
+    final auth = context.read<AuthProvider>();
+    final success = await auth.signInWithGoogle();
+    if (success && mounted) {
+      Navigator.pop(context); // Return on successful sign in
+    } else if (!success && mounted && auth.errorMessage != null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(auth.errorMessage!),
+          backgroundColor: AppTheme.errorRed,
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
     }
   }
 
@@ -283,6 +300,59 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       ),
                               ),
                             ),
+                            
+                            const SizedBox(height: 16),
+                            
+                            // Divider
+                            Row(
+                              children: [
+                                Expanded(child: Divider(color: borderColor, thickness: 1)),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                                  child: Text(
+                                    'or',
+                                    style: GoogleFonts.inter(fontSize: 12, color: subColor),
+                                  ),
+                                ),
+                                Expanded(child: Divider(color: borderColor, thickness: 1)),
+                              ],
+                            ),
+                            
+                            const SizedBox(height: 16),
+                            
+                            // Google SignUp Button
+                            SizedBox(
+                              width: double.infinity,
+                              height: 52,
+                              child: OutlinedButton(
+                                style: OutlinedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                                  side: BorderSide(color: borderColor, width: 1.5),
+                                  backgroundColor: isDark ? AppTheme.surfaceDark.withOpacity(0.5) : Colors.white,
+                                  foregroundColor: textColor,
+                                ),
+                                onPressed: authProvider.isLoading ? null : _handleGoogleSignUp,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                      Container(
+                                        width: 20,
+                                        height: 20,
+                                        margin: const EdgeInsets.only(right: 12),
+                                        child: CustomPaint(
+                                          painter: GoogleIconPainter(
+                                            backgroundColor: isDark ? AppTheme.surfaceDark.withOpacity(0.5) : Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    Text(
+                                      'Continue with Gmail',
+                                      style: GoogleFonts.inter(fontWeight: FontWeight.w700, fontSize: 14),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ).animate().fadeIn(delay: 150.ms).slideY(begin: 0.1, end: 0),
@@ -320,4 +390,68 @@ class _SignUpScreenState extends State<SignUpScreen> {
       ),
     );
   }
+}
+
+// Custom Painter to draw a clean vector Google G logo
+class GoogleIconPainter extends CustomPainter {
+  final Color backgroundColor;
+  GoogleIconPainter({this.backgroundColor = Colors.white});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final double w = size.width;
+    final double h = size.height;
+    final double cx = w / 2;
+    final double cy = h / 2;
+    final double r = w / 2;
+
+    final Paint paint = Paint()..style = PaintingStyle.fill;
+    
+    // Red quadrant (Top)
+    paint.color = const Color(0xFFEA4335);
+    final Path redPath = Path()
+      ..moveTo(cx, cy)
+      ..lineTo(cx + r * 0.707, cy - r * 0.707)
+      ..arcTo(Rect.fromCircle(center: Offset(cx, cy), radius: r), -math.pi / 4, -math.pi / 2, false)
+      ..lineTo(cx, cy);
+    canvas.drawPath(redPath, paint);
+
+    // Yellow quadrant (Left)
+    paint.color = const Color(0xFFFBBC05);
+    final Path yellowPath = Path()
+      ..moveTo(cx, cy)
+      ..lineTo(cx - r * 0.707, cy - r * 0.707)
+      ..arcTo(Rect.fromCircle(center: Offset(cx, cy), radius: r), -3 * math.pi / 4, -math.pi / 2, false)
+      ..lineTo(cx, cy);
+    canvas.drawPath(yellowPath, paint);
+
+    // Green quadrant (Bottom)
+    paint.color = const Color(0xFF34A853);
+    final Path greenPath = Path()
+      ..moveTo(cx, cy)
+      ..lineTo(cx - r * 0.707, cy + r * 0.707)
+      ..arcTo(Rect.fromCircle(center: Offset(cx, cy), radius: r), 3 * math.pi / 4, -math.pi / 2, false)
+      ..lineTo(cx, cy);
+    canvas.drawPath(greenPath, paint);
+
+    // Blue quadrant (Right)
+    paint.color = const Color(0xFF4285F4);
+    final Path bluePath = Path()
+      ..moveTo(cx, cy)
+      ..lineTo(cx + r * 0.707, cy + r * 0.707)
+      ..arcTo(Rect.fromCircle(center: Offset(cx, cy), radius: r), math.pi / 4, -math.pi / 2, false)
+      ..lineTo(cx, cy);
+    canvas.drawPath(bluePath, paint);
+
+    // Draw inner circle cut-out matching the parent's background color
+    paint.color = backgroundColor;
+    canvas.drawCircle(Offset(cx, cy), r * 0.6, paint);
+
+    // Draw Blue central horizontal bar for the "G" shape
+    paint.color = const Color(0xFF4285F4);
+    canvas.drawRect(Rect.fromLTWH(cx, cy - r * 0.2, r * 0.9, r * 0.4), paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant GoogleIconPainter oldDelegate) => oldDelegate.backgroundColor != backgroundColor;
 }

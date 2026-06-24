@@ -152,16 +152,20 @@ class FlashcardProvider extends ChangeNotifier {
     await loadDecks(); // Refresh deck stats
   }
 
-  Future<void> toggleBookmark() async {
-    if (_currentCard == null) return;
-    await _db.toggleBookmark(_currentCard!.id);
+  Future<void> toggleBookmark([String? cardId]) async {
+    final targetId = cardId ?? _currentCard?.id;
+    if (targetId == null) return;
+    await _db.toggleBookmark(targetId);
     
     // Update local provider state so UI updates immediately
-    final index = _currentCards.indexWhere((c) => c.id == _currentCard!.id);
+    final index = _currentCards.indexWhere((c) => c.id == targetId);
     if (index != -1) {
       _currentCards[index] = _currentCards[index].copyWith(bookmarked: !_currentCards[index].bookmarked);
     }
-    _currentCard = _currentCard!.copyWith(bookmarked: !_currentCard!.bookmarked);
+    
+    if (_currentCard?.id == targetId) {
+      _currentCard = _currentCard!.copyWith(bookmarked: !_currentCard!.bookmarked);
+    }
 
     await loadDecks();
     notifyListeners();
@@ -215,6 +219,78 @@ class FlashcardProvider extends ChangeNotifier {
 
   void resetConfetti() {
     _showConfetti = false;
+    notifyListeners();
+  }
+
+  Future<void> addOrUpdateCard(Flashcard card) async {
+    _isLoading = true;
+    notifyListeners();
+    try {
+      await _db.insertFlashcard(card);
+      await loadDecks();
+      // Reload current cards if we are currently looking at a deck
+      if (_currentCards.isNotEmpty) {
+        final firstCard = _currentCards.first;
+        if (firstCard.deckName == card.deckName || firstCard.subject == card.subject) {
+          await loadDeckCards(firstCard.deckName);
+        }
+      }
+    } catch (e) {
+      debugPrint('Error adding/updating card: $e');
+    }
+    _isLoading = false;
+    notifyListeners();
+  }
+
+  Future<void> deleteCard(String cardId) async {
+    _isLoading = true;
+    notifyListeners();
+    try {
+      await _db.deleteFlashcard(cardId);
+      await loadDecks();
+      // Remove from current local lists
+      _currentCards.removeWhere((c) => c.id == cardId);
+      if (_currentCard?.id == cardId) {
+        if (_currentIndex < _currentCards.length) {
+          _currentCard = _currentCards[_currentIndex];
+        } else {
+          _currentIndex = _currentCards.isNotEmpty ? _currentCards.length - 1 : 0;
+          _currentCard = _currentCards.isNotEmpty ? _currentCards[_currentIndex] : null;
+        }
+      }
+    } catch (e) {
+      debugPrint('Error deleting card: $e');
+    }
+    _isLoading = false;
+    notifyListeners();
+  }
+
+  Future<void> submitReport({
+    required String cardId,
+    required String cardFront,
+    required String reason,
+    required String comment,
+    required String reportedBy,
+  }) async {
+    final report = {
+      'id': 'rep_${DateTime.now().millisecondsSinceEpoch}_${cardId.hashCode}',
+      'cardId': cardId,
+      'cardFront': cardFront,
+      'reason': reason,
+      'comment': comment,
+      'reportedBy': reportedBy,
+      'reportedAt': DateTime.now().toIso8601String(),
+      'status': 'pending',
+    };
+    await _db.insertReport(report);
+  }
+
+  Future<List<Map<String, dynamic>>> loadReports() async {
+    return await _db.getAllReports();
+  }
+
+  Future<void> resolveReport(String reportId) async {
+    await _db.deleteReport(reportId);
     notifyListeners();
   }
 }
